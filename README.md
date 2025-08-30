@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="assets/sibyl.jpg" alt="Sibyl - Agentic Event Discovery System" width="600" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+</div>
+
 # Sibyl
 
 An agentic event discovery system that discovers predictable events and assigns likelihoods with full provenance tracking.
