@@ -1,150 +1,156 @@
-# Sibyl
+# Signal Loom
 
-A minimal viable implementation of an agentic event discovery system that discovers predictable events and assigns likelihoods with provenance.
+An agentic event discovery system that discovers predictable events and assigns likelihoods with full provenance tracking.
 
-## Overview
+## 🚀 Quick Start
 
-This system consists of two main agents:
-- **Discovery Agent**: Gathers candidate signals from various sources (RSS feeds, etc.)
-- **Assessor Agent**: Evaluates evidence and makes predictions using Google's Gemini AI
-
-## Features
-
-- RSS feed parsing and evidence gathering
-- Content deduplication using SHA-256 hashing
-- Proto event grouping and management
-- LLM-powered prediction assessment
-- SQLite database with full provenance tracking
-- Mock mode for offline testing
-- Docker support for Cloud Run deployment
-
-## Quick Start
-
-### 1. Setup Environment
-
+### 1. Setup
 ```bash
-# Create virtual environment
-python -m venv .venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-
 # Install dependencies
 pip install -r requirements.txt
 
-# Copy environment template
-cp .env.example .env
-# Edit .env and add your GOOGLE_API_KEY
+# Initialize database
+make init-db
 ```
 
-### 2. Initialize Database
+### 2. Run (Choose One)
 
+**Offline Mode (No API Key Required):**
 ```bash
-python - <<'PY'
-from app.core.store import Store
-s = Store.from_env()
-s.create_all()
-print('DB initialized at', s.engine.url)
-PY
+make run-offline
 ```
 
-### 3. Run in Mock Mode (Offline)
-
+**Live Mode (Requires Google API Key):**
 ```bash
-export LLM_MODE=mock
-python -m app.run_cycle
-```
-
-### 4. Run in Live Mode (Requires API Key)
-
-```bash
-export LLM_MODE=live
+# Set your Google AI API key
 export GOOGLE_API_KEY=your_api_key_here
-python -m app.run_cycle
+make quick-run
 ```
 
-## Testing
+## 🔑 Required Credentials
 
-Run the smoke tests:
+### Google AI API Key (for live mode)
+- **Required for**: LLM-powered predictions and assessments
+- **Get it from**: [Google AI Studio](https://aistudio.google.com/app/apikey)
+- **Set via**: `export GOOGLE_API_KEY=your_key_here`
+- **Alternative**: Create `.env` file with `GOOGLE_API_KEY=your_key_here`
 
+## 📋 Available Commands
+
+### Development
 ```bash
-pytest tests/test_smoke.py -v
+make help              # Show all available commands
+make quick-run         # Quick test (1 feed, 3 items, 1 event)
+make run-offline       # Offline test with fixtures
+make reset-db          # Reset database
+make dev-reset         # Reset DB + quick run
 ```
 
-## Docker
+### Testing
+```bash
+make test              # Run tests
+make run-offline       # Test without network
+```
 
-Build and run with Docker:
+## 🏗️ System Architecture
+
+**Two Main Agents:**
+- **Discovery Agent**: Gathers evidence from RSS feeds
+- **Assessor Agent**: Uses Google Gemini to evaluate evidence and make predictions
+
+**Key Features:**
+- RSS feed parsing with network resilience
+- Content deduplication via SHA-256 hashing
+- SQLite database with full provenance
+- Offline mode for development/testing
+- Docker support for deployment
+
+## 🔧 Configuration
+
+**Environment Variables:**
+- `GOOGLE_API_KEY` - **Required for live mode** - Your Google AI API key
+- `LLM_MODE` - `live` (default) or `mock` for testing
+- `DB_URL` - Database connection (default: `sqlite:///./local.db`)
+- `MODEL` - Gemini model (default: `gemini-1.5-flash`)
+
+**Create `.env` file:**
+```bash
+# Copy and edit this template
+cat > .env << EOF
+# REQUIRED: Google AI API Key for live mode
+# Get your API key from: https://aistudio.google.com/app/apikey
+GOOGLE_API_KEY=your_api_key_here
+
+# LLM Mode: 'live' for real API calls, 'mock' for testing
+LLM_MODE=live
+
+# Database connection string
+DB_URL=sqlite:///./local.db
+
+# Gemini model to use
+MODEL=gemini-1.5-flash
+EOF
+```
+
+## 🌐 GitHub Pages
+
+The project includes a GitHub Pages website with dynamic visualizations and old-school styling:
+
+- **Live Demo**: [View the website](https://yourusername.github.io/signal_loom) (replace with your GitHub username)
+- **Features**: Interactive charts, real-time system status, old-school Times New Roman design
+- **Auto-Deploy**: Automatically updates when you push to the main branch
+
+## 🐳 Docker
 
 ```bash
-# Build image
+# Build and run
 docker build -f docker/Dockerfile -t signal-loom .
-
-# Run with environment file
 docker run --env-file .env signal-loom
 ```
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 signal_loom/
 ├── app/
-│   ├── adapters/          # Data source adapters (RSS, etc.)
+│   ├── adapters/          # RSS and other data sources
 │   ├── agents/            # Discovery and Assessor agents
-│   ├── core/              # Core types, store, and utilities
-│   ├── llm/               # LLM client (Google AI SDK)
-│   ├── config.py          # Configuration management
-│   └── run_cycle.py       # Main orchestration
-├── tests/                 # Test files and fixtures
+│   ├── core/              # Database, types, utilities
+│   ├── llm/               # Google AI SDK client
+│   └── cli.py             # Command-line interface
+├── docs/                  # GitHub Pages website
+├── tests/                 # Tests and fixtures
 ├── docker/                # Docker configuration
-└── requirements.txt       # Python dependencies
+└── Makefile              # Development commands
 ```
 
-## Configuration
+## 🧪 Testing
 
-Key environment variables:
+**Smoke Test:**
+```bash
+pytest tests/test_smoke.py -v
+```
 
-- `GOOGLE_API_KEY`: Your Google AI API key
-- `DB_URL`: Database connection string (default: sqlite:///./local.db)
-- `LLM_MODE`: `live` or `mock` (default: live)
-- `MODEL`: Gemini model to use (default: gemini-1.5-flash)
-- `RSS_FIXTURE`: Path to RSS fixture file for testing
+**Offline Development:**
+```bash
+make run-offline  # Uses test fixtures, no network required
+```
 
-## Database Schema
+## 📊 Database Schema
 
-The system uses SQLite with the following tables:
+- `evidence` - Raw evidence from data sources
+- `proto_events` - Grouped events awaiting assessment  
+- `predictions` - LLM-generated predictions with probabilities
+- `agent_runs` - Execution logs for all agent runs
+- `llm_interactions` - Detailed LLM call tracking
 
-- `evidence`: Raw evidence from data sources
-- `proto_events`: Grouped events awaiting assessment
-- `predictions`: LLM-generated predictions with probabilities
-- `agent_runs`: Execution logs for all agent runs
-- `prediction_evidence`: Links between predictions and evidence
+## 🔄 Development Workflow
 
-## Development
+1. **Start with offline mode**: `make run-offline`
+2. **Add your API key**: `export GOOGLE_API_KEY=your_key`
+3. **Test live mode**: `make quick-run`
+4. **Reset for clean testing**: `make dev-reset`
 
-### Adding New Data Sources
-
-1. Create a new adapter in `app/adapters/`
-2. Implement the fetch and parse methods
-3. Update the Discovery agent to use the new adapter
-
-### Customizing LLM Prompts
-
-Modify the prompt in `app/llm/adk_client.py` in the `_live_reason_prediction` method.
-
-### Adding New Agent Types
-
-1. Create a new agent class in `app/agents/`
-2. Add the agent type to the `AgentType` enum in `app/core/types.py`
-3. Update the orchestration logic in `app/run_cycle.py`
-
-## Next Steps
-
-This implementation provides the foundation for a full-stack event discovery system. Future enhancements could include:
-
-- PostgreSQL and pgvector for better scalability
-- Web UI for browsing predictions and evidence
-- Real-time event streaming
-- Advanced ML models for prediction calibration
-- Integration with more data sources (SEC EDGAR, PR wires, etc.)
-
-## License
+## 📝 License
 
 MIT License

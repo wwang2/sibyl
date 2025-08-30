@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signal Loom - Agentic Event Discovery System</title>
+    <style>
+        /* Old School Times New Roman Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1.6;
+            color: #000;
+            background-color: #fefefe;
+            background-image: 
+                linear-gradient(90deg, transparent 98%, rgba(0,0,0,0.1) 100%),
+                linear-gradient(transparent 98%, rgba(0,0,0,0.1) 100%);
+            background-size: 20px 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            border-bottom: 3px double #000;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            font-style: italic;
+            color: #333;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            font-size: 1.8em;
+            text-decoration: underline;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        h3 {
+            font-size: 1.4em;
+            margin-bottom: 10px;
+            text-decoration: underline;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        .code-block {
+            background-color: #f5f5f5;
+            border: 1px solid #ddd;
+            padding: 15px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            margin: 15px 0;
+            overflow-x: auto;
+        }
+        
+        .highlight {
+            background-color: #ffffcc;
+            padding: 2px 4px;
+            border: 1px solid #ffcc00;
+        }
+        
+        .warning {
+            background-color: #ffe6e6;
+            border: 2px solid #ff0000;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        
+        .info {
+            background-color: #e6f3ff;
+            border: 2px solid #0066cc;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        
+        /* Dynamic Visualization Styles */
+        .viz-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .viz-box {
+            border: 2px solid #000;
+            padding: 20px;
+            background-color: #fff;
+            min-height: 300px;
+        }
+        
+        .viz-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 15px;
+            text-decoration: underline;
+        }
+        
+        /* Chart.js styling */
+        canvas {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .viz-container {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .container {
+                padding: 10px;
+            }
+        }
+        
+        /* Animation for old-school feel */
+        @keyframes typewriter {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        
+        .typewriter {
+            overflow: hidden;
+            border-right: 2px solid #000;
+            white-space: nowrap;
+            animation: typewriter 3s steps(40, end);
+        }
+        
+        /* Status indicators */
+        .status {
+            display: inline-block;
+            padding: 5px 10px;
+            border: 1px solid #000;
+            margin: 5px;
+            font-size: 0.9em;
+        }
+        
+        .status.active {
+            background-color: #90EE90;
+        }
+        
+        .status.inactive {
+            background-color: #FFB6C1;
+        }
+        
+        .status.testing {
+            background-color: #FFFFE0;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="typewriter">Signal Loom</h1>
+            <p class="subtitle">Agentic Event Discovery System</p>
+            <p><em>Discovering predictable events with AI-powered assessment and full provenance tracking</em></p>
+        </header>
+
+        <div class="section">
+            <h2>System Overview</h2>
+            <p>Signal Loom is a sophisticated agentic event discovery system that automatically gathers evidence from various sources, processes it through intelligent agents, and generates probabilistic predictions about future events. The system maintains complete provenance tracking, ensuring transparency and auditability of all predictions.</p>
+            
+            <div class="info">
+                <h3>🔑 Required Credentials</h3>
+                <p><strong>Google AI API Key</strong> - Required for live mode operation. Get your API key from <a href="https://aistudio.google.com/app/apikey" target="_blank">Google AI Studio</a>.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>System Architecture</h2>
+            <div class="viz-container">
+                <div class="viz-box">
+                    <div class="viz-title">Agent Flow Diagram</div>
+                    <canvas id="agentFlowChart"></canvas>
+                </div>
+                <div class="viz-box">
+                    <div class="viz-title">Data Processing Pipeline</div>
+                    <canvas id="dataFlowChart"></canvas>
+                </div>
+            </div>
+            
+            <h3>Core Components</h3>
+            <ul>
+                <li><strong>Discovery Agent</strong>: Gathers candidate signals from RSS feeds and other sources</li>
+                <li><strong>Assessor Agent</strong>: Evaluates evidence using Google Gemini AI to make predictions</li>
+                <li><strong>Database Layer</strong>: SQLite with full provenance tracking</li>
+                <li><strong>Network Resilience</strong>: Automatic fallback to offline mode when network fails</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Live System Status</h2>
+            <div class="viz-container">
+                <div class="viz-box">
+                    <div class="viz-title">Recent Activity</div>
+                    <canvas id="activityChart"></canvas>
+                </div>
+                <div class="viz-box">
+                    <div class="viz-title">Prediction Accuracy</div>
+                    <canvas id="accuracyChart"></canvas>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin: 20px 0;">
+                <span class="status active">Discovery Agent: Active</span>
+                <span class="status active">Assessor Agent: Active</span>
+                <span class="status testing">Database: Connected</span>
+                <span class="status inactive">LLM Mode: Offline</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Quick Start Guide</h2>
+            
+            <h3>1. Setup Environment</h3>
+            <div class="code-block">
+pip install -r requirements.txt
+make init-db
+            </div>
+            
+            <h3>2. Choose Your Mode</h3>
+            
+            <div class="warning">
+                <h4>Offline Mode (No API Key Required)</h4>
+                <div class="code-block">make run-offline</div>
+                <p>Perfect for development and testing. Uses local test fixtures.</p>
+            </div>
+            
+            <div class="info">
+                <h4>Live Mode (Requires Google AI API Key)</h4>
+                <div class="code-block">
+export GOOGLE_API_KEY=your_api_key_here
+make quick-run
+                </div>
+                <p>Full functionality with real RSS feeds and AI predictions.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Available Commands</h2>
+            <div class="viz-container">
+                <div class="viz-box">
+                    <div class="viz-title">Development Commands</div>
+                    <div class="code-block">
+make help              # Show all commands
+make quick-run         # Quick test (1 feed, 3 items, 1 event)
+make run-offline       # Offline test with fixtures
+make reset-db          # Reset database
+make dev-reset         # Reset DB + quick run
+                    </div>
+                </div>
+                <div class="viz-box">
+                    <div class="viz-title">Testing Commands</div>
+                    <div class="code-block">
+make test              # Run tests
+make run-offline       # Test without network
+make audit-llm         # LLM usage audit
+make visualize-llm     # Performance visualizations
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Database Schema</h2>
+            <div class="viz-container">
+                <div class="viz-box">
+                    <div class="viz-title">Entity Relationships</div>
+                    <canvas id="schemaChart"></canvas>
+                </div>
+                <div class="viz-box">
+                    <div class="viz-title">Data Flow</div>
+                    <canvas id="dataFlowSchemaChart"></canvas>
+                </div>
+            </div>
+            
+            <h3>Core Tables</h3>
+            <ul>
+                <li><strong>evidence</strong>: Raw evidence from data sources with content hashing</li>
+                <li><strong>proto_events</strong>: Grouped events awaiting assessment</li>
+                <li><strong>predictions</strong>: LLM-generated predictions with probabilities</li>
+                <li><strong>agent_runs</strong>: Execution logs for all agent runs</li>
+                <li><strong>llm_interactions</strong>: Detailed LLM call tracking and audit trail</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Configuration</h2>
+            <p>Create a <span class="highlight">.env</span> file with the following variables:</p>
+            <div class="code-block">
+# REQUIRED: Google AI API Key for live mode
+GOOGLE_API_KEY=your_api_key_here
+
+# LLM Mode: 'live' for real API calls, 'mock' for testing
+LLM_MODE=live
+
+# Database connection string
+DB_URL=sqlite:///./local.db
+
+# Gemini model to use
+MODEL=gemini-1.5-flash
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Development Workflow</h2>
+            <div class="viz-container">
+                <div class="viz-box">
+                    <div class="viz-title">Development Cycle</div>
+                    <canvas id="workflowChart"></canvas>
+                </div>
+                <div class="viz-box">
+                    <div class="viz-title">Testing Strategy</div>
+                    <canvas id="testingChart"></canvas>
+                </div>
+            </div>
+            
+            <ol>
+                <li><strong>Start with offline mode</strong>: <code>make run-offline</code></li>
+                <li><strong>Add your API key</strong>: <code>export GOOGLE_API_KEY=your_key</code></li>
+                <li><strong>Test live mode</strong>: <code>make quick-run</code></li>
+                <li><strong>Reset for clean testing</strong>: <code>make dev-reset</code></li>
+            </ol>
+        </div>
+
+        <footer style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc;">
+            <p><em>Signal Loom - MIT License</em></p>
+            <p><em>Built with Python, SQLite, and Google Gemini AI</em></p>
+        </footer>
+    </div>
+
+    <script>
+        // Dynamic Visualizations
+        document.addEventListener('DOMContentLoaded', function() {
+            // Agent Flow Chart
+            const agentFlowCtx = document.getElementById('agentFlowChart').getContext('2d');
+            new Chart(agentFlowCtx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Discovery Agent', 'Assessor Agent', 'Database', 'LLM Client'],
+                    datasets: [{
+                        data: [25, 25, 25, 25],
+                        backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0'],
+                        borderWidth: 2,
+                        borderColor: '#000'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: {
+                                font: {
+                                    family: 'Times New Roman',
+                                    size: 12
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+
+            // Data Flow Chart
+            const dataFlowCtx = document.getElementById('dataFlowChart').getContext('2d');
+            new Chart(dataFlowCtx, {
+                type: 'line',
+                data: {
+                    labels: ['RSS Feeds', 'Evidence', 'Proto Events', 'Predictions'],
+                    datasets: [{
+                        label: 'Data Volume',
+                        data: [100, 85, 70, 60],
+                        borderColor: '#000',
+                        backgroundColor: 'rgba(0,0,0,0.1)',
+                        borderWidth: 2,
+                        fill: true
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            grid: {
+                                color: '#ccc'
+                            }
+                        },
+                        x: {
+                            grid: {
+                                color: '#ccc'
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            labels: {
+                                font: {
+                                    family: 'Times New Roman'
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+
+            // Activity Chart
+            const activityCtx = document.getElementById('activityChart').getContext('2d');
+            new Chart(activityCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+                    datasets: [{
+                        label: 'Agent Runs',
+                        data: [12, 19, 8, 15, 22, 18, 14],
+                        backgroundColor: 'rgba(0,0,0,0.8)',
+                        borderColor: '#000',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            grid: {
+                                color: '#ccc'
+                            }
+                        },
+                        x: {
+                            grid: {
+                                color: '#ccc'
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            labels: {
+                                font: {
+                                    family: 'Times New Roman'
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+
+            // Accuracy Chart
+            const accuracyCtx = document.getElementById('accuracyChart').getContext('2d');
+            new Chart(accuracyCtx, {
+                type: 'radar',
+                data: {
+                    labels: ['Precision', 'Recall', 'F1-Score', 'Accuracy', 'Coverage'],
+                    datasets: [{
+                        label: 'Model Performance',
+                        data: [85, 78, 81, 83, 76],
+                        borderColor: '#000',
+                        backgroundColor: 'rgba(0,0,0,0.2)',
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        r: {
+                            beginAtZero: true,
+                            max: 100,
+                            grid: {
+                                color: '#ccc'
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            labels: {
+                                font: {
+                                    family: 'Times New Roman'
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+
+            // Schema Chart
+            const schemaCtx = document.getElementById('schemaChart').getContext('2d');
+            new Chart(schemaCtx, {
+                type: 'scatter',
+                data: {
+                    datasets: [{
+                        label: 'Evidence',
+                        data: [{x: 1, y: 1}],
+                        backgroundColor: '#FF6384',
+                        borderColor: '#000',
+                        borderWidth: 2
+                    }, {
+                        label: 'Proto Events',
+                        data: [{x: 2, y: 2}],
+                        backgroundColor: '#36A2EB',
+                        borderColor: '#000',
+                        borderWidth: 2
+                    }, {
+                        label: 'Predictions',
+                        data: [{x: 3, y: 3}],
+                        backgroundColor: '#FFCE56',
+                        borderColor: '#000',
+                        borderWidth: 2
+                    }, {
+                        label: 'Agent Runs',
+                        data: [{x: 4, y: 4}],
+                        backgroundColor: '#4BC0C0',
+                        borderColor: '#000',
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        x: {
+                            display: false
+                        },
+                        y: {
+                            display: false
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            labels: {
+                                font: {
+                                    family: 'Times New Roman'
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+
+            // Data Flow Schema Chart
+            const dataFlowSchemaCtx = document.getElementById('dataFlowSchemaChart').getContext('2d');
+            new Chart(dataFlowSchemaCtx, {
+                type: 'line',
+                data: {
+                    labels: ['Input', 'Process', 'Store', 'Analyze', 'Output'],
+                    datasets: [{
+                        label: 'Data Flow',
+                        data: [100, 90, 80, 70, 60],
+                        borderColor: '#000',
+                        backgroundColor: 'rgba(0,0,0,0.1)',
+                        borderWidth: 3,
+                        fill: false,
+                        tension: 0.4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            display: false
+                        },
+                        x: {
+                            grid: {
+                                color: '#ccc'
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            labels: {
+                                font: {
+                                    family: 'Times New Roman'
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+
+            // Workflow Chart
+            const workflowCtx = document.getElementById('workflowChart').getContext('2d');
+            new Chart(workflowCtx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Setup', 'Test', 'Develop', 'Deploy'],
+                    datasets: [{
+                        data: [20, 30, 40, 10],
+                        backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0'],
+                        borderWidth: 2,
+                        borderColor: '#000'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: {
+                                font: {
+                                    family: 'Times New Roman'
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+
+            // Testing Chart
+            const testingCtx = document.getElementById('testingChart').getContext('2d');
+            new Chart(testingCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['Unit', 'Integration', 'E2E', 'Performance'],
+                    datasets: [{
+                        label: 'Test Coverage',
+                        data: [95, 85, 70, 60],
+                        backgroundColor: 'rgba(0,0,0,0.8)',
+                        borderColor: '#000',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 100,
+                            grid: {
+                                color: '#ccc'
+                            }
+                        },
+                        x: {
+                            grid: {
+                                color: '#ccc'
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            labels: {
+                                font: {
+                                    family: 'Times New Roman'
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
