@@ -1,0 +1,24 @@
+---
+alwaysApply: true
+---
+Philosophy
+	•	Simplicity > Features > Performance (unless proven otherwise).
+	•	Fewer files, fewer concepts, fewer dependencies.
+	•	If a change adds complexity, it must remove at least as much elsewhere.
+
+File & Folder Hygiene
+	•	Delete unused files (code, assets, schemas, migrations, notebooks) as soon as they’re unreferenced. 
+
+Temporary Workflows
+	•	Scratch or experimental code must live in /experiments and be auto-cleaned weekly (delete or promote to production).
+	•	Any file under /tmp, /experiments, or with suffix .temp, .draft, .bak is unmergeable.Philosophy
+	•	Simplicity > Features > Performance (unless proven otherwise).
+	•	Fewer files, fewer concepts, fewer dependencies.
+	•	If a change adds complexity, it must remove at least as much elsewhere.
+
+File & Folder Hygiene
+	•	Delete unused files (code, assets, schemas, migrations, notebooks) as soon as they’re unreferenced. 
+
+Temporary Workflows
+	•	Scratch or experimental code must live in /experiments and be auto-cleaned weekly (delete or promote to production).
+	•	Any file under /tmp, /experiments, or with suffix .temp, .draft, .bak is unmergeable.

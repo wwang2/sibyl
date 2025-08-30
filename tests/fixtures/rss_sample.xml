@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Test Financial News Feed</title>
+        <description>Test RSS feed for financial news smoke testing</description>
+        <link>https://example.com/feed</link>
+        <item>
+            <title>Tech Company Announces Major Acquisition</title>
+            <link>https://example.com/news/tech-acquisition</link>
+            <description>Leading technology company announces acquisition of smaller competitor for $2.5 billion, expected to close in Q2 2024.</description>
+            <pubDate>Mon, 01 Jan 2024 12:00:00 GMT</pubDate>
+            <author>Financial Reporter</author>
+        </item>
+        <item>
+            <title>Federal Reserve Signals Interest Rate Changes</title>
+            <link>https://example.com/news/fed-rates</link>
+            <description>The Federal Reserve hints at potential interest rate adjustments in the coming months based on economic indicators.</description>
+            <pubDate>Mon, 01 Jan 2024 13:00:00 GMT</pubDate>
+            <author>Economic Analyst</author>
+        </item>
+        <item>
+            <title>Energy Sector Sees Significant Growth</title>
+            <link>https://example.com/news/energy-growth</link>
+            <description>Renewable energy companies report strong quarterly earnings, with solar and wind sectors leading the growth.</description>
+            <pubDate>Mon, 01 Jan 2024 14:00:00 GMT</pubDate>
+            <author>Energy Reporter</author>
+        </item>
+    </channel>
+</rss>
