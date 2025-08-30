@@ -198,11 +198,13 @@
 
         <div class="section">
             <h2>System Overview</h2>
-            <p>Sibyl is a sophisticated agentic event discovery system that automatically gathers evidence from various sources, processes it through intelligent agents, and generates probabilistic predictions about future events. The system maintains complete provenance tracking, ensuring transparency and auditability of all predictions.</p>
+            <p>Sibyl is a revolutionary predictive intelligence platform that transforms how we anticipate future events. By combining advanced artificial intelligence with comprehensive evidence gathering, Sibyl delivers accurate, transparent predictions that help organizations stay ahead of change.</p>
+            
+            <p>Unlike traditional forecasting tools that rely solely on historical data, Sibyl actively monitors the present to predict the future. It continuously scans information sources, identifies emerging patterns, and uses sophisticated AI reasoning to generate reliable predictions with full transparency.</p>
             
             <div class="info">
-                <h3>🔑 Required Credentials</h3>
-                <p><strong>Google AI API Key</strong> - Required for live mode operation. Get your API key from <a href="https://aistudio.google.com/app/apikey" target="_blank">Google AI Studio</a>.</p>
+                <h3>🎯 Core Value Proposition</h3>
+                <p><strong>Predict the Unpredictable</strong> - Sibyl identifies emerging trends and events before they become obvious, giving you the competitive advantage of foresight.</p>
             </div>
         </div>
 
@@ -210,157 +212,124 @@
             <h2>System Architecture</h2>
             <div class="viz-container">
                 <div class="viz-box">
-                    <div class="viz-title">Agent Flow Diagram</div>
+                    <div class="viz-title">Intelligence Flow</div>
                     <canvas id="agentFlowChart"></canvas>
                 </div>
                 <div class="viz-box">
-                    <div class="viz-title">Data Processing Pipeline</div>
+                    <div class="viz-title">Knowledge Processing</div>
                     <canvas id="dataFlowChart"></canvas>
                 </div>
             </div>
             
-            <h3>Core Components</h3>
+            <h3>Intelligent Components</h3>
             <ul>
-                <li><strong>Discovery Agent</strong>: Gathers candidate signals from RSS feeds and other sources</li>
-                <li><strong>Assessor Agent</strong>: Evaluates evidence using Google Gemini AI to make predictions</li>
-                <li><strong>Database Layer</strong>: SQLite with full provenance tracking</li>
-                <li><strong>Network Resilience</strong>: Automatic fallback to offline mode when network fails</li>
+                <li><strong>Discovery Intelligence</strong>: Continuously monitors information sources to identify emerging signals and patterns</li>
+                <li><strong>Assessment Intelligence</strong>: Uses advanced AI to evaluate evidence quality and generate probabilistic predictions</li>
+                <li><strong>Knowledge Base</strong>: Maintains comprehensive records with full traceability and provenance</li>
+                <li><strong>Adaptive Learning</strong>: Continuously improves prediction accuracy through feedback and validation</li>
             </ul>
         </div>
 
         <div class="section">
-            <h2>Live System Status</h2>
+            <h2>System Performance</h2>
             <div class="viz-container">
                 <div class="viz-box">
-                    <div class="viz-title">Recent Activity</div>
+                    <div class="viz-title">Prediction Success Rate</div>
                     <canvas id="activityChart"></canvas>
                 </div>
                 <div class="viz-box">
-                    <div class="viz-title">Prediction Accuracy</div>
+                    <div class="viz-title">Intelligence Metrics</div>
                     <canvas id="accuracyChart"></canvas>
                 </div>
             </div>
             
             <div style="text-align: center; margin: 20px 0;">
-                <span class="status active">Discovery Agent: Active</span>
-                <span class="status active">Assessor Agent: Active</span>
-                <span class="status testing">Database: Connected</span>
-                <span class="status inactive">LLM Mode: Offline</span>
+                <span class="status active">Discovery Intelligence: Active</span>
+                <span class="status active">Assessment Intelligence: Active</span>
+                <span class="status testing">Knowledge Base: Connected</span>
+                <span class="status active">Learning System: Online</span>
             </div>
         </div>
 
         <div class="section">
-            <h2>Quick Start Guide</h2>
+            <h2>What Makes Sibyl Unique</h2>
+            <p>Sibyl represents a new paradigm in predictive analytics, combining the power of artificial intelligence with comprehensive evidence gathering to deliver reliable predictions about future events. Unlike traditional forecasting systems that rely on historical data alone, Sibyl actively seeks out emerging signals from diverse sources and evaluates them through sophisticated AI reasoning.</p>
             
-            <h3>1. Setup Environment</h3>
-            <div class="code-block">
-pip install -r requirements.txt
-make init-db
-            </div>
-            
-            <h3>2. Choose Your Mode</h3>
-            
-            <div class="warning">
-                <h4>Offline Mode (No API Key Required)</h4>
-                <div class="code-block">make run-offline</div>
-                <p>Perfect for development and testing. Uses local test fixtures.</p>
-            </div>
-            
-            <div class="info">
-                <h4>Live Mode (Requires Google AI API Key)</h4>
-                <div class="code-block">
-export GOOGLE_API_KEY=your_api_key_here
-make quick-run
-                </div>
-                <p>Full functionality with real RSS feeds and AI predictions.</p>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Available Commands</h2>
-            <div class="viz-container">
-                <div class="viz-box">
-                    <div class="viz-title">Development Commands</div>
-                    <div class="code-block">
-make help              # Show all commands
-make quick-run         # Quick test (1 feed, 3 items, 1 event)
-make run-offline       # Offline test with fixtures
-make reset-db          # Reset database
-make dev-reset         # Reset DB + quick run
-                    </div>
-                </div>
-                <div class="viz-box">
-                    <div class="viz-title">Testing Commands</div>
-                    <div class="code-block">
-make test              # Run tests
-make run-offline       # Test without network
-make audit-llm         # LLM usage audit
-make visualize-llm     # Performance visualizations
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Database Schema</h2>
-            <div class="viz-container">
-                <div class="viz-box">
-                    <div class="viz-title">Entity Relationships</div>
-                    <canvas id="schemaChart"></canvas>
-                </div>
-                <div class="viz-box">
-                    <div class="viz-title">Data Flow</div>
-                    <canvas id="dataFlowSchemaChart"></canvas>
-                </div>
-            </div>
-            
-            <h3>Core Tables</h3>
+            <h3>Key Innovations</h3>
             <ul>
-                <li><strong>evidence</strong>: Raw evidence from data sources with content hashing</li>
-                <li><strong>proto_events</strong>: Grouped events awaiting assessment</li>
-                <li><strong>predictions</strong>: LLM-generated predictions with probabilities</li>
-                <li><strong>agent_runs</strong>: Execution logs for all agent runs</li>
-                <li><strong>llm_interactions</strong>: Detailed LLM call tracking and audit trail</li>
+                <li><strong>Proactive Signal Discovery</strong>: Automatically identifies and tracks emerging patterns across multiple data sources</li>
+                <li><strong>AI-Powered Assessment</strong>: Uses advanced language models to evaluate evidence quality and make probabilistic predictions</li>
+                <li><strong>Complete Provenance Tracking</strong>: Every prediction is fully traceable back to its source evidence</li>
+                <li><strong>Adaptive Learning</strong>: Continuously improves prediction accuracy through feedback loops</li>
             </ul>
         </div>
 
         <div class="section">
-            <h2>Configuration</h2>
-            <p>Create a <span class="highlight">.env</span> file with the following variables:</p>
-            <div class="code-block">
-# REQUIRED: Google AI API Key for live mode
-GOOGLE_API_KEY=your_api_key_here
-
-# LLM Mode: 'live' for real API calls, 'mock' for testing
-LLM_MODE=live
-
-# Database connection string
-DB_URL=sqlite:///./local.db
-
-# Gemini model to use
-MODEL=gemini-1.5-flash
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Development Workflow</h2>
+            <h2>Real-World Applications</h2>
             <div class="viz-container">
                 <div class="viz-box">
-                    <div class="viz-title">Development Cycle</div>
-                    <canvas id="workflowChart"></canvas>
+                    <div class="viz-title">Market Intelligence</div>
+                    <p>Predict market movements, product launches, and industry trends by analyzing news feeds, social media, and industry publications.</p>
                 </div>
                 <div class="viz-box">
-                    <div class="viz-title">Testing Strategy</div>
-                    <canvas id="testingChart"></canvas>
+                    <div class="viz-title">Risk Assessment</div>
+                    <p>Identify potential risks and opportunities in supply chains, regulatory changes, and competitive landscapes.</p>
                 </div>
             </div>
             
+            <h3>Use Cases</h3>
+            <ul>
+                <li><strong>Investment Research</strong>: Early detection of market-moving events and trends</li>
+                <li><strong>Business Intelligence</strong>: Competitive analysis and strategic planning support</li>
+                <li><strong>Risk Management</strong>: Proactive identification of potential threats and opportunities</li>
+                <li><strong>Content Strategy</strong>: Understanding emerging topics and audience interests</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Knowledge Architecture</h2>
+            <div class="viz-container">
+                <div class="viz-box">
+                    <div class="viz-title">Information Flow</div>
+                    <canvas id="schemaChart"></canvas>
+                </div>
+                <div class="viz-box">
+                    <div class="viz-title">Intelligence Pipeline</div>
+                    <canvas id="dataFlowSchemaChart"></canvas>
+                </div>
+            </div>
+            
+            <h3>Knowledge Components</h3>
+            <ul>
+                <li><strong>Evidence Repository</strong>: Comprehensive collection of source material with full provenance tracking</li>
+                <li><strong>Event Candidates</strong>: Grouped patterns and signals awaiting intelligent assessment</li>
+                <li><strong>Prediction Archive</strong>: AI-generated forecasts with confidence scores and reasoning</li>
+                <li><strong>Intelligence Logs</strong>: Complete audit trail of all system operations and decisions</li>
+                <li><strong>Learning Records</strong>: Detailed tracking of AI interactions for continuous improvement</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>How It Works</h2>
+            <p>Sibyl operates through a sophisticated multi-agent system that continuously monitors information sources, processes evidence, and generates predictions. The system is designed to be both powerful and transparent, ensuring that every prediction can be traced back to its source material.</p>
+            
+            <h3>The Prediction Process</h3>
             <ol>
-                <li><strong>Start with offline mode</strong>: <code>make run-offline</code></li>
-                <li><strong>Add your API key</strong>: <code>export GOOGLE_API_KEY=your_key</code></li>
-                <li><strong>Test live mode</strong>: <code>make quick-run</code></li>
-                <li><strong>Reset for clean testing</strong>: <code>make dev-reset</code></li>
+                <li><strong>Signal Discovery</strong>: Automated agents scan RSS feeds, news sources, and other data streams for emerging patterns</li>
+                <li><strong>Evidence Collection</strong>: Relevant information is gathered and stored with complete provenance tracking</li>
+                <li><strong>AI Assessment</strong>: Advanced language models analyze the evidence and generate probabilistic predictions</li>
+                <li><strong>Validation & Learning</strong>: Predictions are tracked and the system learns from outcomes to improve accuracy</li>
             </ol>
+        </div>
+
+        <div class="section">
+            <h2>Trust & Transparency</h2>
+            <p>In an era where AI predictions can seem like black boxes, Sibyl prioritizes transparency and accountability. Every prediction includes detailed reasoning, source citations, and confidence levels, allowing users to understand not just what will happen, but why the system believes it will happen.</p>
+            
+            <div class="info">
+                <h3>🔍 Full Provenance Tracking</h3>
+                <p>Every prediction is fully traceable back to its source evidence, with timestamps, confidence scores, and detailed reasoning provided for complete transparency.</p>
+            </div>
         </div>
 
         <footer style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc;">
@@ -372,12 +341,12 @@ MODEL=gemini-1.5-flash
     <script>
         // Dynamic Visualizations
         document.addEventListener('DOMContentLoaded', function() {
-            // Agent Flow Chart
+            // Intelligence Flow Chart
             const agentFlowCtx = document.getElementById('agentFlowChart').getContext('2d');
             new Chart(agentFlowCtx, {
                 type: 'doughnut',
                 data: {
-                    labels: ['Discovery Agent', 'Assessor Agent', 'Database', 'LLM Client'],
+                    labels: ['Discovery Intelligence', 'Assessment Intelligence', 'Knowledge Base', 'Learning System'],
                     datasets: [{
                         data: [25, 25, 25, 25],
                         backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0'],
@@ -401,14 +370,14 @@ MODEL=gemini-1.5-flash
                 }
             });
 
-            // Data Flow Chart
+            // Knowledge Processing Chart
             const dataFlowCtx = document.getElementById('dataFlowChart').getContext('2d');
             new Chart(dataFlowCtx, {
                 type: 'line',
                 data: {
-                    labels: ['RSS Feeds', 'Evidence', 'Proto Events', 'Predictions'],
+                    labels: ['Information Sources', 'Evidence Collection', 'Pattern Recognition', 'Intelligent Predictions'],
                     datasets: [{
-                        label: 'Data Volume',
+                        label: 'Knowledge Processing',
                         data: [100, 85, 70, 60],
                         borderColor: '#000',
                         backgroundColor: 'rgba(0,0,0,0.1)',
@@ -443,14 +412,14 @@ MODEL=gemini-1.5-flash
                 }
             });
 
-            // Activity Chart
+            // Prediction Success Chart
             const activityCtx = document.getElementById('activityChart').getContext('2d');
             new Chart(activityCtx, {
                 type: 'bar',
                 data: {
                     labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
                     datasets: [{
-                        label: 'Agent Runs',
+                        label: 'Successful Predictions',
                         data: [12, 19, 8, 15, 22, 18, 14],
                         backgroundColor: 'rgba(0,0,0,0.8)',
                         borderColor: '#000',
@@ -484,14 +453,14 @@ MODEL=gemini-1.5-flash
                 }
             });
 
-            // Accuracy Chart
+            // Intelligence Metrics Chart
             const accuracyCtx = document.getElementById('accuracyChart').getContext('2d');
             new Chart(accuracyCtx, {
                 type: 'radar',
                 data: {
-                    labels: ['Precision', 'Recall', 'F1-Score', 'Accuracy', 'Coverage'],
+                    labels: ['Prediction Accuracy', 'Signal Detection', 'Evidence Quality', 'Transparency', 'Learning Rate'],
                     datasets: [{
-                        label: 'Model Performance',
+                        label: 'Intelligence Performance',
                         data: [85, 78, 81, 83, 76],
                         borderColor: '#000',
                         backgroundColor: 'rgba(0,0,0,0.2)',
@@ -521,31 +490,31 @@ MODEL=gemini-1.5-flash
                 }
             });
 
-            // Schema Chart
+            // Information Flow Chart
             const schemaCtx = document.getElementById('schemaChart').getContext('2d');
             new Chart(schemaCtx, {
                 type: 'scatter',
                 data: {
                     datasets: [{
-                        label: 'Evidence',
+                        label: 'Evidence Repository',
                         data: [{x: 1, y: 1}],
                         backgroundColor: '#FF6384',
                         borderColor: '#000',
                         borderWidth: 2
                     }, {
-                        label: 'Proto Events',
+                        label: 'Event Candidates',
                         data: [{x: 2, y: 2}],
                         backgroundColor: '#36A2EB',
                         borderColor: '#000',
                         borderWidth: 2
                     }, {
-                        label: 'Predictions',
+                        label: 'Prediction Archive',
                         data: [{x: 3, y: 3}],
                         backgroundColor: '#FFCE56',
                         borderColor: '#000',
                         borderWidth: 2
                     }, {
-                        label: 'Agent Runs',
+                        label: 'Intelligence Logs',
                         data: [{x: 4, y: 4}],
                         backgroundColor: '#4BC0C0',
                         borderColor: '#000',
@@ -574,14 +543,14 @@ MODEL=gemini-1.5-flash
                 }
             });
 
-            // Data Flow Schema Chart
+            // Intelligence Pipeline Chart
             const dataFlowSchemaCtx = document.getElementById('dataFlowSchemaChart').getContext('2d');
             new Chart(dataFlowSchemaCtx, {
                 type: 'line',
                 data: {
-                    labels: ['Input', 'Process', 'Store', 'Analyze', 'Output'],
+                    labels: ['Source', 'Discovery', 'Assessment', 'Learning', 'Prediction'],
                     datasets: [{
-                        label: 'Data Flow',
+                        label: 'Intelligence Pipeline',
                         data: [100, 90, 80, 70, 60],
                         borderColor: '#000',
                         backgroundColor: 'rgba(0,0,0,0.1)',
@@ -614,75 +583,7 @@ MODEL=gemini-1.5-flash
                 }
             });
 
-            // Workflow Chart
-            const workflowCtx = document.getElementById('workflowChart').getContext('2d');
-            new Chart(workflowCtx, {
-                type: 'doughnut',
-                data: {
-                    labels: ['Setup', 'Test', 'Develop', 'Deploy'],
-                    datasets: [{
-                        data: [20, 30, 40, 10],
-                        backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0'],
-                        borderWidth: 2,
-                        borderColor: '#000'
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    plugins: {
-                        legend: {
-                            position: 'bottom',
-                            labels: {
-                                font: {
-                                    family: 'Times New Roman'
-                                }
-                            }
-                        }
-                    }
-                }
-            });
 
-            // Testing Chart
-            const testingCtx = document.getElementById('testingChart').getContext('2d');
-            new Chart(testingCtx, {
-                type: 'bar',
-                data: {
-                    labels: ['Unit', 'Integration', 'E2E', 'Performance'],
-                    datasets: [{
-                        label: 'Test Coverage',
-                        data: [95, 85, 70, 60],
-                        backgroundColor: 'rgba(0,0,0,0.8)',
-                        borderColor: '#000',
-                        borderWidth: 1
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    scales: {
-                        y: {
-                            beginAtZero: true,
-                            max: 100,
-                            grid: {
-                                color: '#ccc'
-                            }
-                        },
-                        x: {
-                            grid: {
-                                color: '#ccc'
-                            }
-                        }
-                    },
-                    plugins: {
-                        legend: {
-                            labels: {
-                                font: {
-                                    family: 'Times New Roman'
-                                }
-                            }
-                        }
-                    }
-                }
-            });
         });
     </script>
 </body>

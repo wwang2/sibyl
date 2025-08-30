@@ -107,10 +107,11 @@ The project includes a GitHub Pages website with dynamic visualizations and old-
 ### Setup GitHub Pages
 
 1. **Enable Pages**: Go to repository Settings → Pages → Source: GitHub Actions
-2. **Push changes**: The website will deploy automatically
-3. **Access site**: Available at `https://yourusername.github.io/sibyl`
+2. **Create Environment**: Go to Settings → Environments → New environment → Name: `github-pages`
+3. **Push changes**: The website will deploy automatically
+4. **Access site**: Available at `https://yourusername.github.io/sibyl`
 
-**Troubleshooting**: See `docs/SETUP.md` for detailed setup instructions.
+**Troubleshooting**: If you get "Missing environment" error, see `docs/SETUP.md` for detailed setup instructions.
 
 ## 🐳 Docker
 

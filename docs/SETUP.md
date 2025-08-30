@@ -45,6 +45,31 @@ git push origin main
 
 This usually means GitHub Pages isn't enabled yet. Follow the manual setup steps above.
 
+### Error: "Missing environment" or "Failed to create deployment"
+
+This means the GitHub Pages environment isn't properly configured. Follow these steps:
+
+1. **Enable GitHub Pages Environment**:
+   - Go to your repository Settings → Environments
+   - Click "New environment"
+   - Name it exactly: `github-pages`
+   - Click "Configure environment"
+
+2. **Set Environment Protection Rules** (optional but recommended):
+   - Uncheck "Required reviewers" (unless you want manual approval)
+   - Uncheck "Wait timer" 
+   - Click "Save protection rules"
+
+3. **Verify GitHub Pages Source**:
+   - Go to Settings → Pages
+   - Under "Source", select "GitHub Actions"
+   - Save the settings
+
+4. **Re-run the workflow**:
+   - Go to Actions tab
+   - Find the failed workflow
+   - Click "Re-run all jobs"
+
 ### Error: "Permission denied"
 
 Make sure your repository has the correct workflow permissions (step 2 above).
