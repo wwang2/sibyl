@@ -1,6 +1,6 @@
-# Signal Loom - GitHub Pages
+# Sibyl - GitHub Pages
 
-This directory contains the GitHub Pages website for the Signal Loom project.
+This directory contains the GitHub Pages website for the Sibyl project.
 
 ## Files
 

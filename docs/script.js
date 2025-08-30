@@ -1,7 +1,7 @@
-// Signal Loom - Dynamic Website Features
+// Sibyl - Dynamic Website Features
 // Old-school JavaScript with modern functionality
 
-class SignalLoomDashboard {
+class SibylDashboard {
     constructor() {
         this.lastUpdate = new Date();
         this.systemStatus = {
@@ -166,10 +166,10 @@ class SignalLoomDashboard {
 
 // Initialize dashboard when page loads
 document.addEventListener('DOMContentLoaded', function() {
-    const dashboard = new SignalLoomDashboard();
+    const dashboard = new SibylDashboard();
     
     // Add some old-school console logging
-    console.log('%cSignal Loom Dashboard Initialized', 'color: #000; font-family: Times New Roman; font-size: 16px; font-weight: bold;');
+    console.log('%cSibyl Dashboard Initialized', 'color: #000; font-family: Times New Roman; font-size: 16px; font-weight: bold;');
     console.log('%cSystem Status: Online', 'color: #008000; font-family: Times New Roman; font-size: 12px;');
     
     // Add keyboard shortcuts
@@ -210,5 +210,5 @@ function generateSystemReport() {
 }
 
 // Export for potential use in other scripts
-window.SignalLoomDashboard = SignalLoomDashboard;
+window.SibylDashboard = SibylDashboard;
 window.generateSystemReport = generateSystemReport;

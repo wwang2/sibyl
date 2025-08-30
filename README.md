@@ -1,4 +1,4 @@
-# Signal Loom
+# Sibyl
 
 An agentic event discovery system that discovers predictable events and assigns likelihoods with full provenance tracking.
 
@@ -96,22 +96,30 @@ EOF
 
 The project includes a GitHub Pages website with dynamic visualizations and old-school styling:
 
-- **Live Demo**: [View the website](https://yourusername.github.io/signal_loom) (replace with your GitHub username)
+- **Live Demo**: [View the website](https://yourusername.github.io/sibyl) (replace with your GitHub username)
 - **Features**: Interactive charts, real-time system status, old-school Times New Roman design
 - **Auto-Deploy**: Automatically updates when you push to the main branch
+
+### Setup GitHub Pages
+
+1. **Enable Pages**: Go to repository Settings → Pages → Source: GitHub Actions
+2. **Push changes**: The website will deploy automatically
+3. **Access site**: Available at `https://yourusername.github.io/sibyl`
+
+**Troubleshooting**: See `docs/SETUP.md` for detailed setup instructions.
 
 ## 🐳 Docker
 
 ```bash
 # Build and run
-docker build -f docker/Dockerfile -t signal-loom .
-docker run --env-file .env signal-loom
+docker build -f docker/Dockerfile -t sibyl .
+docker run --env-file .env sibyl
 ```
 
 ## 📁 Project Structure
 
 ```
-signal_loom/
+sibyl/
 ├── app/
 │   ├── adapters/          # RSS and other data sources
 │   ├── agents/            # Discovery and Assessor agents

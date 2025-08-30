@@ -1,11 +1,11 @@
-# Signal Loom - Development Makefile
+# Sibyl - Development Makefile
 # Quick commands for local development and testing
 
 .PHONY: help install test clean reset-db quick-run run-full run-limit install-deps
 
 # Default target
 help:
-	@echo "Signal Loom Development Commands:"
+	@echo "Sibyl Development Commands:"
 	@echo ""
 	@echo "Setup & Installation:"
 	@echo "  install          Install dependencies and setup environment"
@@ -32,7 +32,7 @@ help:
 
 # Setup & Installation
 install: install-deps init-db
-	@echo "✅ Signal Loom setup complete!"
+	@echo "✅ Sibyl setup complete!"
 
 install-deps:
 	@echo "📦 Installing Python dependencies..."
@@ -110,11 +110,11 @@ dev-offline-cycle: run-offline
 # Docker commands (if needed)
 docker-build:
 	@echo "🐳 Building Docker image..."
-	docker build -t signal-loom -f docker/Dockerfile .
+	docker build -t sibyl -f docker/Dockerfile .
 
 docker-run:
 	@echo "🐳 Running Docker container..."
-	docker run --rm -it signal-loom
+	docker run --rm -it sibyl
 
 # Environment setup
 venv:
