@@ -2,23 +2,21 @@
 alwaysApply: true
 ---
 Philosophy
-	•	Simplicity > Features > Performance (unless proven otherwise).
-	•	Fewer files, fewer concepts, fewer dependencies.
-	•	If a change adds complexity, it must remove at least as much elsewhere.
+	Simplicity > Features > Performance (unless proven otherwise).
+	Fewer files, fewer concepts, fewer dependencies.
+	If a change adds complexity, it must remove at least as much elsewhere.
 
 File & Folder Hygiene
-	•	Delete unused files (code, assets, schemas, migrations, notebooks) as soon as they’re unreferenced. 
+	Delete unused files (code, assets, schemas, migrations, notebooks) as soon as they’re unreferenced. 
+	avoid file name like *_v2.py when versioning is not needed.
+
+Environment management
+	timely update configuration such as requriements.txt when a new dependency is introduced.
+	Always remember activate the environment to run any code.
 
 Temporary Workflows
-	•	Scratch or experimental code must live in /experiments and be auto-cleaned weekly (delete or promote to production).
-	•	Any file under /tmp, /experiments, or with suffix .temp, .draft, .bak is unmergeable.Philosophy
-	•	Simplicity > Features > Performance (unless proven otherwise).
-	•	Fewer files, fewer concepts, fewer dependencies.
-	•	If a change adds complexity, it must remove at least as much elsewhere.
-
-File & Folder Hygiene
-	•	Delete unused files (code, assets, schemas, migrations, notebooks) as soon as they’re unreferenced. 
-
-Temporary Workflows
-	•	Scratch or experimental code must live in /experiments and be auto-cleaned weekly (delete or promote to production).
-	•	Any file under /tmp, /experiments, or with suffix .temp, .draft, .bak is unmergeable.
+	Scratch or experimental code must live in /experiments or /temp_scripts and be auto-cleaned weekly (delete or promote to production).
+	Any file under /tmp, /experiments or /temp_scripts, or with suffix .temp, .draft, .bak is unmergeable.Philosophy
+	Simplicity > Features > Performance (unless proven otherwise).
+	Fewer files, fewer concepts, fewer dependencies.
+	If a change adds complexity, it must remove at least as much elsewhere.
