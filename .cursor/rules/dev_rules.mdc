@@ -13,6 +13,7 @@ File & Folder Hygiene
 Environment management
 	timely update configuration such as requriements.txt when a new dependency is introduced.
 	Always remember activate the environment to run any code.
+	Do not hard code file path!
 
 Temporary Workflows
 	Scratch or experimental code must live in /experiments or /temp_scripts and be auto-cleaned weekly (delete or promote to production).

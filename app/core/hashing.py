@@ -24,4 +24,8 @@ def generate_proto_event_key(title: str, source_type: str, meta: Dict[str, Any])
     import re
     clean_title = re.sub(r'[^\w\s]', '', clean_title)
     clean_title = re.sub(r'\s+', '_', clean_title)
-    return f"{source_type}_{clean_title}"
+    
+    # Add timestamp to ensure uniqueness across runs
+    import time
+    timestamp = int(time.time())
+    return f"{source_type}_{clean_title}_{timestamp}"

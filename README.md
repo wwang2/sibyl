@@ -4,7 +4,7 @@
 
 # Sibyl
 
-An agentic event discovery system that discovers predictable events and assigns likelihoods with full provenance tracking.
+An intelligent AutoGen-powered event discovery system that discovers predictable events and assigns likelihoods with full provenance tracking using advanced LLM reasoning.
 
 ## 🚀 Quick Start
 
@@ -24,20 +24,21 @@ make init-db
 make run-offline
 ```
 
-**Live Mode (Requires Google API Key):**
+**Live Mode (Requires AutoGen with Gemini):**
 ```bash
-# Set your Google AI API key
+# Set your Google AI API key for AutoGen
 export GOOGLE_API_KEY=your_api_key_here
 make quick-run
 ```
 
 ## 🔑 Required Credentials
 
-### Google AI API Key (for live mode)
-- **Required for**: LLM-powered predictions and assessments
+### Google AI API Key (for AutoGen with Gemini)
+- **Required for**: AutoGen-powered intelligent event discovery and assessment
 - **Get it from**: [Google AI Studio](https://aistudio.google.com/app/apikey)
 - **Set via**: `export GOOGLE_API_KEY=your_key_here`
 - **Alternative**: Create `.env` file with `GOOGLE_API_KEY=your_key_here`
+- **Model Used**: `gemini-1.5-flash-8b` via AutoGen
 
 ## 📋 Available Commands
 
@@ -58,41 +59,41 @@ make run-offline       # Test without network
 
 ## 🏗️ System Architecture
 
-**Two Main Agents:**
-- **Discovery Agent**: Gathers evidence from RSS feeds
-- **Assessor Agent**: Uses Google Gemini to evaluate evidence and make predictions
+**Two AutoGen-Powered Agents:**
+- **Discovery Agent**: Intelligent RSS feed analysis with AutoGen for event proposal generation
+- **Assessor Agent**: Advanced AutoGen-powered event assessment and probability analysis
 
 **Key Features:**
+- AutoGen framework with Gemini LLM integration
+- Intelligent event proposal generation with structured JSON analysis
+- Advanced probability assessment with detailed reasoning
 - RSS feed parsing with network resilience
 - Content deduplication via SHA-256 hashing
-- SQLite database with full provenance
+- SQLite database with full workflow provenance
+- Real-time AutoGen analysis visibility
 - Offline mode for development/testing
 - Docker support for deployment
 
 ## 🔧 Configuration
 
 **Environment Variables:**
-- `GOOGLE_API_KEY` - **Required for live mode** - Your Google AI API key
-- `LLM_MODE` - `live` (default) or `mock` for testing
+- `GOOGLE_API_KEY` - **Required for AutoGen** - Your Google AI API key
 - `DB_URL` - Database connection (default: `sqlite:///./local.db`)
-- `MODEL` - Gemini model (default: `gemini-1.5-flash`)
+- `MODEL` - AutoGen model (default: `gemini-1.5-flash-8b`)
 
 **Create `.env` file:**
 ```bash
 # Copy and edit this template
 cat > .env << EOF
-# REQUIRED: Google AI API Key for live mode
+# REQUIRED: Google AI API Key for AutoGen
 # Get your API key from: https://aistudio.google.com/app/apikey
 GOOGLE_API_KEY=your_api_key_here
-
-# LLM Mode: 'live' for real API calls, 'mock' for testing
-LLM_MODE=live
 
 # Database connection string
 DB_URL=sqlite:///./local.db
 
-# Gemini model to use
-MODEL=gemini-1.5-flash
+# AutoGen model to use
+MODEL=gemini-1.5-flash-8b
 EOF
 ```
 
@@ -127,11 +128,11 @@ docker run --env-file .env sibyl
 sibyl/
 ├── app/
 │   ├── adapters/          # RSS and other data sources
-│   ├── agents/            # Discovery and Assessor agents
+│   ├── agents/            # AutoGen-powered Discovery and Assessor agents
 │   ├── core/              # Database, types, utilities
-│   ├── llm/               # Google AI SDK client
-│   └── cli.py             # Command-line interface
+│   └── run_cycle.py       # Main AutoGen workflow orchestrator
 ├── docs/                  # GitHub Pages website
+├── temp_scripts/          # Development utilities and analysis tools
 ├── tests/                 # Tests and fixtures
 ├── docker/                # Docker configuration
 └── Makefile              # Development commands

@@ -1,9 +1,4 @@
+[ ] set up Kalshi, prediction market API key 
+[ ] test prediction agents 
 
-High Priority 
-
-- [ ] Agentic POC and local workflow
-- [ ] Plan local and cloud db maintenance 
-
-Mid Priority 
-
-- [ ] Add tool interface, make Info retrieval search a tool
+[ ] test cloud SQL migration 
