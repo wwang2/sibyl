@@ -2,18 +2,25 @@
 alwaysApply: true
 ---
 Philosophy
-	Simplicity > Features > Performance (unless proven otherwise).
-	Fewer files, fewer concepts, fewer dependencies.
-	If a change adds complexity, it must remove at least as much elsewhere.
+	Simplicity > Features > Performance (unless a benchmark proves otherwise).
+	Every change must delete or simplify something elsewhere.
+	No dead files. If it’s unused, remove it (or add a test/reference proving why it stays).
+	Typed, tested, formatted, linted before commit.
+	No secrets in code. Use env vars or a vault. Never upload real keys.
 
 File & Folder Hygiene
-	Delete unused files (code, assets, schemas, migrations, notebooks) as soon as they’re unreferenced. 
-	avoid file name like *_v2.py when versioning is not needed.
-
+	Delete unreferenced files (code, assets, schemas, migrations, notebooks) as soon as they’re unused.
+	Prohibited names: *_v2.py, final_final.*, copy_of_*. Use proper version control.
+	Co-locate code with its tests: foo.py ↔ tests/test_foo.py.
+	Keep module depth shallow (ideally ≤ 3 levels).
+	
 Environment management
 	timely update configuration such as requriements.txt when a new dependency is introduced.
 	Always remember activate the environment to run any code.
 	Do not hard code file path!
+
+Credential management
+	Never commit or paste secrets, tokens, API keys.
 
 Temporary Workflows
 	Scratch or experimental code must live in /experiments or /temp_scripts and be auto-cleaned weekly (delete or promote to production).
