@@ -20,10 +20,11 @@ except ImportError:
 class PolymarketAdapter:
     """Adapter for fetching data from Polymarket prediction markets."""
     
-    def __init__(self, timeout: int = 30):
+    def __init__(self, timeout: int = 30, use_main_api: bool = True):
         """Initialize the Polymarket adapter."""
         self.timeout = timeout
-        self.base_url = "https://gamma-api.polymarket.com"
+        self.use_main_api = use_main_api
+        self.base_url = "https://clob.polymarket.com" if use_main_api else "https://gamma-api.polymarket.com"
         
         # Create session with headers
         self.session = requests.Session()
@@ -95,11 +96,19 @@ class PolymarketAdapter:
             return True
         return False
     
-    def fetch_markets(self, limit: int = 50, category: Optional[str] = None) -> List[RawItem]:
-        """Fetch markets with optional category filtering (for compatibility with mining scripts)."""
+    def fetch_markets(self, limit: int = 50, category: Optional[str] = None, 
+                     exclude_past: bool = True, min_days_future: int = 1) -> List[RawItem]:
+        """Fetch markets with optional category filtering and time filtering."""
         url = f"{self.base_url}/markets"
         data = self._get_json(url)
-        markets = data if isinstance(data, list) else data.get("markets", [])
+        
+        # Handle different API response structures
+        if self.use_main_api:
+            # Main API returns {"data": [...], "next_cursor": ..., "limit": ..., "count": ...}
+            markets = data.get("data", [])
+        else:
+            # Gamma API returns list or {"markets": [...]}
+            markets = data if isinstance(data, list) else data.get("markets", [])
 
         # Filter by category if specified
         if category:
@@ -110,6 +119,19 @@ class PolymarketAdapter:
                 if market_category and category.lower() in market_category.lower():
                     filtered_markets.append(market)
             markets = filtered_markets
+
+        # Filter by time if requested
+        if exclude_past:
+            now = datetime.utcnow()
+            future_markets = []
+            for market in markets:
+                # Handle different date field names
+                end_date_str = market.get("endDate") or market.get("end_date_iso")
+                end_dt = self._parse_iso_z(end_date_str)
+                if end_dt and end_dt > now + timedelta(days=min_days_future):
+                    future_markets.append(market)
+            markets = future_markets
+            print(f"🕒 Filtered to {len(markets)} future markets (excluding past events)")
 
         # Limit results
         markets = markets[:limit]
@@ -210,12 +232,16 @@ class PolymarketAdapter:
     
     def _parse_market(self, market: Dict[str, Any]) -> RawItem:
         """Parse a Polymarket market into a RawItem."""
+        # Handle different API field names
+        market_id = market.get('id') or market.get('question_id', 'No ID')
+        end_date = market.get('endDate') or market.get('end_date_iso', 'Unknown')
+        
         # Create comprehensive content text
         content_parts = [
             f"Question: {market.get('question', 'No question')}",
             f"Description: {market.get('description', 'No description')}",
-            f"Market ID: {market.get('id', 'No ID')}",
-            f"End Date: {market.get('endDate', 'Unknown')}",
+            f"Market ID: {market_id}",
+            f"End Date: {end_date}",
             f"Category: {market.get('category', 'Unknown')}",
             f"Subcategory: {market.get('subcategory', 'Unknown')}",
         ]
@@ -270,8 +296,8 @@ class PolymarketAdapter:
         # Create meta information
         meta_json = {
             "source": "polymarket",
-            "market_id": market.get('id'),
-            "end_date": market.get('endDate'),
+            "market_id": market_id,
+            "end_date": end_date,
             "category": market.get('category'),
             "subcategory": market.get('subcategory'),
             "volume": market.get('volume'),
@@ -284,6 +310,7 @@ class PolymarketAdapter:
             "closed": market.get('closed'),
             "market_type": "prediction_market",
             "platform": "polymarket",
+            "api_source": "main" if self.use_main_api else "gamma",
             "fetched_at": datetime.utcnow().isoformat(),
             "raw_market_data": market
         }
@@ -294,8 +321,8 @@ class PolymarketAdapter:
         # Create RawItem
         return RawItem(
             source_id="polymarket_api",
-            external_id=market.get('id'),
-            raw_url=f"https://polymarket.com/market/{market.get('id', 'unknown')}",
+            external_id=market_id,
+            raw_url=f"https://polymarket.com/market/{market_id}",
             title=market.get('question', 'Polymarket Market'),
             content_text=content_text,
             raw_content_hash=content_hash,
@@ -363,25 +390,49 @@ class PolymarketAdapter:
     
     def get_categories(self) -> List[str]:
         """Get available market categories."""
-        url = f"{self.base_url}/categories"
-        data = self._get_json(url)
-        
-        # Handle both list and dict responses
-        if isinstance(data, list):
-            # Direct list of categories
-            categories = []
-            for cat in data:
-                if isinstance(cat, dict):
-                    # Extract label from the category dict
-                    label = cat.get("label", "")
-                    if label:
-                        categories.append(label)
-                elif isinstance(cat, str):
-                    # Handle string categories
-                    categories.append(cat)
-            return categories
-        elif isinstance(data, dict):
-            # Dictionary with categories key
-            return [cat.get("name") for cat in data.get("categories", [])]
+        if self.use_main_api:
+            # Main API doesn't have categories endpoint, extract from markets
+            try:
+                url = f"{self.base_url}/markets"
+                data = self._get_json(url)
+                markets = data.get("data", [])
+                
+                # Extract unique categories from markets
+                categories = set()
+                for market in markets:
+                    tags = market.get("tags", [])
+                    if tags:
+                        categories.update(tags)
+                
+                return sorted(list(categories))
+            except Exception as e:
+                print(f"⚠️ Error getting categories from main API: {e}")
+                return ["All"]  # Fallback
         else:
-            return []
+            # Gamma API has categories endpoint
+            try:
+                url = f"{self.base_url}/categories"
+                data = self._get_json(url)
+                
+                # Handle both list and dict responses
+                if isinstance(data, list):
+                    # Direct list of categories
+                    categories = []
+                    for cat in data:
+                        if isinstance(cat, dict):
+                            # Extract label from the category dict
+                            label = cat.get("label", "")
+                            if label:
+                                categories.append(label)
+                        elif isinstance(cat, str):
+                            # Handle string categories
+                            categories.append(cat)
+                    return categories
+                elif isinstance(data, dict):
+                    # Dictionary with categories key
+                    return [cat.get("name") for cat in data.get("categories", [])]
+                else:
+                    return []
+            except Exception as e:
+                print(f"⚠️ Error getting categories from gamma API: {e}")
+                return ["All"]  # Fallback
