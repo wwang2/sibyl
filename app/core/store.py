@@ -35,7 +35,8 @@ class Store:
             db_url = get_database_url()
         
         # Validate the database path
-        if not validate_database_path(db_url.replace("sqlite:///", "")):
+        db_path = str(db_url).replace("sqlite:///", "")
+        if not validate_database_path(db_path):
             print("⚠️ Warning: Database path validation failed, but continuing...")
         
         self.engine = create_engine(db_url)

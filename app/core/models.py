@@ -128,7 +128,7 @@ class EventProposal(Base):
     title: Mapped[str] = mapped_column(String(500), nullable=False)
     description: Mapped[str] = mapped_column(Text, nullable=False)
     proposed_by: Mapped[str] = mapped_column(String(50), nullable=False)  # agent_name or "human"
-    status: Mapped[ProposalStatus] = mapped_column(SAEnum(ProposalStatus), default=ProposalStatus.PENDING, nullable=False)
+    status: Mapped[str] = mapped_column(String(20), default="pending", nullable=False)
     confidence_score: Mapped[Optional[float]] = mapped_column(Numeric(3,2))
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=datetime.utcnow, nullable=False)
     reviewed_at: Mapped[Optional[datetime]] = mapped_column(DateTime(timezone=True))

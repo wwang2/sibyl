@@ -16,7 +16,6 @@ help:
 	@echo "Database Management:"
 	@echo "  reset-db         Reset local database (delete and recreate)"
 	@echo "  init-db          Initialize database with event sourcing tables"
-	@echo "  migrate          Run database migrations"
 	@echo ""
 	@echo "Agentic Workflows:"
 	@echo "  quick-run        Quick agentic workflow (1 feed, 3 items, 2 events)"
@@ -27,37 +26,29 @@ help:
 	@echo ""
 	@echo "Testing & Development:"
 	@echo "  test             Run all tests"
-	@echo "  test-agents      Test discovery and assessor agents"
-	@echo "  visualize        Open event visualization in browser"
-	@echo "  test-models      Test event sourcing models"
+	@echo "  test-core        Run core workflow tests only"
+	@echo "  test-unit        Run unit tests"
+	@echo "  test-integration Run integration tests"
+	@echo "  test-coverage    Run tests with coverage report"
+	@echo "  lint             Run linting checks"
 	@echo ""
 	@echo "Database Query Tools:"
 	@echo "  query-db         Query complete database (all tables)"
-	@echo "  query-events     Query events and raw items only"
 	@echo "  query-simple     Simple database query with counts and recent items"
-	@echo "  query-all        Show everything in database with detailed breakdown"
-	@echo "  query-everything Show COMPLETE database with all details and samples"
-	@echo "  query-politics   Show all politics-related markets"
-	@echo "  query-crypto     Show all crypto-related markets"
-	@echo "  query-by-source  Show breakdown by data source (Kalshi/Polymarket)"
-	@echo "  query-recent     Show all items from last 24 hours"
+	@echo "  query-proposals  Show event proposals with status breakdown"
 	@echo ""
 	@echo "Prediction Market Mining:"
 	@echo "  mine-markets     Mine both Kalshi and Polymarket (100 markets each)"
 	@echo "  mine-kalshi      Mine Kalshi prediction markets only"
 	@echo "  mine-polymarket  Mine Polymarket prediction markets only"
-	@echo "  mine-politics    Mine politics-focused markets (Polymarket)"
-	@echo "  mine-finance     Mine finance/markets-focused markets (Polymarket)"
-	@echo "  mine-crypto      Mine crypto-focused markets (both platforms)"
 	@echo ""
-	@echo "Routine Workflows:"
-	@echo "  workflow-scheduler    Start the complete workflow scheduler"
-	@echo "  workflow-mining       Run market mining workflow once"
-	@echo "  workflow-discovery    Run discovery workflow once"
-	@echo "  workflow-prediction   Run prediction workflow once"
-	@echo "  workflow-research     Run research workflow once"
+	@echo "Event Proposal Judgment:"
+	@echo "  judge-proposals  Judge event proposals using LLM-based evaluation"
+	@echo "  judge-offline    Judge proposals in offline mode (no LLM calls)"
+	@echo "  judge-sample     Judge a sample of 10 proposals for testing"
+	@echo ""
+	@echo "Cleanup:"
 	@echo "  clean            Clean up temporary files and caches"
-	@echo "  lint             Run linting checks"
 	@echo ""
 	@echo "Monitoring & Analysis:"
 	@echo "  audit-workflows  Generate workflow audit report"
@@ -97,9 +88,6 @@ init-db:
 	@echo "🔧 Initializing database with event sourcing schema..."
 	PYTHONPATH=$$(pwd) python3 -c "from app.core.store import Store; store = Store(); store.create_all(); print('✅ Database initialized')"
 
-migrate:
-	@echo "🔄 Running database migrations..."
-	alembic upgrade head
 
 # Agentic Workflows
 quick-run: init-db
@@ -128,22 +116,28 @@ test:
 	@echo "🧪 Running all tests..."
 	PYTHONPATH=$$(pwd) python3 -m pytest tests/ -v
 
-test-agents:
-	@echo "🤖 Testing discovery and assessor agents..."
-	PYTHONPATH=$$(pwd) python3 temp_scripts/test_agentic_workflow.py
+test-core:
+	@echo "🔧 Running core workflow tests..."
+	PYTHONPATH=$$(pwd) python3 -m pytest tests/test_core_workflow.py -v
 
-test-models:
-	@echo "📊 Testing event sourcing models..."
-	PYTHONPATH=$$(pwd) python3 temp_scripts/test_event_sourcing_v2.py
+test-unit:
+	@echo "🔬 Running unit tests..."
+	PYTHONPATH=$$(pwd) python3 -m pytest tests/ -m "unit" -v
+
+test-integration:
+	@echo "🔗 Running integration tests..."
+	PYTHONPATH=$$(pwd) python3 -m pytest tests/ -m "integration" -v
+
+test-coverage:
+	@echo "📊 Running tests with coverage..."
+	PYTHONPATH=$$(pwd) python3 -m pytest tests/ --cov=app --cov-report=html --cov-report=term
+
 
 # Database Query Tools
 query-db:
 	@echo "🔍 Querying complete database..."
 	@PYTHONPATH=$$(pwd) python3 temp_scripts/query_database.py
 
-query-events:
-	@echo "🎲 Querying events and raw items..."
-	@PYTHONPATH=$$(pwd) python3 temp_scripts/query_events_and_raw_items.py
 
 clean:
 	@echo "🧹 Cleaning up temporary files..."
@@ -206,40 +200,16 @@ raw-items-count:
 dev: install quick-run
 	@echo "🎉 Development environment ready!"
 
-# Visualization
-visualize:
-	@echo "🔮 Opening event visualization..."
-	@cd temp_scripts && python event_visualizer.py && python launch_visualizer.py
 
 # Simple database query
 query-simple:
 	@echo "🔍 Querying database contents..."
 	@cd temp_scripts && python query_database.py
 
-# Comprehensive query commands
-query-all:
-	@echo "🔍 Comprehensive Database Query - Everything"
-	@cd temp_scripts && python query_all.py
 
-query-politics:
-	@echo "🏛️ Politics-Related Markets"
-	@cd temp_scripts && python query_politics.py
-
-query-crypto:
-	@echo "₿ Crypto-Related Markets"
-	@cd temp_scripts && python query_crypto.py
-
-query-by-source:
-	@echo "📊 Breakdown by Data Source"
-	@cd temp_scripts && python query_by_source.py
-
-query-recent:
-	@echo "⏰ Recent Items (Last 24 Hours)"
-	@cd temp_scripts && python query_recent.py
-
-query-everything:
-	@echo "🔍 COMPREHENSIVE DATABASE QUERY - EVERYTHING"
-	@cd temp_scripts && python query_everything.py
+query-proposals:
+	@echo "🎯 Event Proposals Status Report"
+	@cd temp_scripts && python query_proposals_simple.py
 
 # Mine prediction markets
 mine-markets:
@@ -254,39 +224,20 @@ mine-polymarket:
 	@echo "⛏️ Mining Polymarket markets..."
 	@cd temp_scripts && python mine_prediction_markets.py --platform polymarket --limit 100 --create-proposals
 
-# Category-specific mining
-mine-politics:
-	@echo "⛏️ Mining Politics-focused markets..."
-	@cd temp_scripts && python mine_prediction_markets.py --platform polymarket --categories "US-current-affairs" --limit 50 --create-proposals
 
-mine-finance:
-	@echo "⛏️ Mining Finance/Markets-focused markets..."
-	@cd temp_scripts && python mine_prediction_markets.py --platform polymarket --categories "Finance" "Inflation" "Commodity prices" "Forex" --limit 50 --create-proposals
+# Event Proposal Judgment
+judge-proposals:
+	@echo "⚖️ Judging event proposals using LLM-based evaluation..."
+	@cd temp_scripts && python judge_event_proposals.py
 
-mine-crypto:
-	@echo "⛏️ Mining Crypto-focused markets..."
-	@cd temp_scripts && python mine_prediction_markets.py --platform both --categories "Crypto" --limit 100 --create-proposals
+judge-offline:
+	@echo "⚖️ Judging event proposals in offline mode..."
+	@cd temp_scripts && python judge_event_proposals.py --offline
 
-# Routine Workflows
-workflow-scheduler:
-	@echo "🔄 Starting workflow scheduler..."
-	@PYTHONPATH=$$(pwd) python3 -m app.workflows scheduler
+judge-sample:
+	@echo "⚖️ Judging sample of 10 event proposals..."
+	@cd temp_scripts && python judge_event_proposals.py --max-proposals 10
 
-workflow-mining:
-	@echo "⛏️ Running market mining workflow..."
-	@PYTHONPATH=$$(pwd) python3 -m app.workflows workflow market_mining --platforms kalshi,polymarket --limit 10 --create-proposals
-
-workflow-discovery:
-	@echo "🔍 Running discovery workflow..."
-	@PYTHONPATH=$$(pwd) python3 -m app.workflows workflow discovery --sources rss,kalshi,polymarket --max-events 10
-
-workflow-prediction:
-	@echo "🔮 Running prediction workflow..."
-	@PYTHONPATH=$$(pwd) python3 -m app.workflows workflow prediction --max-events 5 --confidence-threshold 0.6
-
-workflow-research:
-	@echo "🔬 Running research workflow..."
-	@PYTHONPATH=$$(pwd) python3 -m app.workflows workflow research --max-events 3 --depth medium
 
 # Docker commands (if needed)
 docker-build:
