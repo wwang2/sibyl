@@ -20,6 +20,13 @@ except ImportError:
 
 def main(max_feeds: Optional[int] = None, max_items_per_feed: Optional[int] = None, max_events: Optional[int] = None, offline_mode: bool = False, model_name: str = "gemini-1.5-flash-8b"):
     """Run a single discovery and assessment cycle with event sourcing."""
+    import os
+    
+    # Check for LLM_MODE environment variable
+    llm_mode = os.getenv('LLM_MODE', '').lower()
+    if llm_mode == 'mock':
+        offline_mode = True
+    
     print("Starting agentic event discovery cycle with event sourcing...")
     
     # Print limits if specified

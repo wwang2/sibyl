@@ -45,6 +45,7 @@ def test_run_cycle_mock(tmp_path, monkeypatch):
     monkeypatch.setenv('LLM_MODE', 'mock')
     monkeypatch.setenv('MOCK_SEED', '42')
     monkeypatch.setenv('DB_URL', f'sqlite:///{tmp_path}/test.db')
+    monkeypatch.setenv('GOOGLE_API_KEY', 'mock-api-key-for-testing')
     
     # Create a simple RSS fixture
     rss_fixture = tmp_path / "rss_sample.xml"

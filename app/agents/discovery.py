@@ -82,6 +82,14 @@ class SmartDiscoveryAgent:
         if self.assistant_agent is not None:
             return
             
+        # Skip AutoGen initialization in offline mode
+        if self.offline_mode:
+            # Initialize adapters only
+            self.rss_adapter = RSSAdapter(offline_mode=self.offline_mode)
+            self.kalshi_adapter = KalshiAdapter()
+            self.polymarket_adapter = PolymarketAdapter()
+            return
+            
         # Initialize LLM client
         api_key = os.getenv("GOOGLE_API_KEY")
         if not api_key:
@@ -307,7 +315,10 @@ Please tell me which 2-3 sources you want to fetch and why you think they'll hav
 - For prediction markets, list the market names (e.g., "kalshi_politics", "polymarket_crypto")"""
 
             print("🤖 Asking agent to select sources...")
-            response1 = await self.assistant_agent.run(task=source_selection_task)
+            if self.offline_mode:
+                response1 = self._mock_source_selection()
+            else:
+                response1 = await self.assistant_agent.run(task=source_selection_task)
             
             # Extract sources from response
             sources_to_fetch = self._extract_sources_from_response(response1)
@@ -345,7 +356,10 @@ Please analyze this content and identify potential predictable events. For each 
 Provide your analysis in the exact JSON format I specified in your system message."""
 
             print("🧠 Asking agent to analyze content...")
-            response2 = await self.assistant_agent.run(task=analysis_task)
+            if self.offline_mode:
+                response2 = self._mock_content_analysis()
+            else:
+                response2 = await self.assistant_agent.run(task=analysis_task)
             
             # Extract analysis from response
             self._extract_analysis_from_response(response2)
@@ -570,3 +584,46 @@ Provide your analysis in the exact JSON format I specified in your system messag
         
         print(f"\nModel Used: {self.model_name}")
         print("="*60)
+    
+    def _mock_source_selection(self):
+        """Mock source selection for offline mode."""
+        # Return a mock response that selects some sources
+        mock_message = type('MockMessage', (), {
+            'source': 'assistant',
+            'content': 'I recommend fetching from these sources:\n- kalshi_politics\n- polymarket_politics\n- https://feeds.bbci.co.uk/news/rss.xml\n\nThese sources should provide good content for event discovery.'
+        })()
+        
+        mock_response = type('MockResponse', (), {
+            'messages': [mock_message]
+        })()
+        return mock_response
+    
+    def _mock_content_analysis(self):
+        """Mock content analysis for offline mode."""
+        # Return a mock response with some analysis
+        mock_message = type('MockMessage', (), {
+            'source': 'assistant',
+            'content': '''```json
+{
+  "items": [
+    {
+      "title": "US President's Approval Rating for the week of September 25th, 2025",
+      "description": "Kalshi provides a series of prediction markets on the President's approval rating, which is a measurable and predictable political event.",
+      "confidence": 0.70,
+      "reasoning": "Approval ratings are regularly measured and reported, making this a highly predictable event with clear resolution criteria."
+    },
+    {
+      "title": "High Temperature in Chicago on September 8, 2025",
+      "description": "Weather prediction markets provide specific temperature forecasts for major cities, which are measurable and predictable.",
+      "confidence": 0.60,
+      "reasoning": "Weather forecasts are highly accurate for short-term predictions, making temperature events predictable."
+    }
+  ]
+}
+```'''
+        })()
+        
+        mock_response = type('MockResponse', (), {
+            'messages': [mock_message]
+        })()
+        return mock_response
