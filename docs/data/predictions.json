@@ -1,1370 +1,1221 @@
 {
-  "timestamp": "2025-09-08T01:30:41.424739",
+  "timestamp": "2025-09-08T02:27:40.274690",
   "predictions": [
     {
-      "id": "07134957-a19b-47d9-93b8-4edba4ea3525",
-      "event_id": "6e7ba275-0736-40ba-8fcc-30a003b6e39e",
-      "event_key": "market_kalshi_965af747_1757308753",
-      "event_title": "Will Ripple XRP reach above $2.94 before 12:00 AM ET on Oct 1, 2025?",
-      "event_description": "Title: Will Ripple XRP reach above $2.94 before 12:00 AM ET on Oct 1, 2025?\nDescription: No description\nTicker: KXXRPMAXM-25OCT01-2.94\nStatus: initialized\nClose Time: 2025-10-01T04:00:00Z\nCategory: \nSubcategory: Unknown\nCurrent Price: 0.000 - 0.000\nVolume: 0",
-      "probability": 0.55,
+      "id": "fecf20a7-9da6-4222-8340-ed2276739fd1",
+      "event_id": "5883a08b-dd44-4e88-9962-680753bda2e0",
+      "event_key": "kalshi_KXTARIFFPHARMA-26SEP30",
+      "event_title": "Will the U.S. impose tariffs on pharmaceuticals from any country in Sep 2025-Sep 2026?",
+      "event_description": "Title: Will the U.S. impose tariffs on pharmaceuticals from any country in Sep 2025-Sep 2026?\nDescription: No description\nTicker: KXTARIFFPHARMA-26SEP30\nStatus: initialized\nClose Time: 2026-10-02T00:00:00Z\nCategory: \nSubcategory: Unknown\nCurrent Price: 0.000 - 0.000\nVolume: 0",
+      "probability": 0.9,
       "horizon_hours": 168,
-      "rationale": "Based on analysis of 50 evidence items with an overall strength of 41.2%:\n        \n        \u2022 3 high-reliability sources provide strong supporting evidence\n        \u2022 Evidence covers multiple aspects of the event with consistent patterns\n        \u2022 Source diversity includes news articles, official statements, and expert opinions\n        \u2022 Confidence level reflects the quality and quantity of available evidence\n        \n        The prediction is based on the most reliable and relevant evidence available at the time of analysis.",
-      "created_at": "2025-09-08T01:30:41.348733",
+      "rationale": "Based on analysis of 46 evidence items with an overall strength of 89.8%:\n        \n        \u2022 10 high-reliability sources provide strong supporting evidence\n        \u2022 Evidence covers multiple aspects of the event with consistent patterns\n        \u2022 Source diversity includes news articles, official statements, and expert opinions\n        \u2022 Confidence level reflects the quality and quantity of available evidence\n        \n        The prediction is based on the most reliable and relevant evidence available at the time of analysis.",
+      "created_at": "2025-09-08T02:27:40.205080",
       "evidence_sources": [
         {
           "rank": 1,
-          "relevance_score": 0.38,
-          "title": "How Kalshi and prediction markets are disrupting sports betting",
-          "url": "https://www.espn.com/espn/betting/story/_/id/45377686/kalshi-prediction-markets-disrupt-sports-betting",
+          "relevance_score": 0.48,
+          "title": "Will the U.S. tariff rate on India be at least 25% on Aug 31, 2025?",
+          "url": "https://kalshi.com/markets/kxtariffrateindia/tariff-rate-on-india",
           "source_type": "news_article",
           "reliability": "low",
-          "extracted_fact": "Recent developments related to: latest news about market_kalshi_965af747_1757308753"
+          "extracted_fact": "Jul 30, 2025\u00b7Track what Kalshi's markets predict for \"Will the U.S."
         },
         {
           "rank": 2,
-          "relevance_score": 0.35,
-          "title": "Judge lets MD regulator enforce sports betting laws against ...",
-          "url": "https://thedailyrecord.com/2025/08/12/kalshi-maryland-gambling-license-ruling/",
+          "relevance_score": 0.45,
+          "title": "Will the Supreme Court rule in favor of Trump's tariffs? - Kalshi",
+          "url": "https://kalshi.com/markets/kxdjtvostariffs/tariffs-case",
           "source_type": "news_article",
           "reliability": "low",
-          "extracted_fact": "Recent developments related to: latest news about market_kalshi_965af747_1757308753"
+          "extracted_fact": "5 days ago\u00b7If the Supreme Court, in V.O.S."
         },
         {
           "rank": 3,
-          "relevance_score": 0.35,
-          "title": "Buy Kalshi stock and other Pre-IPO shares on UpMarket",
-          "url": "https://www.upmarket.co/private-markets/pre-ipo/kalshi/",
+          "relevance_score": 0.38,
+          "title": "Will Trump impose pharma tariffs this year? | Trade on Kalshi",
+          "url": "https://kalshi.com/markets/kxtariffpharma/pharma-tariffs",
           "source_type": "news_article",
           "reliability": "low",
-          "extracted_fact": "Recent developments related to: latest news about market_kalshi_965af747_1757308753"
+          "extracted_fact": "Track what Kalshi's markets predict for \"Will Trump impose pharma tariffs this year?\", or trade it yourself."
+        },
+        {
+          "rank": 4,
+          "relevance_score": 0.27,
+          "title": "Which countries will impose tariffs on the US this year? - Kalshi",
+          "url": "https://kalshi.com/markets/kxforeigntariff",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Which countries will impose tariffs on the US this year? ; China."
+        },
+        {
+          "rank": 5,
+          "relevance_score": 0.23,
+          "title": "Will pharmaceutical ads on TV be banned this year? | Trade on Kalshi",
+          "url": "https://kalshi.com/markets/kxdrugads/drug-ads-on-tv",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Jul 2, 2025\u00b7If television ads for prescription pharmaceutical products are banned in the United States before Jan 1, 2026, then the market resolves to Yes."
+        },
+        {
+          "rank": 6,
+          "relevance_score": 0.21,
+          "title": "Kalshi - Prediction Market for Trading the Future",
+          "url": "https://kalshi.com/",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Kalshi is a regulated exchange & prediction market where you can trade on the outcome of real-world events."
+        },
+        {
+          "rank": 7,
+          "relevance_score": 0.02,
+          "title": "Daily Discussion Thread - May 20, 2025 : r/wallstreetbetsHUZZAH",
+          "url": "https://www.reddit.com/r/wallstreetbetsHUZZAH/comments/1kr12jc/daily_discussion_thread_may_20_2025/",
+          "source_type": "social_media",
+          "reliability": "low",
+          "extracted_fact": "FED'S BOSTIC: CURRENT U.S."
+        },
+        {
+          "rank": 8,
+          "relevance_score": 0.01,
+          "title": "Standard | PDF | Tuberculosis | Government - Scribd",
+          "url": "https://www.scribd.com/doc/132389675/Standard",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "# Standard\n\nStandard\n\n## Uploaded by\n\nAI-enhanced description\n\n## Share this document\n\n## Footer menu\n\nAbout\n\nSupport\n\nLegal\n\nSocial\n\nGet our free apps\n\nScribd - Download on the App Store\nScribd - Get it on Google Play\n\nAbout\n\nLegal\n\nSupport\n\nSocial\n\nGet our free apps\n\nScribd - Download on the App Store\nScribd - Get it on Google Play [...] observe the scrutiny process and for IEBC to provide all documents considered the voter register."
+        },
+        {
+          "rank": 9,
+          "relevance_score": 0.01,
+          "title": "observed production rates: Topics by Science.gov",
+          "url": "https://www.science.gov/topicpages/o/observed+production+rates",
+          "source_type": "official_statement",
+          "reliability": "high",
+          "extracted_fact": "For this study, active comets are defined as those which exhibit excess signal of at least 3\u03c3 in the 4.6 \u03bcm detection band, while comets for which upper limits."
+        },
+        {
+          "rank": 10,
+          "relevance_score": null,
+          "title": "[PDF] B.A. PART I ENVIRONMENTAL STUDIES - HTE Rajasthan",
+          "url": "https://hte.rajasthan.gov.in/dept/dce/jai_narayan_vyas_unversity,_jodhpur/government_college,_barmer/uploads/doc/Syllabus.pdf",
+          "source_type": "official_statement",
+          "reliability": "high",
+          "extracted_fact": "Unit II : Natural Resources : Renewable and Non-Renewable : Forest Resources -."
+        },
+        {
+          "rank": 11,
+          "relevance_score": 0.54,
+          "title": "This Kalshi Market Is Still Too Cheap... - Reddit",
+          "url": "https://www.reddit.com/r/Kalshi/comments/1lfn3gl/this_kalshi_market_is_still_too_cheap/",
+          "source_type": "social_media",
+          "reliability": "low",
+          "extracted_fact": "Jun 20, 2025\u00b7If I had to make a directional prediction, I would say that the pharmaceutical tariff market on Kalshi will resolve \u201cYes\u201d by November 2025."
+        },
+        {
+          "rank": 12,
+          "relevance_score": 0.48,
+          "title": "Will Congress pass a law increasing tariffs this year? | Trade on Kalshi",
+          "url": "https://kalshi.com/markets/kxcongresstariff",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "If Congress sends to the President a bill increasing or imposing new tariffs before Jan 1, 2026, then the market resolves to Yes."
+        },
+        {
+          "rank": 13,
+          "relevance_score": 0.32,
+          "title": "Will Trump impose pharma tariffs this year?",
+          "url": "https://kalshi.com/markets/kxtariffpharma/pharma-tariffs",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Track what Kalshi's markets predict for \"Will Trump impose pharma tariffs this year?\", or trade it yourself."
+        },
+        {
+          "rank": 14,
+          "relevance_score": 0.29,
+          "title": "Which countries will impose tariffs on the US this year? - Kalshi",
+          "url": "https://kalshi.com/markets/kxforeigntariff",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Which countries will impose tariffs on the US this year? China."
+        },
+        {
+          "rank": 15,
+          "relevance_score": 0.16,
+          "title": "Global drugmakers rush to boost US presence as tariff threat looms",
+          "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/global-drugmakers-rush-boost-us-presence-tariff-threat-looms-2025-09-03/",
+          "source_type": "news_article",
+          "reliability": "high",
+          "extracted_fact": "### Workspace, opens new tab Access unmatched financial data, news and content in a highly-customised workflow experience on desktop, web and mobile.\n\nAccess unmatched financial data, news and content in a highly-customised workflow experience on desktop, web and mobile.\n\n### Data Catalogue, opens new tab Browse an unrivalled portfolio of real-time and historical market data and insights from worldwide sources and experts."
+        },
+        {
+          "rank": 16,
+          "relevance_score": 0.08,
+          "title": "observed production rates: Topics by ...",
+          "url": "https://www.science.gov/topicpages/o/observed+production+rates",
+          "source_type": "official_statement",
+          "reliability": "high",
+          "extracted_fact": "Recent advances in column heating technology have made possible very fast linear temperature programming for high-speed gas chromatography."
+        },
+        {
+          "rank": 17,
+          "relevance_score": 0.07,
+          "title": "80-90% Of The Tariffs On Pharma Sector Will Be Passed ... - YouTube",
+          "url": "https://www.youtube.com/watch?v=4PPIXpxrXSo",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Apr 10, 2025\u00b7Trump Tariffs | 'Cipla, Sun Pharma, DRL will be the vulnerable players if tariff are imposed', says Bino Pathiparampil of Elara Securities."
+        },
+        {
+          "rank": 18,
+          "relevance_score": 0.03,
+          "title": ":?5:2 42==D ECF562F\u00b6D 3=F77 ?C8Q 70=6I7>D",
+          "url": "https://www.dailypioneer.com/uploads/2023/epaper/september/chandigarh-english-edition-2023-09-27.pdf",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "dated 26 SEP 2023 before Ist."
+        },
+        {
+          "rank": 19,
+          "relevance_score": 0.01,
+          "title": "Standard | PDF | Tuberculosis | Government",
+          "url": "https://www.scribd.com/doc/132389675/Standard",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "# Standard\n\nStandard\n\n## Uploaded by\n\nAI-enhanced description\n\n## Share this document\n\n## Footer menu\n\nAbout\n\nSupport\n\nLegal\n\nSocial\n\nGet our free apps\n\nScribd - Download on the App Store\nScribd - Get it on Google Play\n\nAbout\n\nLegal\n\nSupport\n\nSocial\n\nGet our free apps\n\nScribd - Download on the App Store\nScribd - Get it on Google Play [...] Scribd\n\n# Standard\n\nStandard\n\n## Uploaded by\n\nAI-enhanced description\n\n# Standard [...] observe the scrutiny process and for IEBC to provide all documents considered the voter register."
+        },
+        {
+          "rank": 20,
+          "relevance_score": 0.01,
+          "title": "B.A. PART I ENVIRONMENTAL STUDIES",
+          "url": "https://hte.rajasthan.gov.in/dept/dce/jai_narayan_vyas_unversity,_jodhpur/government_college,_barmer/uploads/doc/Syllabus.pdf",
+          "source_type": "official_statement",
+          "reliability": "high",
+          "extracted_fact": "Food Resources - World food problems, changes caused by agriculture and overgrazing, effects of modern agriculture, fertilizer-pesticide problems."
+        },
+        {
+          "rank": 21,
+          "relevance_score": 0.99,
+          "title": "Will Trump impose pharma tariffs this year? | Trade on Kalshi",
+          "url": "https://kalshi.com/markets/kxtariffpharma/pharma-tariffs",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "Track what Kalshi's markets predict for \"Will Trump impose pharma tariffs this year?\", or trade it yourself."
+        },
+        {
+          "rank": 22,
+          "relevance_score": 0.98,
+          "title": "A Review of Nonanesthetic Uses of Ketamine - PMC - PubMed Central",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7152956/",
+          "source_type": "official_statement",
+          "reliability": "high",
+          "extracted_fact": "Ketamine appears to reduce the analgesic requirement for treatment of acute pain and also has a clear role in the management of CRPS."
+        },
+        {
+          "rank": 23,
+          "relevance_score": 0.98,
+          "title": "[PDF] Gerard T. Berry Curriculum Vitae - FDA",
+          "url": "https://www.fda.gov/media/180131/download",
+          "source_type": "official_statement",
+          "reliability": "high",
+          "extracted_fact": "2003-2006 Medical Staff Member, Thomas Jefferson University Hospital,  6Epilepsia European Journal of Human Genetics European Journal of Paediatric Neurology European Neuropsychopharmacology Expert Opinion on Orphan Drugs FEBS Letters Fertility and Sterility Frontiers in Genetics Future Medicinal Chemistry Gene Reports Genetic Testing Genetics in Medicine Hepatic Medicine: Evidence and Research Human Molecular Genetics Human Mutation Institute for Laboratory Animal Research Journal IUBMB Life Journal of Biological Chemistry Journal of Cell Physiology Journal of Child Neurology Journal of Clinical Investigation Journal of Inherited Metabolic Disease Journal of Membrane Biology Journal of Neurochemistry Journal of Pediatrics Journal of Personalized Medicine Journal of the American Medical Association Life Sciences Metabolism- Clinical and Experimental Molecular Genetics and Genomic Medicine Molecular Genetics and Metabolism Molecular Psychiatry Molecular Therapy Nature Reviews Endocrinology NeuroMolecular Medicine Neuropsychopharmacology Neurotherapeutics New England Journal of Medicine Orphanet Journal of Rare Diseases Pediatric Research Pediatrics Plos One Proceedings of the National Academy of Sciences Reproduction Science Science Signaling."
+        },
+        {
+          "rank": 24,
+          "relevance_score": 0.98,
+          "title": "[PDF] B.Sc - Mahasatee Arts, Commerce and Science College, Ulga Karwar",
+          "url": "https://www.sesmacsc.co.in/SSR/C1/1.1.1/SY_BSC.pdf",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "Unit 3: Fungi."
+        },
+        {
+          "rank": 25,
+          "relevance_score": 0.98,
+          "title": "[PDF] Electrochemical Deuterations and Fluorocyclizations of sp2-Carbon ...",
+          "url": "https://mediatum.ub.tum.de/doc/1727952/1727952.pdf",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "The aim was to establish a catalytic supply of bromine source, a strategic approach intended to mitigate the buildup of bromide intermediates and consequently."
+        },
+        {
+          "rank": 26,
+          "relevance_score": 0.97,
+          "title": "[PDF] B.A. PART I ENVIRONMENTAL STUDIES - HTE Rajasthan",
+          "url": "https://hte.rajasthan.gov.in/dept/dce/jai_narayan_vyas_unversity,_jodhpur/government_college,_barmer/uploads/doc/Syllabus.pdf",
+          "source_type": "official_statement",
+          "reliability": "high",
+          "extracted_fact": "/ B.Sc."
+        },
+        {
+          "rank": 27,
+          "relevance_score": 0.97,
+          "title": "Expression of gain-of-function CFTR in cystic fibrosis airway cells ...",
+          "url": "https://www.cell.com/molecular-therapy-family/methods/fulltext/S2329-0501(23)00120-1",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "Expression of gain-of-function CFTR in cystic fibrosis airway cells restores epithelial function better than wild-type or codon-optimized CFTR: Molecular Therapy Methods & Clinical Development *   Submit article External Link *   Cell *   Molecular Cell *   Submit article External Link *   Submit your next paper to Molecular Therapy External Link *   Submit your next paper to Molecular Therapy Oncology External Link *   Gene and cell therapy patient education External Link *   Open access at Cell Press Expression of gain-of-function CFTR in cystic fibrosis airway cells restores epithelial function better than wild-type or codon-optimized CFTR _Cells._ 2020; **9**:2090 Expression of gain-of-function CFTR in cystic fibrosis airway cells restores epithelial function better than wild-type or codon-optimized CFTR *   Cell *   Molecular Cell."
+        },
+        {
+          "rank": 28,
+          "relevance_score": 0.97,
+          "title": "Part 1 | PDF | Glossary Of Patent Law Terms - Scribd",
+          "url": "https://www.scribd.com/document/681951878/Part-1",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "This document is the official journal of the Patent Office of India."
+        },
+        {
+          "rank": 29,
+          "relevance_score": 0.96,
+          "title": "Full text of \"A dictionary of applied chemistry\" - Internet Archive",
+          "url": "https://archive.org/stream/bub_gb_6XfPAAAAMAAJ/bub_gb_6XfPAAAAMAAJ_djvu.txt",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "Full text of \"A dictionary of applied chemistry\"."
+        },
+        {
+          "rank": 30,
+          "relevance_score": 0.95,
+          "title": "[PDF] 1 FACULTY OF EDUCATION SYLLABUS AND SCHEME OF ...",
+          "url": "https://www.mdsuajmer.ac.in/syllabus/342_B.SC.B.ED.%20MDSU%20PDF_4yr.pdf",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "1."
+        },
+        {
+          "rank": 31,
+          "relevance_score": 0.73,
+          "title": "This Kalshi Market Is Still Too Cheap... - Reddit",
+          "url": "https://www.reddit.com/r/Kalshi/comments/1lfn3gl/this_kalshi_market_is_still_too_cheap/",
+          "source_type": "social_media",
+          "reliability": "medium",
+          "extracted_fact": "If I had to make a directional prediction, I would say that the pharmaceutical tariff market on Kalshi will resolve \u201cYes\u201d by November 2025."
+        },
+        {
+          "rank": 32,
+          "relevance_score": 0.56,
+          "title": "Will Trump impose pharma tariffs this year? | Trade on Kalshi",
+          "url": "https://kalshi.com/markets/kxtariffpharma/pharma-tariffs",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Track what Kalshi's markets predict for \"Will Trump impose pharma tariffs this year?\", or trade it yourself."
+        },
+        {
+          "rank": 33,
+          "relevance_score": 0.52,
+          "title": "Prediction Market for Trading the Future - Kalshi",
+          "url": "https://kalshi.com/external-widgets/events/KXZELENSKYYPUTINMEET-26/markets/KXZELENSKYYPUTINMEET-26?color_scheme=light&widget_size=large&period=all",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Kalshi is a regulated exchange & prediction market where you can trade on the outcome of real-world events."
+        },
+        {
+          "rank": 34,
+          "relevance_score": 0.5,
+          "title": "Kalshi - Prediction Market for Trading the Future",
+          "url": "https://kalshi.com/",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Which party will win the House next year?\n\nDemocratic Party\n\n68%\n\nYes\n\n/\n\nNo\n\nYes\n\n$100 \u2192 $\u2013\u2013\n\nNo\n\n$100 \u2192 $\u2013\u2013\n\nRepublican Party\n\n32%\n\nYes\n\n/\n\nNo\n\nYes\n\n$100 \u2192 $\u2013\u2013\n\nNo\n\n$100 \u2192 $\u2013\u2013\n\n$3,654,606\n\nFed decision in September?\n\nCut 25bps\n\n77%\n\nYes\n\n/\n\nNo\n\nYes\n\n$100 \u2192 $\u2013\u2013\n\nNo\n\n$100 \u2192 $\u2013\u2013\n\nFed maintains rate\n\n19%\n\nYes\n\n/\n\nNo\n\nYes\n\n$100 \u2192 $\u2013\u2013\n\nNo\n\n$100 \u2192 $\u2013\u2013\n\n$165,928,121\n\nJulie Felss Masino out as Cracker Barrel CEO this year?\n\n24%\n\nYes\n\n$100 \u2192 $395\n\nNo\n\n$100 \u2192 $128\n\n$69,620 [...] Will any Covid vaccine lose its FDA approval this year?\n\n40%\n\nYes\n\n$100 \u2192 $202\n\nNo\n\n$100 \u2192 $158\n\n$71,169\n\n\"Caught Stealing\" Rotten Tomatoes score?\n\nAbove 82\n\n52%\n\nYes\n\n/\n\nNo\n\nYes\n\n$100 \u2192 $\u2013\u2013\n\nNo\n\n$100 \u2192 $\u2013\u2013\n\nAbove 80\n\n70%\n\nYes\n\n/\n\nNo\n\nYes\n\n$100 \u2192 $\u2013\u2013\n\nNo\n\n$100 \u2192 $\u2013\u2013\n\n$128,677\n\nWill a Sabrina Carpenter song reach #1 again this year?\n\n91%\n\nYes\n\n$100 \u2192 $110\n\nNo\n\n$100 \u2192 $432\n\n$27,859\n\u00b7\n\nAnnually\n\nCollege Football Championship Winner?\n\nTexas\n\n16%\n\nYes\n\n/\n\nNo\n\nYes\n\n$100 \u2192 $\u2013\u2013\n\nNo\n\n$100 \u2192 $\u2013\u2013 [...] Ohio St.\n\n13%\n\nYes\n\n/\n\nNo\n\nYes\n\n$100 \u2192 $\u2013\u2013\n\nNo\n\n$100 \u2192 $\u2013\u2013\n\n$2,143,042\n\u00b7\n\nAnnually\n\nTIME's Person of the Year for 2025?\n\nAI\n\n31%\n\nYes\n\n/\n\nNo\n\nYes\n\n$100 \u2192 $\u2013\u2013\n\nNo\n\n$100 \u2192 $\u2013\u2013\n\nPope Leo XIV\n\n25%\n\nYes\n\n/\n\nNo\n\nYes\n\n$100 \u2192 $\u2013\u2013\n\nNo\n\n$100 \u2192 $\u2013\u2013\n\n$2,343,839\n\u00b7\n\nAnnually\n\nMost streamed song on 'THE LIFE OF A SHOWGIRL' by Oct 10th?\n\nThe Life of a Showgirl\n\n48%\n\nYes\n\n/\n\nNo\n\nYes\n\n$100 \u2192 $\u2013\u2013\n\nNo\n\n$100 \u2192 $\u2013\u2013\n\nThe Fate of Ophelia\n\n33%\n\nYes\n\n/\n\nNo\n\nYes\n\n$100 \u2192 $\u2013\u2013\n\nNo\n\n$100 \u2192 $\u2013\u2013\n\n$13,847."
+        },
+        {
+          "rank": 35,
+          "relevance_score": 0.28,
+          "title": "Will Trump impose pharma tariffs in 2025? - Bitcoin.com | Markets",
+          "url": "https://markets.bitcoin.com/prediction/kalshi/will-trump-impose-pharma-tariffs-in-2025-KXTARIFFPHARMA-25",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "### \n\n### Markets\n\n### Trade\n\n### Insights\n\n### Socials\n\n## \n\n# Top Coins\n\n\u00a9 2025 Saint Bitts LLC."
+        },
+        {
+          "rank": 36,
+          "relevance_score": 0.03,
+          "title": "[PDF] B.Sc - Mahasatee Arts, Commerce and Science College, Ulga Karwar",
+          "url": "https://www.sesmacsc.co.in/SSR/C1/1.1.1/SY_BSC.pdf",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Paper A: Separation techniques and pharmaceutical analysis."
+        },
+        {
+          "rank": 37,
+          "relevance_score": 0.01,
+          "title": "Standard | PDF | Tuberculosis | Government - Scribd",
+          "url": "https://www.scribd.com/doc/132389675/Standard",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "# Standard\n\nStandard\n\n## Uploaded by\n\nAI-enhanced description\n\n## Share this document\n\n## Footer menu\n\nAbout\n\nSupport\n\nLegal\n\nSocial\n\nGet our free apps\n\nScribd - Download on the App Store\nScribd - Get it on Google Play\n\nAbout\n\nLegal\n\nSupport\n\nSocial\n\nGet our free apps\n\nScribd - Download on the App Store\nScribd - Get it on Google Play [...] Scribd\n\n# Standard\n\nStandard\n\n## Uploaded by\n\nAI-enhanced description\n\n# Standard [...] observe the scrutiny process and for IEBC to provide all documents considered the voter register."
+        },
+        {
+          "rank": 38,
+          "relevance_score": 0.01,
+          "title": "[PDF] COURSE CURRICULUM - GSFC University",
+          "url": "https://www.gsfcuniversity.ac.in/upload/ckfiles/B_28.pdf",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "VISION."
+        },
+        {
+          "rank": 39,
+          "relevance_score": 0.01,
+          "title": "[PDF] ANNUAL REPORT - INIS-IAEA",
+          "url": "https://inis.iaea.org/collection/NCLCollectionStore/_Public/19/089/19089984.pdf",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "The detailed reporting of work is done through publications in scientific journals."
+        },
+        {
+          "rank": 40,
+          "relevance_score": null,
+          "title": "observed production rates: Topics by Science.gov",
+          "url": "https://www.science.gov/topicpages/o/observed+production+rates",
+          "source_type": "official_statement",
+          "reliability": "high",
+          "extracted_fact": "This poster will display production rates and other physical properties of these HTCs, as well as place the ensemble of HTC production rate properties into."
+        },
+        {
+          "rank": 41,
+          "relevance_score": 0.43,
+          "title": "Will Trump launch tariffs on copper? | Trade on Kalshi",
+          "url": "https://kalshi.com/markets/kxtariffscopper/copper-tariffs",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Article titled 'Will Trump launch tariffs on copper? | Trade on Kalshi' discusses topics related to: official statements kalshi_KXTARIFFPHARMA-26SEP30"
+        },
+        {
+          "rank": 42,
+          "relevance_score": 0.33,
+          "title": "Will Trump impose pharma tariffs this year? | Trade on Kalshi",
+          "url": "https://kalshi.com/markets/kxtariffpharma/pharma-tariffs",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Track what Kalshi's markets predict for \"Will Trump impose pharma tariffs this year?\", or trade it yourself."
+        },
+        {
+          "rank": 43,
+          "relevance_score": 0.04,
+          "title": "[PDF] :?5:2 42==D ECF562F\u00b6D 3=F77 ?C8Q 70=6I7>D - Daily Pioneer",
+          "url": "https://www.dailypioneer.com/uploads/2023/epaper/september/chandigarh-english-edition-2023-09-27.pdf",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "dated 26 SEP 2023 before Ist."
+        },
+        {
+          "rank": 44,
+          "relevance_score": 0.01,
+          "title": "Daily Discussion Thread - May 20, 2025 : r/wallstreetbetsHUZZAH",
+          "url": "https://www.reddit.com/r/wallstreetbetsHUZZAH/comments/1kr12jc/daily_discussion_thread_may_20_2025/",
+          "source_type": "social_media",
+          "reliability": "low",
+          "extracted_fact": "Daily Discussion Thread - May 20, 2025 .."
+        },
+        {
+          "rank": 45,
+          "relevance_score": 0.01,
+          "title": "[PDF] Part 2 - Advance and Innovative Research",
+          "url": "https://iaraedu.com/pdf/ijair-volume-8-issue-2-iii-april-june-2021-part-2.pdf",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Jun 10, 2021\u00b7The University of Mumbai is one of the oldest and premier universities in India."
+        },
+        {
+          "rank": 46,
+          "relevance_score": 0.01,
+          "title": "[PDF] B.A. PART I ENVIRONMENTAL STUDIES - HTE Rajasthan",
+          "url": "https://hte.rajasthan.gov.in/dept/dce/jai_narayan_vyas_unversity,_jodhpur/government_college,_barmer/uploads/doc/Syllabus.pdf",
+          "source_type": "official_statement",
+          "reliability": "high",
+          "extracted_fact": "/ B.Sc."
+        }
+      ]
+    },
+    {
+      "id": "0ac2893e-2720-4ffa-99a4-4eabd65848bd",
+      "event_id": "02c3059b-edb3-4f2a-8516-802eb6eba931",
+      "event_key": "kalshi_KXVIRGINIAHOUSEDEMS-25NOV04-B48",
+      "event_title": "Will the Democrats win below 48 seats in the 2025 Virginia House of Delegates election?",
+      "event_description": "Title: Will the Democrats win below 48 seats in the 2025 Virginia House of Delegates election?\nDescription: No description\nTicker: KXVIRGINIAHOUSEDEMS-25NOV04-B48\nStatus: initialized\nClose Time: 2026-11-04T15:00:00Z\nCategory: \nSubcategory: Unknown\nCurrent Price: 0.000 - 0.000\nVolume: 0",
+      "probability": 0.55,
+      "horizon_hours": 168,
+      "rationale": "Based on analysis of 49 evidence items with an overall strength of 51.1%:\n        \n        \u2022 5 high-reliability sources provide strong supporting evidence\n        \u2022 Evidence covers multiple aspects of the event with consistent patterns\n        \u2022 Source diversity includes news articles, official statements, and expert opinions\n        \u2022 Confidence level reflects the quality and quantity of available evidence\n        \n        The prediction is based on the most reliable and relevant evidence available at the time of analysis.",
+      "created_at": "2025-09-08T02:27:15.515381",
+      "evidence_sources": [
+        {
+          "rank": 1,
+          "relevance_score": 0.65,
+          "title": "2025 Virginia House of Delegates election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2025_Virginia_House_of_Delegates_election",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "The 2025 Virginia House of Delegates election is scheduled to be held on Tuesday, November 4, 2025 to elect members of the 164th Virginia General Assembly."
+        },
+        {
+          "rank": 2,
+          "relevance_score": 0.52,
+          "title": "Kalshi v. CFTC Challenges Contracts on Political Events | Brownstein",
+          "url": "https://www.bhfs.com/insight/kalshi-v-cftc-challenges-contracts-on-political-events/",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "On June 12, 2023, Kalshi self-certified that its planned event contracts complied with applicable federal statutory and regulatory requirements."
+        },
+        {
+          "rank": 3,
+          "relevance_score": 0.36,
+          "title": "Who will win the Virginia House of Delegates? - Bitcoin.com | Markets",
+          "url": "https://markets.bitcoin.com/prediction/kalshi/who-will-win-the-virginia-house-of-delegates-KXVAHOUSE-25",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Closes: 2026-11-04T15:00:00Z\n\nPays out: 0.5 hours after closing\n\nIf this event occurs, the market will close the following 10am ET."
         },
         {
           "rank": 4,
           "relevance_score": 0.31,
+          "title": "Virginia House Democrats: Building a Better Virginia",
+          "url": "https://vahousedems.org/",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "We are dedicated to creating a better future for Virginia families by guiding efforts to elect Democratic leaders of character, integrity, ability,\u00a0...Meet Our Caucus Members I...\u00b7Contact Us\u00b7About Us\u00b7News."
+        },
+        {
+          "rank": 5,
+          "relevance_score": 0.22,
+          "title": "House of Delegates - Virginia Department of Elections",
+          "url": "https://www.elections.virginia.gov/casting-a-ballot/candidate-list/november-4-2025-gen-elect-house-of-del/",
+          "source_type": "official_statement",
+          "reliability": "high",
+          "extracted_fact": "|  |  |  |  |  |  |  |  |  |  |  |  |  |  |\n ---  ---  ---  ---  ---  ---  --- |\n| Office Title | District | Political Party | Candidate Name | Incumbent | Candidate Status | Campaign Email | Campaign Phone | Campaign Website | Campaign Address Line 1 | Campaign Address Line 2 | Campaign City | Campaign State | Campaign Zip | [...] | Member, House of Delegates | 48 | Independent | Barbara Mayhew Hancock | No | Qualified | hancockforvirginia@gmail.com | 434-728-3557 |  | 970 Wade Rd |  | Pittsville | VA | 24139-2506 |\n| Member, House of Delegates | 49 | Democratic | Gary P."
+        },
+        {
+          "rank": 6,
+          "relevance_score": 0.21,
+          "title": "Meet Our Caucus Members I Virginia House Democrats",
+          "url": "https://vahousedems.org/our-members/",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Meet our members and find out more about the Democrats working to build a better Virginia in the House of Delegates."
+        },
+        {
+          "rank": 7,
+          "relevance_score": 0.17,
+          "title": "Democratic leadership battle erupts in Virginia House of Delegates",
+          "url": "https://www.washingtonpost.com/dc-md-va/2022/04/25/virginia-house-democrats-leadership-fight/",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Apr 25, 2022\u00b7Former House Speaker Eileen Filler-Corn and other Democratic leaders in Virginia's House of Delegates face a challenge from members upset."
+        },
+        {
+          "rank": 8,
+          "relevance_score": 0.1,
+          "title": "Virginia Democrats reject more Youngkin university board appointees",
+          "url": "https://virginiabusiness.com/virginia-democrats-reject-more-university-board-appointees-by-youngkin/",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Three high-ranking Senate Democrats have sent a letter to the governor asking him to suspend future board appointments."
+        },
+        {
+          "rank": 9,
+          "relevance_score": 0.09,
+          "title": "Virginia's Congressional District 11 Democratic Candidate Forum",
+          "url": "https://www.youtube.com/watch?v=ZaxD_b6fH1k&pp=0gcJCfwAo7VqN5tD",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Jun 25, 2025\u00b7Nine of 10 candidates running to replace the late U.S."
+        },
+        {
+          "rank": 10,
+          "relevance_score": 0.51,
+          "title": "Who will win the Virginia House of Delegates? | Trade on Kalshi",
+          "url": "https://kalshi.com/markets/kxvahouse/virginia-house-of-delegates-election",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Dec 21, 2024\u00b7If Democratic wins the Virginia House of Delegates in 2025, then the market resolves to Yes."
+        },
+        {
+          "rank": 11,
+          "relevance_score": 0.42,
+          "title": "Third Time's The Charm for Gambling Regulators in Kalshi Litigation",
+          "url": "https://www.bhfs.com/insight/third-times-the-charm-for-gambling-regulators-in-kalshi-litigation/",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Then, on the eve of the 2025 Super Bowl, Kalshi debuted contract offerings on the outcome [...] ### TAGS:\n\n### Contributors:\n\n## Recent Insights\n\n### \u2018The Game is Afoot\u2019: Federal Appeals Court Strikes Down the President\u2019s IEEPA-Based Tariffs\n\n### Caught Between Courts: Navigating Grant Termination Claims\n\n### Ninth Circuit Clarifies DTSA\u2019s \u201cSufficient Particularity\u201d for Identifying Trade Secrets\n\n### Sixth Circuit Opens Path for Broad Privilege Application to Internal Investigations\n\n### From Moratoriums to Momentum: Policymakers Seek to Escalate Nuclear Energy Production [...] To be sure, each of these rulings in Nevada, New Jersey and Maryland are only preliminary, and in none of these cases has the judge reached a final decision on the merits."
+        },
+        {
+          "rank": 12,
+          "relevance_score": 0.36,
+          "title": "How Kalshi and prediction markets are disrupting sports betting",
+          "url": "https://www.espn.com/espn/betting/story/_/id/45377686/kalshi-prediction-markets-disrupt-sports-betting",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Seven states have sent cease-and-desist letters to the company in recent months, alleging that its activities violate state law."
+        },
+        {
+          "rank": 13,
+          "relevance_score": 0.34,
+          "title": "Kalshi found a backdoor to sports gambling, and flung it wide open",
+          "url": "https://www.fastcompany.com/91399289/kalshi-prediction-markets-sports-gambling",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "In other words, Kalshi users would no longer be limited to predicting game results, awards winners, win totals, and end-of-season champions."
+        },
+        {
+          "rank": 14,
+          "relevance_score": 0.34,
           "title": "New Jersey Federal Court Sides with Kalshi Over Prediction Market ...",
           "url": "https://www.hklaw.com/en/insights/publications/2025/06/new-jersey-federal-court-sides-with-kalshi-over-prediction",
           "source_type": "news_article",
           "reliability": "low",
-          "extracted_fact": "Recent developments related to: latest news about market_kalshi_965af747_1757308753"
+          "extracted_fact": "Gaming attorney Johnny ElHachem authored a FinTech Law Report article analyzing the recent legal victory of prediction market platform Kalshi, which secured a preliminary injunction preventing the New Jersey Division of Gaming Enforcement from enforcing a cease-and-desist order against its operations in the state."
         },
         {
-          "rank": 5,
-          "relevance_score": 0.3,
-          "title": "What are prediction markets? | Kalshi Help Center",
-          "url": "https://help.kalshi.com/kalshi-101/what-are-prediction-markets",
+          "rank": 15,
+          "relevance_score": 0.31,
+          "title": "Who will win the Virginia House of Delegates? - Bitcoin.com | Markets",
+          "url": "https://markets.bitcoin.com/prediction/kalshi/who-will-win-the-virginia-house-of-delegates-KXVAHOUSE-25",
           "source_type": "news_article",
           "reliability": "low",
-          "extracted_fact": "Recent developments related to: latest news about market_kalshi_965af747_1757308753"
+          "extracted_fact": "Closes: 2026-11-04T15:00:00Z\n\nPays out: 0.5 hours after closing\n\nIf this event occurs, the market will close the following 10am ET."
         },
         {
-          "rank": 6,
-          "relevance_score": 0.3,
-          "title": "Prediction Market for Trading the Future - Kalshi",
-          "url": "https://kalshi.com/market-makers",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: latest news about market_kalshi_965af747_1757308753"
-        },
-        {
-          "rank": 7,
+          "rank": 16,
           "relevance_score": 0.28,
+          "title": "Why Kalshi's new $2B valuation makes sense - Blockworks",
+          "url": "https://blockworks.co/news/kalshi-2b-valuation-prediction-markets",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Daily, with Byron Gilliam.\n\nUpcoming Events\n\nDigital Asset Summit 2025\n\nMon - Wed, October 13 - 15, 2025\n\nBlockworks\u2019 Digital Asset Summit (DAS) will feature conversations between the builders, allocators, and legislators who will shape the trajectory of the digital asset ecosystem in the US and abroad.\n\nrecent research\n\nResearch Report Templates (1).png\n\nResearch [...] BusinessFinance\n\nPrivate testnet aims to deliver low-cost settlement with partners including Visa, Deutsche Bank, and OpenAI\n\narticle-image\n\nLightspeed NewsletterMarkets\n\nSolana saw $78 million in REV for August\n\narticle-image\n\nBusiness\n\nLit Protocol\u2019s Vincent is shifting agentic finance from toy demos to production rails\n\narticle-image\n\nBusinessFinance\n\nThe new system aims to unify Europe\u2019s fragmented tokenized asset settlement and cut cross-border costs\n\narticle-image [...] Polymarket is in a similar boat, with a recent Bloomberg report claiming that Peter Thiel\u2019s Founders Fund is leading a round that would put Polymarket\u2019s valuation over $1 billion."
+        },
+        {
+          "rank": 17,
+          "relevance_score": 0.23,
           "title": "Kalshi - Prediction Market for Trading the Future",
           "url": "https://kalshi.com/",
           "source_type": "news_article",
           "reliability": "low",
-          "extracted_fact": "Recent developments related to: latest news about market_kalshi_965af747_1757308753"
+          "extracted_fact": "Kalshi is a regulated exchange & prediction market where you can trade on the outcome of real-world events."
+        },
+        {
+          "rank": 18,
+          "relevance_score": 0.17,
+          "title": "Kalshi valued at $2 billion in latest funding round, CEO says - Reuters",
+          "url": "https://www.reuters.com/technology/kalshi-valued-2-billion-latest-funding-round-ceo-says-2025-06-25/",
+          "source_type": "news_article",
+          "reliability": "high",
+          "extracted_fact": "All quotes delayed a minimum of 15 minutes."
+        },
+        {
+          "rank": 19,
+          "relevance_score": 0.01,
+          "title": "Full text of \"Routes in Jammu and Kashmir\" - Internet Archive",
+          "url": "https://archive.org/stream/dli.pahar.1435/1897%20Routes%20in%20Jammu%20and%20Kashmir%20by%20De%20Bourbel%20s_djvu.txt",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Capture a web page as it appears now for use as a trusted\ncitation in the future.\n\nPlease enter a valid web address\n\n# Full text of \"Routes in Jammu and Kashmir\"\n\n## See other formats [...] Ask the publishers to restore access to 500,000+ books.\n\n### Internet Archive Audio\n\n#### Featured\n\n#### Top\n\n### Images\n\n#### Featured\n\n#### Top\n\n### Software\n\n#### Featured\n\n#### Top\n\n### Texts\n\n#### Featured\n\n#### Top\n\n### Video\n\n#### Featured\n\n#### Top\n\nSearch the history of over \\_\\_WB\\_PAGES\\_ARCHIVED\\_\\_\nweb pages\non the Internet.\n\n#### Mobile Apps\n\n#### Browser Extensions\n\n#### Archive-It Subscription\n\n### Save Page Now."
+        },
+        {
+          "rank": 20,
+          "relevance_score": 0.52,
+          "title": "Who will win the Virginia House of Delegates? - Bitcoin.com | Markets",
+          "url": "https://markets.bitcoin.com/prediction/kalshi/who-will-win-the-virginia-house-of-delegates-KXVAHOUSE-25",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "# Prediction Markets\n\nExplore prediction markets for future events\n\nKalshi EventsPolymarket Events\n\n# Who will win the Virginia House of Delegates?\n\nBet Now\n\nElections\n\n### Democratic\n\n$6,811 VOL.\n\n90%YES 95\u00a2NO 10\u00a2\n\n### Republican\n\n$205 VOL.\n\n3%YES 9\u00a2NO 97\u00a2\n\n# Rules Summary\n\nIf Democratic wins the Virginia House of Delegates in 2025, then the market resolves to Yes.\n\nNo secondary rules available.\n\n# Timeline and Payout\n\nOpened: Dec 21, 2024, 10:00 AM\n\nCloses: 2026-11-04T15:00:00Z [...] Pays out: 0.5 hours after closing\n\nIf this event occurs, the market will close the following 10am ET."
+        },
+        {
+          "rank": 21,
+          "relevance_score": 0.41,
+          "title": "Kalshi Gets Approval for 2024 Election Prediction Markets",
+          "url": "https://dapp.expert/news/en_kalshi-gets-approval-for-2024-election-prediction-markets",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "However, the potential for these services to continue hinges on an ongoing appeals process, with a final verdict expected by 2025.\n\n## Impact on Prediction Market [...] Important disclaimer:  The information presented on the Dapp.Expert portal is intended solely for informational purposes and does not constitute an investment recommendation or a guide to action in the field of cryptocurrencies."
+        },
+        {
+          "rank": 22,
+          "relevance_score": 0.38,
+          "title": "PDF Political Event Contract Update: Previewing Tomorrow's Kalshi v. CFTC ...",
+          "url": "https://www.wilmerhale.com/-/media/files/shared_content/editorial/publications/wh_publications/client_alert_pdfs/20240918-political-event-contract-update-previewing-tomorrows-kalshi-v-cftc-appellate-court-hearing.pdf",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "KalshiEx LLC (Kalshi), a designated contract market (DCM), can list political event contracts for trading between now and the November 5 elections."
+        },
+        {
+          "rank": 23,
+          "relevance_score": 0.36,
+          "title": "CFTC Announces Review of Kalshi Congressional Control Contracts and ...",
+          "url": "https://www.cftc.gov/PressRoom/PressReleases/8728-23",
+          "source_type": "official_statement",
+          "reliability": "high",
+          "extracted_fact": "As described in Kalshi\u2019s submission, the contracts are cash-settled, binary contracts based on the question: \u201cWill <chamber of Congress> be controlled by <party> for <term>?\u201d The contracts settle based on the party affiliation of the Speaker of the U.S."
+        },
+        {
+          "rank": 24,
+          "relevance_score": 0.28,
+          "title": "Kalshi Draws Court Scrutiny for Major Reversal in Its Effort to Evade ...",
+          "url": "https://bettermarkets.org/newsroom/kalshi-draws-court-scrutiny-for-major-reversal-in-its-effort-to-evade-state-regulation-of-sports-gambling-contracts/",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "\u201cThis pivot is no accident, and it has clearly raised serious questions for the court."
+        },
+        {
+          "rank": 25,
+          "relevance_score": 0.28,
+          "title": "Washington DC Court Permits Kalshi Users to Participate in 2024 ...",
+          "url": "https://www.dapp.expert/news/en_washington-dc-court-permits-kalshi-users-to-participate-in-2024-election-prediction-market",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "[...] Get crypto analysis, news and updates right to your inbox! Sign up here so you don\u2019t miss a single newsletter\n\ndapp expert logo [...] Important disclaimer:  The information presented on the Dapp.Expert portal is intended solely for informational purposes and does not constitute an investment recommendation or a guide to action in the field of cryptocurrencies."
+        },
+        {
+          "rank": 26,
+          "relevance_score": 0.27,
+          "title": "Are Political Elections Betting Sites Accurate Or Not? Have You ... - Blind",
+          "url": "https://www.teamblind.com/post/are-political-elections-betting-sites-accurate-or-not-have-you-made-a-bet-on-kalshi-predicit-or-polymarket-2ldnm1e0",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "It's worth noting that betting markets are not infallible and have made incorrect predictions in the past."
+        },
+        {
+          "rank": 27,
+          "relevance_score": 0.26,
+          "title": "Kalshi Loss in Maryland Increases Odds for Supreme Court Review",
+          "url": "https://www.sportico.com/law/analysis/2025/kalsh-prediction-markets-maryland-loss-scotus-review-1234865768/",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Central to the debate is the Supremacy Clause found in Article VI, Clause 2 of the U.S."
+        },
+        {
+          "rank": 28,
+          "relevance_score": 0.15,
+          "title": "Fact Sheet: The DC Circuit Court Should Uphold the CFTC's Decision on ...",
+          "url": "https://bettermarkets.org/newsroom/fact-sheet-the-dc-circuit-court-should-uphold-the-cftcs-decision-on-kalshi-and-prohibit-gambling-on-u-s-elections/",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Better Markets\n\n# Newsroom\n\nJanuary 9, 2025\n\n# Fact Sheet: The DC Circuit Court Should Uphold the CFTC\u2019s Decision on Kalshi and Prohibit Gambling on U.S."
+        },
+        {
+          "rank": 29,
+          "relevance_score": 0.05,
+          "title": "What's In The Cards For CFTC's Election Betting Case - Law360",
+          "url": "https://www.law360.com/articles/1883353/what-s-in-the-cards-for-cftc-s-election-betting-case",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Law360 - The Newswire for Business Lawyers\n\nTry our Advanced Search for more refined results\n\nLaw360\n\n# Law360\n\n## The Practice of Law\n\n# Law360 Pulse\n\n## Business of Law\n\n# Law360 Authority\n\n## Deep News & Analysis\n\n## Tax Authority\n\n## Employment Authority\n\n## Insurance Authority\n\n## Real Estate Authority\n\n## Bankruptcy Authority\n\n## Healthcare Authority\n\n# Global\n\n## Law360 UK\n\nLaw360 Tax Authority\n\nExpert Analysis\n\n# What's In The Cards For CFTC's Election Betting Case [...] Email (NOTE: Free email domains not supported)\n\nFirst Name\n\nLast Name\n\nJob Title\n\nPLEASE NOTE: A verification email will be sent to your address before you can access your trial.\n\nPassword (at least 8 characters required)\n\nConfirm Password\n\n###### Show all interests [...] Law360 takes your privacy seriously."
+        },
+        {
+          "rank": 30,
+          "relevance_score": 0.75,
+          "title": "Who will win the Virginia House of Delegates? - Bitcoin.com | Markets",
+          "url": "https://markets.bitcoin.com/prediction/kalshi/who-will-win-the-virginia-house-of-delegates-KXVAHOUSE-25",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "# Prediction Markets\n\nExplore prediction markets for future events\n\nKalshi EventsPolymarket Events\n\n# Who will win the Virginia House of Delegates?\n\nBet Now\n\nElections\n\n### Democratic\n\n$6,811 VOL.\n\n90%YES 95\u00a2NO 10\u00a2\n\n### Republican\n\n$205 VOL.\n\n3%YES 9\u00a2NO 97\u00a2\n\n# Rules Summary\n\nIf Democratic wins the Virginia House of Delegates in 2025, then the market resolves to Yes.\n\nNo secondary rules available.\n\n# Timeline and Payout\n\nOpened: Dec 21, 2024, 10:00 AM\n\nCloses: 2026-11-04T15:00:00Z [...] Pays out: 0.5 hours after closing\n\nIf this event occurs, the market will close the following 10am ET."
+        },
+        {
+          "rank": 31,
+          "relevance_score": 0.65,
+          "title": "Who will win the Virginia House of Delegates? | Trade on Kalshi",
+          "url": "https://kalshi.com/markets/kxvahouse/virginia-house-of-delegates-election",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Dec 21, 2024\u00b7If Democratic wins the Virginia House of Delegates in 2025, then the market resolves to Yes."
+        },
+        {
+          "rank": 32,
+          "relevance_score": 0.61,
+          "title": "Kalshi - Prediction Market for Trading the Future",
+          "url": "https://kalshi.com/",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Which party will win the House next year?\n\nDemocratic Party\n\n68%\n\nYes\n\n/\n\nNo\n\nYes\n\n$100 \u2192 $\u2013\u2013\n\nNo\n\n$100 \u2192 $\u2013\u2013\n\nRepublican Party\n\n32%\n\nYes\n\n/\n\nNo\n\nYes\n\n$100 \u2192 $\u2013\u2013\n\nNo\n\n$100 \u2192 $\u2013\u2013\n\n$3,654,606\n\nFed decision in September?\n\nCut 25bps\n\n77%\n\nYes\n\n/\n\nNo\n\nYes\n\n$100 \u2192 $\u2013\u2013\n\nNo\n\n$100 \u2192 $\u2013\u2013\n\nFed maintains rate\n\n19%\n\nYes\n\n/\n\nNo\n\nYes\n\n$100 \u2192 $\u2013\u2013\n\nNo\n\n$100 \u2192 $\u2013\u2013\n\n$165,928,121\n\nJulie Felss Masino out as Cracker Barrel CEO this year?\n\n24%\n\nYes\n\n$100 \u2192 $395\n\nNo\n\n$100 \u2192 $128\n\n$69,620 [...] $1,500,845\n\nWhich party will win the most seats in the 2025 Norwegian election?\n\nLabour party\n\n89%\n\nYes\n\n/\n\nNo\n\nYes\n\n$100 \u2192 $\u2013\u2013\n\nNo\n\n$100 \u2192 $\u2013\u2013\n\nProgress party\n\n8%\n\nYes\n\n/\n\nNo\n\nYes\n\n$100 \u2192 $\u2013\u2013\n\nNo\n\n$100 \u2192 $\u2013\u2013\n\n$49,974\n\nTop US Netflix show this week?\n\nMy Life with the Walter Boys\n\n60%\n\nYes\n\n/\n\nNo\n\nYes\n\n$100 \u2192 $\u2013\u2013\n\nNo\n\n$100 \u2192 $\u2013\u2013\n\nHostage: Limited Series\n\n11%\n\nYes\n\n/\n\nNo\n\nYes\n\n$100 \u2192 $\u2013\u2013\n\nNo\n\n$100 \u2192 $\u2013\u2013\n\n$1,295,292\n\u00b7\n\nWeekly\n\nRyder Cup Champion?\n\nUnited States\n\n55%\n\nYes\n\n/\n\nNo\n\nYes\n\n$100 \u2192 $\u2013\u2013 [...] No\n\n$100 \u2192 $\u2013\u2013\n\nEurope\n\n40%\n\nYes\n\n/\n\nNo\n\nYes\n\n$100 \u2192 $\u2013\u2013\n\nNo\n\n$100 \u2192 $\u2013\u2013\n\n$69,654\n\u00b7\n\nAnnually\n\nDemocratic nominee in 2028?\n\nGavin Newsom\n\n31%\n\nYes\n\n/\n\nNo\n\nYes\n\n$100 \u2192 $\u2013\u2013\n\nNo\n\n$100 \u2192 $\u2013\u2013\n\nAlexandria Ocasio-Cortez\n\n11%\n\nYes\n\n/\n\nNo\n\nYes\n\n$100 \u2192 $\u2013\u2013\n\nNo\n\n$100 \u2192 $\u2013\u2013\n\n$18,160,018\n\nLisa Cook Out as Fed Governor this year?\n\n28%\n\nYes\n\n$100 \u2192 $340\n\nNo\n\n$100 \u2192 $134\n\n$785,471\n\nWhen will Mr."
+        },
+        {
+          "rank": 33,
+          "relevance_score": 0.59,
+          "title": "Markets bet on whether the Republican party will win the ...",
+          "url": "https://www.quiverquant.com/news/Markets+bet+on+whether+the+Republican+party+will+win+the+governorship+in+Virginia",
+          "source_type": "official_statement",
+          "reliability": "high",
+          "extracted_fact": "Vance Profile\nQuiver Logo\nQuiver Logo\n\n# Markets bet on whether the Republican party will win the governorship in Virginia\n\nBy: Quiver MarketTracker\n\nQuiver Quantitative Logo\n\nKalshi has reported 5,256 in volume over the last 24 hours on their market for \u201cWill the Republican party win the governorship in Virginia\u201d, making it one of the hottest markets on the platform today."
+        },
+        {
+          "rank": 34,
+          "relevance_score": 0.59,
+          "title": "2025-2026 Kalshi Prediction Market Prices - 270toWin.com",
+          "url": "https://www.270towin.com/2026-governor-election/kalshi-2026-governor-prediction-market-prices",
+          "source_type": "official_statement",
+          "reliability": "high",
+          "extracted_fact": "Follow\n\n# 2025-2026 Kalshi Prediction Market Prices\n\n##### Current as of Map Timestamp\n\nThis is a forecast map based on the Kalshi prediction market odds for the 2025-26 gubernatorial elections.\n\nEvery 15 minutes, the price to buy (the 'ask' price) the Democratic or Republican party in each election market is compared."
+        },
+        {
+          "rank": 35,
+          "relevance_score": 0.55,
+          "title": "Which party will win the House next year? | Trade on Kalshi",
+          "url": "https://kalshi.com/markets/controlh",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "If the Democratic has won control of the House in 2026, then the market resolves to Yes."
+        },
+        {
+          "rank": 36,
+          "relevance_score": 0.5,
+          "title": "Kalshi 2026 Senate Prediction Market Prices - 270toWin.com",
+          "url": "https://www.270towin.com/2026-senate-election/kalshi-2026-senate-prediction-market-prices",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "50-50 tie decided by Vice-President (VP) [...] The Toss-Up tan color is only used where neither party has market odds implying a 55% or higher chance of winning."
+        },
+        {
+          "rank": 37,
+          "relevance_score": 0.43,
+          "title": "Who will win the House, Senate, and Presidency? | Trade on Kalshi",
+          "url": "https://kalshi.com/markets/power",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "If the Republican party wins the House, the Republican party wins the Senate, and the Republican party wins the Presidency in the 2028 election, then the."
+        },
+        {
+          "rank": 38,
+          "relevance_score": 0.35,
+          "title": "Who will win the Attorney General race in Virginia?",
+          "url": "https://markets.bitcoin.com/prediction/kalshi/who-will-win-the-attorney-general-race-in-virginia-KXATTYGENVA-25",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "### \n\n### Markets\n\n### Trade\n\n### Insights\n\n### Socials\n\n## \n\n# Top Coins\n\n\u00a9 2025 Saint Bitts LLC."
+        },
+        {
+          "rank": 39,
+          "relevance_score": 0.22,
+          "title": "Markets Bet On Whether Democrats Will Win The House Race For ...",
+          "url": "https://www.barchart.com/story/news/34363618/markets-bet-on-whether-democrats-will-win-the-house-race-for-va-11",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Volume reflects consolidated markets."
+        },
+        {
+          "rank": 40,
+          "relevance_score": 0.52,
+          "title": "Virginia House Democrats: Building a Better Virginia",
+          "url": "https://vahousedems.org/",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "We are dedicated to creating a better future for Virginia families by guiding efforts to elect Democratic leaders of character, integrity, ability,."
+        },
+        {
+          "rank": 41,
+          "relevance_score": 0.46,
+          "title": "Who will win the Virginia House of Delegates? | Trade on Kalshi",
+          "url": "https://kalshi.com/markets/kxvahouse/virginia-house-of-delegates-election",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Dec 21, 2024\u00b7If Democratic wins the Virginia House of Delegates in 2025, then the market resolves to Yes."
+        },
+        {
+          "rank": 42,
+          "relevance_score": 0.4,
+          "title": "Virginia House Democratic Caucus Statement on ...",
+          "url": "https://vahousedems.org/2025/07/10/virginia-house-democratic-caucus-statement-on-virginia-dropping-in-cnbcs-top-states-for-business-ranking/",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "\u201cWhile Democrats are fighting to bring jobs and investment into Virginia, Republicans are cheering on Trump's reckless cuts to federal agencies."
+        },
+        {
+          "rank": 43,
+          "relevance_score": 0.38,
+          "title": "VA House Democrats (@VAHouseDems) / X",
+          "url": "https://x.com/vahousedems?lang=en",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Official account of the Virginia House Democratic Caucus."
+        },
+        {
+          "rank": 44,
+          "relevance_score": 0.19,
+          "title": "Press Releases and Announcements Archives",
+          "url": "https://vademocrats.org/press-releases/",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "The latest news from Virginia Democrats."
+        },
+        {
+          "rank": 45,
+          "relevance_score": 0.13,
+          "title": "New House leaders from Virginia get sworn in",
+          "url": "https://www.youtube.com/watch?v=Ow36idLt3zk",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "The new house leaders include some from Virginia."
+        },
+        {
+          "rank": 46,
+          "relevance_score": 0.11,
+          "title": "Democrat Suhas Subramanyam wins Virginia District 10 ...",
+          "url": "https://www.fox5dc.com/news/democrat-suhas-subramanyam-wins-virginia-district-10-house-race-ap-calls",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Voters in Virginia's 10th district will send someone new to the House of Representatives on Election Day."
+        },
+        {
+          "rank": 47,
+          "relevance_score": 0.05,
+          "title": "Suhas Subramanyam declares victory in Virginia's 10th ...",
+          "url": "https://www.youtube.com/watch?v=5YDVcVhfCTI",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Suhas Subramanyam declares victory over Mike Clancy in Virginia's 10th Congressional District seat."
+        },
+        {
+          "rank": 48,
+          "relevance_score": 0.05,
+          "title": "Tone of Va.'s 10th Congressional District race sharpens in ...",
+          "url": "https://www.washingtonpost.com/dc-md-va/2024/10/29/subramanyam-clancy-virginia-10th-district/",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Suhas Subramanyam, the Democrat vying for a competitive congressional seat in Virginia's 10th District, has touted his record as a volunteer."
+        },
+        {
+          "rank": 49,
+          "relevance_score": 0.03,
+          "title": "Democrat Suhas Subramanyam defeats Mike Clancy ...",
+          "url": "https://www.wusa9.com/article/news/politics/ap-suhas-subramanyam-defeats-mike-clancy-keeping-virginias-10th-district-democratic-hands/65-b664e057-2c73-494b-ad5a-7cf3a6c80507",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Subramanyam had received endorsements from both incumbent Democrat Rep."
+        }
+      ]
+    },
+    {
+      "id": "6466ab02-172a-4243-94ea-a278e6ad58f1",
+      "event_id": "2fed4916-96b6-4525-853f-15ee7af123d6",
+      "event_key": "kalshi_KXVIRGINIAHOUSEDEMS-25NOV04-A72",
+      "event_title": "Will the Democrats win above 72 seats in the 2025 Virginia House of Delegates election?",
+      "event_description": "Title: Will the Democrats win above 72 seats in the 2025 Virginia House of Delegates election?\nDescription: No description\nTicker: KXVIRGINIAHOUSEDEMS-25NOV04-A72\nStatus: initialized\nClose Time: 2026-11-04T15:00:00Z\nCategory: \nSubcategory: Unknown\nCurrent Price: 0.000 - 0.000\nVolume: 0",
+      "probability": 0.9,
+      "horizon_hours": 168,
+      "rationale": "Based on analysis of 36 evidence items with an overall strength of 86.9%:\n        \n        \u2022 6 high-reliability sources provide strong supporting evidence\n        \u2022 Evidence covers multiple aspects of the event with consistent patterns\n        \u2022 Source diversity includes news articles, official statements, and expert opinions\n        \u2022 Confidence level reflects the quality and quantity of available evidence\n        \n        The prediction is based on the most reliable and relevant evidence available at the time of analysis.",
+      "created_at": "2025-09-08T02:26:46.899088",
+      "evidence_sources": [
+        {
+          "rank": 1,
+          "relevance_score": 0.64,
+          "title": "2025 Virginia House of Delegates election - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2025_Virginia_House_of_Delegates_election",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "The 2025 Virginia House of Delegates election is scheduled to be held on Tuesday, November 4, 2025 to elect members of the 164th Virginia General Assembly."
+        },
+        {
+          "rank": 2,
+          "relevance_score": 0.53,
+          "title": "Kalshi v. CFTC Challenges Contracts on Political Events | Brownstein",
+          "url": "https://www.bhfs.com/insight/kalshi-v-cftc-challenges-contracts-on-political-events/",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "On June 12, 2023, Kalshi self-certified that its planned event contracts complied with applicable federal statutory and regulatory requirements."
+        },
+        {
+          "rank": 3,
+          "relevance_score": 0.36,
+          "title": "Who will win the Virginia House of Delegates? - Bitcoin.com | Markets",
+          "url": "https://markets.bitcoin.com/prediction/kalshi/who-will-win-the-virginia-house-of-delegates-KXVAHOUSE-25",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Closes: 2026-11-04T15:00:00Z\n\nPays out: 0.5 hours after closing\n\nIf this event occurs, the market will close the following 10am ET."
+        },
+        {
+          "rank": 4,
+          "relevance_score": 0.31,
+          "title": "Virginia House Democrats: Building a Better Virginia",
+          "url": "https://vahousedems.org/",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "We are dedicated to creating a better future for Virginia families by guiding efforts to elect Democratic leaders of character, integrity, ability,\u00a0...Meet Our Caucus Members I...\u00b7Contact Us\u00b7About Us\u00b7News."
+        },
+        {
+          "rank": 5,
+          "relevance_score": 0.3,
+          "title": "Kalshi Sports Contract Fight Heads to Court of Appeals - MSN",
+          "url": "http://www.msn.com/en-us/news/crime/kalshi-sports-contract-fight-heads-to-court-of-appeals-is-supreme-court-next/ar-AA1K6XLD?apiversion=v2&noservercache=1&domshim=1&renderwebcomponents=1&wcseo=1&batchservertelemetry=1&noservertelemetry=1",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Kalshi has appealed its legal defeat in Maryland, and the appellate case isalready scheduled in the US Court of Appeals for the Fourth Circuit (CA4)."
+        },
+        {
+          "rank": 6,
+          "relevance_score": 0.27,
+          "title": "House of Delegates - Virginia Department of Elections",
+          "url": "https://www.elections.virginia.gov/casting-a-ballot/candidate-list/november-4-2025-gen-elect-house-of-del/",
+          "source_type": "official_statement",
+          "reliability": "high",
+          "extracted_fact": "| Member, House of Delegates | 72 | Republican | R."
+        },
+        {
+          "rank": 7,
+          "relevance_score": 0.2,
+          "title": "Meet Our Caucus Members I Virginia House Democrats",
+          "url": "https://vahousedems.org/our-members/",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Meet our members and find out more about the Democrats working to build a better Virginia in the House of Delegates."
         },
         {
           "rank": 8,
-          "relevance_score": 0.28,
-          "title": "Kalshi - Prediction Market for Trading the Future",
-          "url": "https://kalshi.com/blog/different-types-prediction-markets",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: latest news about market_kalshi_965af747_1757308753"
+          "relevance_score": 0.16,
+          "title": "Governor's office responds to Senate Dems' 'illogical' rejection of ...",
+          "url": "https://www.cbs19news.com/news/state/governor-s-office-responds-to-senate-dems-illogical-rejection-of-youngkin-appointees/article_3eb3912d-c5c9-5624-88b2-f5b7179b4333.html",
+          "source_type": "official_statement",
+          "reliability": "high",
+          "extracted_fact": "\u201cWhile claiming to care so deeply about Virginia\u2019s prestigious institutions of higher education, your actions have consistently caused harm to the governance and operation of our colleges and universities,\u201d the letter states."
         },
         {
           "rank": 9,
-          "relevance_score": 0.28,
-          "title": "What is Kalshi?",
-          "url": "https://help.kalshi.com/kalshi-101/what-is-kalshi",
+          "relevance_score": 0.13,
+          "title": "Crypto PAC-Backed Candidate Wins Virginia Democratic Primary",
+          "url": "https://cointelegraph.com/news/crypto-backed-candidate-virginia-primary",
           "source_type": "news_article",
           "reliability": "low",
-          "extracted_fact": "Recent developments related to: latest news about market_kalshi_965af747_1757308753"
+          "extracted_fact": "Cointelegraph\n\n# Crypto PAC-backed candidate wins Virginia primary for vacant House seat\n\nProtect Progress, an affiliate of the cryptocurrency-backed Fairshake PAC, spent more than $1 million on media buys to support Democratic candidate James Walkinshaw.\n\nCrypto PAC-backed candidate wins Virginia primary for vacant House seat [...] James Walkinshaw, a Democratic candidate seeking to replace the late Representative Gerry Connolly for Virginia\u2019s 11th Congressional District, won a party primary after a cryptocurrency-backed political action committee (PAC) spent more than $1 million to support his race."
         },
         {
           "rank": 10,
-          "relevance_score": 0.27,
-          "title": "Trade Hourly Market Predictions & Fed Events Powered by Kalshi",
-          "url": "https://www.webull.com/trading-investing/prediction-markets?hl=en",
+          "relevance_score": 0.01,
+          "title": "Witness in Worcester double murder arrested by ICE; testimony in ...",
+          "url": "https://www.telegram.com/story/news/crime/2025/07/11/dejan-belnavis-mother-ice-arrest-chasity-zella-nunez/84531290007/",
           "source_type": "news_article",
           "reliability": "low",
-          "extracted_fact": "Recent developments related to: latest news about market_kalshi_965af747_1757308753"
+          "extracted_fact": "# Testimony of key witness in 2024 murder of mother and child in limbo after ICE arrest\n\nPortrait of Brad Petrishen\n\nWORCESTER \u2014 The testimony of a key witness in the double murder of 11-year-old Zella Nun\u0303ez and her mother, Chasity, is in limbo following her arrest on a decade-old deportation order by U.S."
         },
         {
           "rank": 11,
-          "relevance_score": 0.55,
+          "relevance_score": 0.99,
+          "title": "Kalshi found a backdoor to sports gambling, and flung it wide open",
+          "url": "https://www.fastcompany.com/91399289/kalshi-prediction-markets-sports-gambling",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "In other words, Kalshi users would no longer be limited to predicting game results, awards winners, win totals, and end-of-season champions."
+        },
+        {
+          "rank": 12,
+          "relevance_score": 0.99,
+          "title": "Who will win the Virginia House of Delegates? | Trade on Kalshi",
+          "url": "https://kalshi.com/markets/kxvahouse/virginia-house-of-delegates-election",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "Dec 21, 2024\u00b7If Democratic wins the Virginia House of Delegates in 2025, then the market resolves to Yes."
+        },
+        {
+          "rank": 13,
+          "relevance_score": 0.98,
+          "title": "Which party will win the House race for VA-2? | Trade on Kalshi",
+          "url": "https://kalshi.com/markets/houseva2/x",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "If the House member sworn in for VA-2 for the term beginning in 2027 is a member of the Democratic Party, then the market resolves to Yes."
+        },
+        {
+          "rank": 14,
+          "relevance_score": 0.98,
+          "title": "Third Time's The Charm for Gambling Regulators in Kalshi Litigation",
+          "url": "https://www.bhfs.com/insight/third-times-the-charm-for-gambling-regulators-in-kalshi-litigation/",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "Then, on the eve of the 2025 Super Bowl, Kalshi debuted contract offerings on the outcome of sporting contests and now actively trades contracts."
+        },
+        {
+          "rank": 15,
+          "relevance_score": 0.97,
+          "title": "[PDF] E KENYA GAZETTE",
+          "url": "https://archive.gazettes.africa/archive/ke/1994/ke-government-gazette-dated-1994-02-25-no-9.pdf",
+          "source_type": "official_statement",
+          "reliability": "high",
+          "extracted_fact": "Feb 25, 1994\u00b7PENAL LAW S AND PROCEDURFA."
+        },
+        {
+          "rank": 16,
+          "relevance_score": 0.97,
+          "title": "How Kalshi and prediction markets are disrupting sports betting",
+          "url": "https://www.espn.com/espn/betting/story/_/id/45377686/kalshi-prediction-markets-disrupt-sports-betting",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "Seven states have sent cease-and-desist letters to the company in recent months, alleging that its."
+        },
+        {
+          "rank": 17,
+          "relevance_score": 0.96,
           "title": "Prediction market Kalshi raises $185M at $2B valuation \u2014 Report",
           "url": "https://cointelegraph.com/news/prediction-market-kalshi-raises-185m-2b-valuation",
           "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: recent developments market_kalshi_965af747_1757308753"
+          "reliability": "medium",
+          "extracted_fact": "Kalshi, a prediction market and competitor to Polymarket, has reportedly closed a $185 million funding round that values the company at $2 billion."
         },
         {
-          "rank": 12,
-          "relevance_score": 0.38,
-          "title": "How Kalshi and prediction markets are disrupting sports betting",
-          "url": "https://www.espn.com/espn/betting/story/_/id/45377686/kalshi-prediction-markets-disrupt-sports-betting",
+          "rank": 18,
+          "relevance_score": 0.96,
+          "title": "Full text of \"Saharanpur a Gazetteer\" - Internet Archive",
+          "url": "https://archive.org/stream/dli.ministry.22289/30779_djvu.txt",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "The district of Saharanpur batons ta the Meerut divisjou Pounds."
+        },
+        {
+          "rank": 19,
+          "relevance_score": 0.95,
+          "title": "Kalshi valued at $2 billion in latest funding round, CEO says - Reuters",
+          "url": "https://www.reuters.com/technology/kalshi-valued-2-billion-latest-funding-round-ceo-says-2025-06-25/",
+          "source_type": "news_article",
+          "reliability": "high",
+          "extracted_fact": "Kalshi has raised $185 million in a funding round that values the prediction marketplace at $2 billion, its CEO Tarek Mansour said in a post on X on Wednesday."
+        },
+        {
+          "rank": 20,
+          "relevance_score": 0.95,
+          "title": "Why Kalshi's new $2B valuation makes sense - Blockworks",
+          "url": "https://blockworks.co/news/kalshi-2b-valuation-prediction-markets",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "Kalshi raised $185 million in a Series C led by Paradigm."
+        },
+        {
+          "rank": 21,
+          "relevance_score": 0.49,
+          "title": "Who will win the Virginia House of Delegates? | Trade on Kalshi",
+          "url": "https://kalshi.com/markets/kxvahouse/virginia-house-of-delegates-election",
           "source_type": "news_article",
           "reliability": "low",
-          "extracted_fact": "Recent developments related to: recent developments market_kalshi_965af747_1757308753"
+          "extracted_fact": "Dec 21, 2024\u00b7If Democratic wins the Virginia House of Delegates in 2025, then the market resolves to Yes."
         },
         {
-          "rank": 13,
-          "relevance_score": 0.36,
-          "title": "59% of Kalshi Traders Bet Gemini Will Outshine ChatGPT and Grok ...",
-          "url": "https://www.blocmates.com/news-posts/59-of-kalshi-traders-bet-gemini-will-outshine-chatgpt-and-grok-in-2025",
+          "rank": 22,
+          "relevance_score": 0.45,
+          "title": "Markets bet on whether Democrats will win the House race for VA-11",
+          "url": "https://www.quiverquant.com/news/Markets+bet+on+whether+Democrats+will+win+the+House+race+for+VA-11",
           "source_type": "news_article",
           "reliability": "low",
-          "extracted_fact": "Recent developments related to: recent developments market_kalshi_965af747_1757308753"
+          "extracted_fact": "Download our data to use for your own analysis\n\nNancy Pelosi Profile\nMarjorie Taylor Greene Profile\nJ."
         },
         {
-          "rank": 14,
-          "relevance_score": 0.34,
+          "rank": 23,
+          "relevance_score": 0.29,
+          "title": "Who will win the Virginia House of Delegates? - Bitcoin.com | Markets",
+          "url": "https://markets.bitcoin.com/prediction/kalshi/who-will-win-the-virginia-house-of-delegates-KXVAHOUSE-25",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Closes: 2026-11-04T15:00:00Z\n\nPays out: 0.5 hours after closing\n\nIf this event occurs, the market will close the following 10am ET."
+        },
+        {
+          "rank": 24,
+          "relevance_score": 0.05,
+          "title": "From The New York Times Opinion Section Two Democratic ...",
+          "url": "https://www.facebook.com/nytimes/posts/from-the-new-york-times-opinion-section-two-democratic-candidates-for-governor-o/1161693779146417/",
+          "source_type": "official_statement",
+          "reliability": "high",
+          "extracted_fact": "From The New York Times Opinion Section Two Democratic candidates for governor \u2014 one in Virginia, one in New Jersey \u2014 stand as an emerging."
+        },
+        {
+          "rank": 25,
+          "relevance_score": 0.61,
           "title": "Kalshi - Prediction Market for Trading the Future",
           "url": "https://kalshi.com/",
           "source_type": "news_article",
           "reliability": "low",
-          "extracted_fact": "Recent developments related to: recent developments market_kalshi_965af747_1757308753"
+          "extracted_fact": "Which party will win the House next year?\n\nDemocratic Party\n\n68%\n\nYes\n\n/\n\nNo\n\nYes\n\n$100 \u2192 $\u2013\u2013\n\nNo\n\n$100 \u2192 $\u2013\u2013\n\nRepublican Party\n\n32%\n\nYes\n\n/\n\nNo\n\nYes\n\n$100 \u2192 $\u2013\u2013\n\nNo\n\n$100 \u2192 $\u2013\u2013\n\n$3,654,606\n\nFed decision in September?\n\nCut 25bps\n\n77%\n\nYes\n\n/\n\nNo\n\nYes\n\n$100 \u2192 $\u2013\u2013\n\nNo\n\n$100 \u2192 $\u2013\u2013\n\nFed maintains rate\n\n19%\n\nYes\n\n/\n\nNo\n\nYes\n\n$100 \u2192 $\u2013\u2013\n\nNo\n\n$100 \u2192 $\u2013\u2013\n\n$165,928,121\n\nJulie Felss Masino out as Cracker Barrel CEO this year?\n\n24%\n\nYes\n\n$100 \u2192 $395\n\nNo\n\n$100 \u2192 $128\n\n$69,620 [...] $1,500,845\n\nWhich party will win the most seats in the 2025 Norwegian election?\n\nLabour party\n\n89%\n\nYes\n\n/\n\nNo\n\nYes\n\n$100 \u2192 $\u2013\u2013\n\nNo\n\n$100 \u2192 $\u2013\u2013\n\nProgress party\n\n8%\n\nYes\n\n/\n\nNo\n\nYes\n\n$100 \u2192 $\u2013\u2013\n\nNo\n\n$100 \u2192 $\u2013\u2013\n\n$49,974\n\nTop US Netflix show this week?\n\nMy Life with the Walter Boys\n\n60%\n\nYes\n\n/\n\nNo\n\nYes\n\n$100 \u2192 $\u2013\u2013\n\nNo\n\n$100 \u2192 $\u2013\u2013\n\nHostage: Limited Series\n\n11%\n\nYes\n\n/\n\nNo\n\nYes\n\n$100 \u2192 $\u2013\u2013\n\nNo\n\n$100 \u2192 $\u2013\u2013\n\n$1,295,292\n\u00b7\n\nWeekly\n\nRyder Cup Champion?\n\nUnited States\n\n55%\n\nYes\n\n/\n\nNo\n\nYes\n\n$100 \u2192 $\u2013\u2013 [...] No\n\n$100 \u2192 $\u2013\u2013\n\nEurope\n\n40%\n\nYes\n\n/\n\nNo\n\nYes\n\n$100 \u2192 $\u2013\u2013\n\nNo\n\n$100 \u2192 $\u2013\u2013\n\n$69,654\n\u00b7\n\nAnnually\n\nDemocratic nominee in 2028?\n\nGavin Newsom\n\n31%\n\nYes\n\n/\n\nNo\n\nYes\n\n$100 \u2192 $\u2013\u2013\n\nNo\n\n$100 \u2192 $\u2013\u2013\n\nAlexandria Ocasio-Cortez\n\n11%\n\nYes\n\n/\n\nNo\n\nYes\n\n$100 \u2192 $\u2013\u2013\n\nNo\n\n$100 \u2192 $\u2013\u2013\n\n$18,160,018\n\nLisa Cook Out as Fed Governor this year?\n\n28%\n\nYes\n\n$100 \u2192 $340\n\nNo\n\n$100 \u2192 $134\n\n$785,471\n\nWhen will Mr."
         },
         {
-          "rank": 15,
-          "relevance_score": 0.34,
-          "title": "Markets bet on whether inflation in 2025 will be above, below, or ...",
-          "url": "https://www.quiverquant.com/news/Markets+bet+on+whether+inflation+in+2025+will+be+above%2C+below%2C+or+between+certain+thresholds",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: recent developments market_kalshi_965af747_1757308753"
-        },
-        {
-          "rank": 16,
-          "relevance_score": 0.34,
-          "title": "S&P close price end of 2025? | Trade on Kalshi",
-          "url": "https://kalshi.com/markets/kxinxy",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: recent developments market_kalshi_965af747_1757308753"
-        },
-        {
-          "rank": 17,
-          "relevance_score": 0.29,
-          "title": "The Funding: Why crypto VCs are betting on prediction markets now",
-          "url": "https://www.theblock.co/post/369737/why-crypto-vcs-betting-on-prediction-markets-funding",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: recent developments market_kalshi_965af747_1757308753"
-        },
-        {
-          "rank": 18,
-          "relevance_score": 0.28,
-          "title": "The Golden Age of Prediction Markets: Polymarket Rages, Kalshi ...",
-          "url": "https://onekey.so/blog/Learn/the-golden-age-of-prediction-markets-polymarket-rages-kalshi-arrives",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: recent developments market_kalshi_965af747_1757308753"
-        },
-        {
-          "rank": 19,
-          "relevance_score": 0.26,
-          "title": "Trade Hourly Market Predictions & Fed Events Powered by Kalshi",
+          "rank": 26,
+          "relevance_score": 0.42,
+          "title": "Trade Hourly Market Predictions & Fed Events ...",
           "url": "https://www.webull.com/trading-investing/events-trading/kalshi",
           "source_type": "news_article",
           "reliability": "low",
-          "extracted_fact": "Recent developments related to: recent developments market_kalshi_965af747_1757308753"
-        },
-        {
-          "rank": 20,
-          "relevance_score": 0.25,
-          "title": "Kalshi found a backdoor to sports gambling, and flung it wide open",
-          "url": "https://www.fastcompany.com/91399289/kalshi-prediction-markets-sports-gambling",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: recent developments market_kalshi_965af747_1757308753"
-        },
-        {
-          "rank": 21,
-          "relevance_score": 0.47,
-          "title": "Kalshi eyes a new form of a prediction market contract that ...",
-          "url": "https://seekingalpha.com/news/4491470-kalshi-eyes-a-new-form-of-a-prediction-market-contract-that-resembles-a-traditional-sports-betting-parlay",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: expert analysis market_kalshi_965af747_1757308753"
-        },
-        {
-          "rank": 22,
-          "relevance_score": 0.43,
-          "title": "What are prediction markets?",
-          "url": "https://help.kalshi.com/kalshi-101/what-are-prediction-markets",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: expert analysis market_kalshi_965af747_1757308753"
-        },
-        {
-          "rank": 23,
-          "relevance_score": 0.43,
-          "title": "How To WIN On Kalshi \u2014 Top Strategies For Profiting From ...",
-          "url": "https://5reasonstovisit.com/travel/how-to-win-on-kalshi",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: expert analysis market_kalshi_965af747_1757308753"
-        },
-        {
-          "rank": 24,
-          "relevance_score": 0.41,
-          "title": "When AI meets the prediction market: Kalshi trading ...",
-          "url": "https://www.panewslab.com/en/articles/7v5h2okw",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: expert analysis market_kalshi_965af747_1757308753"
-        },
-        {
-          "rank": 25,
-          "relevance_score": 0.4,
-          "title": "Kalshi - Prediction Market for Trading the Future",
-          "url": "https://kalshi.com/",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: expert analysis market_kalshi_965af747_1757308753"
-        },
-        {
-          "rank": 26,
-          "relevance_score": 0.37,
-          "title": "What is Kalshi and how do prediction markets work? - Yahoo",
-          "url": "https://www.yahoo.com/news/articles/kalshi-prediction-markets-181600634.html",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: expert analysis market_kalshi_965af747_1757308753"
+          "extracted_fact": "Kalshi is the first CFTC regulated exchange with prediction markets \u2013 giving traders access to a unique product that allows for precise risk management around intraday market movements."
         },
         {
           "rank": 27,
-          "relevance_score": 0.34,
-          "title": "Kalshi Volume Report: Tennis, Baseball, And Hot Dog Eating ...",
-          "url": "https://nexteventhorizon.substack.com/p/kalshi-volume-report-july-6",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: expert analysis market_kalshi_965af747_1757308753"
-        },
-        {
-          "rank": 28,
-          "relevance_score": 0.32,
-          "title": "Kalshi Volume Report: Preseason NFL Betting Already A Top-10 ...",
-          "url": "https://nexteventhorizon.substack.com/p/kalshi-volume-report-preseason-nfl",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: expert analysis market_kalshi_965af747_1757308753"
-        },
-        {
-          "rank": 29,
-          "relevance_score": 0.29,
-          "title": "How Kalshi and prediction markets are disrupting sports ...",
-          "url": "https://www.espn.com/espn/betting/story/_/id/45377686/kalshi-prediction-markets-disrupt-sports-betting",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: expert analysis market_kalshi_965af747_1757308753"
-        },
-        {
-          "rank": 30,
-          "relevance_score": 0.29,
-          "title": "How Kalshi and Prediction Markets Are Disrupting Sports ...",
-          "url": "https://www.hklaw.com/en/news/intheheadlines/2025/06/how-kalshi-and-prediction-markets-are-disrupting-sports-betting",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: expert analysis market_kalshi_965af747_1757308753"
-        },
-        {
-          "rank": 31,
-          "relevance_score": 0.47,
-          "title": "Kalshi - Prediction Market for Trading the Future",
-          "url": "https://kalshi.com/",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Prediction markets are gaining traction as tools for forecasting future events."
-        },
-        {
-          "rank": 32,
-          "relevance_score": 0.45,
-          "title": "What is Kalshi and how do prediction markets work? - Yahoo",
-          "url": "https://www.yahoo.com/news/articles/kalshi-prediction-markets-181600634.html",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Prediction markets are gaining traction as tools for forecasting future events."
-        },
-        {
-          "rank": 33,
-          "relevance_score": 0.45,
-          "title": "Kalshi Self-Certifies Prediction Markets for Point Spreads, Totals, TD ...",
-          "url": "https://casinobeats.com/2025/08/19/kalshi-set-to-expand-sports-prediction-markets-offering-point-spreads-totals-td-props/",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Prediction markets are gaining traction as tools for forecasting future events."
-        },
-        {
-          "rank": 34,
-          "relevance_score": 0.4,
-          "title": "Prediction Market for Trading the Future - Kalshi",
-          "url": "https://kalshi.com/market-makers",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Prediction markets are gaining traction as tools for forecasting future events."
-        },
-        {
-          "rank": 35,
-          "relevance_score": 0.09,
-          "title": "Weekly Stock Market Update | Edward Jones",
-          "url": "https://www.edwardjones.com/us-en/market-news-insights/stock-market-news/stock-market-weekly-update",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Prediction markets are gaining traction as tools for forecasting future events."
-        },
-        {
-          "rank": 36,
-          "relevance_score": 0.07,
-          "title": "US Markets, Company Earnings, Stock Market Trends, Market News",
-          "url": "https://www.morningstar.com/markets",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Prediction markets are gaining traction as tools for forecasting future events."
-        },
-        {
-          "rank": 37,
-          "relevance_score": 0.06,
-          "title": "Yahoo Finance - Stock Market Live, Quotes, Business & Finance News",
-          "url": "https://finance.yahoo.com/",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Prediction markets are gaining traction as tools for forecasting future events."
-        },
-        {
-          "rank": 38,
-          "relevance_score": 0.06,
-          "title": "June 2025 stock market outlook - Fidelity Investments",
-          "url": "https://www.fidelity.com/learning-center/trading-investing/stock-market-outlook",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Prediction markets are gaining traction as tools for forecasting future events."
-        },
-        {
-          "rank": 39,
-          "relevance_score": 0.05,
-          "title": "Stock Market Data - US Markets, World Markets, and Stock Quotes",
-          "url": "https://www.cnn.com/markets",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Prediction markets are gaining traction as tools for forecasting future events."
-        },
-        {
-          "rank": 40,
-          "relevance_score": 0.04,
-          "title": "U.S. Markets - MarketWatch",
-          "url": "https://www.marketwatch.com/markets/us",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Prediction markets are gaining traction as tools for forecasting future events."
-        },
-        {
-          "rank": 41,
-          "relevance_score": 0.53,
-          "title": "Kalshi, an Online Prediction Market, Will Open Its Bets to Brokerages",
-          "url": "https://www.nytimes.com/2025/01/31/business/dealbook/kalshi-prediction-market-brokerages.html",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: official statements market_kalshi_965af747_1757308753"
-        },
-        {
-          "rank": 42,
-          "relevance_score": 0.53,
-          "title": "[PDF] <date> <Musk/Trump> - Commodity Futures Trading Commission",
-          "url": "https://www.cftc.gov/filings/ptc/ptc06062523298.pdf",
-          "source_type": "official_statement",
-          "reliability": "high",
-          "extracted_fact": "Recent developments related to: official statements market_kalshi_965af747_1757308753"
-        },
-        {
-          "rank": 43,
-          "relevance_score": 0.48,
-          "title": "[PDF] Kalshi Rulebook v1.14 (Position Accountability)",
-          "url": "https://www.cftc.gov/filings/orgrules/rules1114248723.pdf",
-          "source_type": "official_statement",
-          "reliability": "high",
-          "extracted_fact": "Recent developments related to: official statements market_kalshi_965af747_1757308753"
-        },
-        {
-          "rank": 44,
-          "relevance_score": 0.44,
-          "title": "CFTC drops Kalshi election bet case appeal - CNBC",
-          "url": "https://www.cnbc.com/2025/05/05/cftc-kalshi-election-betting-commodities.html",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: official statements market_kalshi_965af747_1757308753"
-        },
-        {
-          "rank": 45,
-          "relevance_score": 0.43,
-          "title": "Kalshi: Federal appeals court allows prediction market to offer US ...",
-          "url": "https://www.cnn.com/2024/10/02/business/appeals-court-allows-kalshi-election-betting",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: official statements market_kalshi_965af747_1757308753"
-        },
-        {
-          "rank": 46,
-          "relevance_score": 0.42,
-          "title": "About Kalshi - Company History & Founders Profile",
+          "relevance_score": 0.64,
+          "title": "Kalshi Kalshi",
           "url": "https://kalshi.com/about",
           "source_type": "news_article",
           "reliability": "low",
-          "extracted_fact": "Recent developments related to: official statements market_kalshi_965af747_1757308753"
-        },
-        {
-          "rank": 47,
-          "relevance_score": 0.42,
-          "title": "The Right to Regulate: Kalshi, Federal Preemption, and the Fight for ...",
-          "url": "https://www.regulatoryoversight.com/2025/07/the-right-to-regulate-kalshi-federal-preemption-and-the-fight-for-state-gaming-authority/",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: official statements market_kalshi_965af747_1757308753"
-        },
-        {
-          "rank": 48,
-          "relevance_score": 0.42,
-          "title": "Kalshi - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Kalshi",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: official statements market_kalshi_965af747_1757308753"
-        },
-        {
-          "rank": 49,
-          "relevance_score": 0.35,
-          "title": "How Kalshi and prediction markets are disrupting sports betting",
-          "url": "https://www.espn.com/espn/betting/story/_/id/45377686/kalshi-prediction-markets-disrupt-sports-betting",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: official statements market_kalshi_965af747_1757308753"
-        },
-        {
-          "rank": 50,
-          "relevance_score": 0.35,
-          "title": "Nevada officials order Kalshi to shut down sports, election markets",
-          "url": "https://subscriber.politicopro.com/article/2025/03/nevada-officials-order-kalshi-to-shut-down-sports-election-markets-00214068",
-          "source_type": "official_statement",
-          "reliability": "high",
-          "extracted_fact": "Recent developments related to: official statements market_kalshi_965af747_1757308753"
-        }
-      ]
-    },
-    {
-      "id": "1451f071-8644-480c-9f66-71268e1bd95c",
-      "event_id": "af7c7a27-b234-430d-9c0f-469752730c9d",
-      "event_key": "market_kalshi_45bb8d5f_1757308753",
-      "event_title": "Will Ripple XRP reach above $2.93 before 12:00 AM ET on Oct 1, 2025?",
-      "event_description": "Title: Will Ripple XRP reach above $2.93 before 12:00 AM ET on Oct 1, 2025?\nDescription: No description\nTicker: KXXRPMAXM-25OCT01-2.93\nStatus: initialized\nClose Time: 2025-10-01T04:00:00Z\nCategory: \nSubcategory: Unknown\nCurrent Price: 0.000 - 0.000\nVolume: 0",
-      "probability": 0.9,
-      "horizon_hours": 168,
-      "rationale": "Based on analysis of 50 evidence items with an overall strength of 84.1%:\n        \n        \u2022 1 high-reliability sources provide strong supporting evidence\n        \u2022 Evidence covers multiple aspects of the event with consistent patterns\n        \u2022 Source diversity includes news articles, official statements, and expert opinions\n        \u2022 Confidence level reflects the quality and quantity of available evidence\n        \n        The prediction is based on the most reliable and relevant evidence available at the time of analysis.",
-      "created_at": "2025-09-08T01:30:18.856547",
-      "evidence_sources": [
-        {
-          "rank": 1,
-          "relevance_score": 0.36,
-          "title": "More Than 80% Of Kalshi Trading Volume Was On Sports Last Week",
-          "url": "https://nexteventhorizon.substack.com/p/more-than-80-percent-of-kalshi-trading-volume-sports",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: latest news about market_kalshi_45bb8d5f_1757308753"
-        },
-        {
-          "rank": 2,
-          "relevance_score": 0.35,
-          "title": "Prediction markets Polymarket and Kalshi are cashing in on \"Trump ...",
-          "url": "https://investinglive.com/news/prediction-markets-polymarket-and-kalshi-are-cashing-in-on-trump-leaving-office-bets-20250903/",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: latest news about market_kalshi_45bb8d5f_1757308753"
-        },
-        {
-          "rank": 3,
-          "relevance_score": 0.32,
-          "title": "dk on X: \"I made a few updates to my @Kalshi research tooling: 1 ...",
-          "url": "https://x.com/dkposts/status/1964484491197505753",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: latest news about market_kalshi_45bb8d5f_1757308753"
-        },
-        {
-          "rank": 4,
-          "relevance_score": 0.31,
-          "title": "Kalshi Volume Report: British Open, MLB, UFC 318 Are Week's Top ...",
-          "url": "https://nexteventhorizon.substack.com/p/kalshi-volume-report-british-open",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: latest news about market_kalshi_45bb8d5f_1757308753"
-        },
-        {
-          "rank": 5,
-          "relevance_score": 0.29,
-          "title": "Kalshi - Prediction Market for Trading the Future",
-          "url": "https://kalshi.com/",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: latest news about market_kalshi_45bb8d5f_1757308753"
-        },
-        {
-          "rank": 6,
-          "relevance_score": 0.28,
-          "title": "Kalshi eyes a new form of a prediction market contract that ...",
-          "url": "https://seekingalpha.com/news/4491470-kalshi-eyes-a-new-form-of-a-prediction-market-contract-that-resembles-a-traditional-sports-betting-parlay",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: latest news about market_kalshi_45bb8d5f_1757308753"
-        },
-        {
-          "rank": 7,
-          "relevance_score": 0.28,
-          "title": "Kalshi's 2025 pro football preview",
-          "url": "https://news.kalshi.com/p/kalshi-s-2025-pro-football-preview",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: latest news about market_kalshi_45bb8d5f_1757308753"
-        },
-        {
-          "rank": 8,
-          "relevance_score": 0.27,
-          "title": "Why Polymarket's 20% Risk of Recession This Year Is Worth Watching",
-          "url": "https://www.businessinsider.com/polymarket-kalshi-prediction-markets-recession-economy-trump-tariffs-inflation-forecasting-2025-7",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: latest news about market_kalshi_45bb8d5f_1757308753"
-        },
-        {
-          "rank": 9,
-          "relevance_score": 0.18,
-          "title": "Kalshi (@Kalshi) / X",
-          "url": "https://x.com/kalshi",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: latest news about market_kalshi_45bb8d5f_1757308753"
-        },
-        {
-          "rank": 10,
-          "relevance_score": 0.14,
-          "title": "Kalshi: 1st federally regulated exchange where people can trade on ...",
-          "url": "https://www.ycombinator.com/companies/kalshi",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: latest news about market_kalshi_45bb8d5f_1757308753"
-        },
-        {
-          "rank": 11,
-          "relevance_score": 0.47,
-          "title": "Solana News Today: Kalshi Bets on Solana to Fuel On-Chain ...",
-          "url": "https://www.ainvest.com/news/solana-news-today-kalshi-bets-solana-fuel-chain-trading-revolution-2508/",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: recent developments market_kalshi_45bb8d5f_1757308753"
-        },
-        {
-          "rank": 12,
-          "relevance_score": 0.42,
-          "title": "Judge lets MD regulator enforce sports betting laws against ...",
-          "url": "https://thedailyrecord.com/2025/08/12/kalshi-maryland-gambling-license-ruling/",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: recent developments market_kalshi_45bb8d5f_1757308753"
-        },
-        {
-          "rank": 13,
-          "relevance_score": 0.41,
-          "title": "How Kalshi and prediction markets are disrupting sports betting",
-          "url": "https://www.espn.com/espn/betting/story/_/id/45377686/kalshi-prediction-markets-disrupt-sports-betting",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: recent developments market_kalshi_45bb8d5f_1757308753"
-        },
-        {
-          "rank": 14,
-          "relevance_score": 0.4,
-          "title": "Kalshi Self-Certifies To Offer Football Player Props, Point Spreads ...",
-          "url": "https://sports.yahoo.com/article/kalshi-self-certifies-offer-football-154252194.html",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: recent developments market_kalshi_45bb8d5f_1757308753"
-        },
-        {
-          "rank": 15,
-          "relevance_score": 0.38,
-          "title": "Kalshi Expands Offerings Before Football Season Kicks Off",
-          "url": "https://www.gamblingnews.com/news/kalshi-expands-offerings-before-football-season-kicks-off/",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: recent developments market_kalshi_45bb8d5f_1757308753"
-        },
-        {
-          "rank": 16,
-          "relevance_score": 0.36,
-          "title": "Kalshi eyes a new form of a prediction market contract that ...",
-          "url": "https://seekingalpha.com/news/4491470-kalshi-eyes-a-new-form-of-a-prediction-market-contract-that-resembles-a-traditional-sports-betting-parlay",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: recent developments market_kalshi_45bb8d5f_1757308753"
-        },
-        {
-          "rank": 17,
-          "relevance_score": 0.33,
-          "title": "The Funding: Why crypto VCs are betting on prediction markets now",
-          "url": "https://www.theblock.co/post/369737/why-crypto-vcs-betting-on-prediction-markets-funding",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: recent developments market_kalshi_45bb8d5f_1757308753"
-        },
-        {
-          "rank": 18,
-          "relevance_score": 0.32,
-          "title": "Kalshi - Prediction Market for Trading the Future",
-          "url": "https://kalshi.com/",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: recent developments market_kalshi_45bb8d5f_1757308753"
-        },
-        {
-          "rank": 19,
-          "relevance_score": 0.31,
-          "title": "Kalshi hires crypto influencer John Wang with prediction market ...",
-          "url": "https://www.theblock.co/post/368121/kalshi-hires-crypto-influencer-john-wang-with-prediction-market-competition-poised-to-intensify",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: recent developments market_kalshi_45bb8d5f_1757308753"
-        },
-        {
-          "rank": 20,
-          "relevance_score": 0.25,
-          "title": "Kalshi found a backdoor to sports gambling, and flung it wide open",
-          "url": "https://www.fastcompany.com/91399289/kalshi-prediction-markets-sports-gambling",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: recent developments market_kalshi_45bb8d5f_1757308753"
-        },
-        {
-          "rank": 21,
-          "relevance_score": 0.47,
-          "title": "What are prediction markets? | Kalshi Help Center",
-          "url": "https://help.kalshi.com/kalshi-101/what-are-prediction-markets",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: expert analysis market_kalshi_45bb8d5f_1757308753"
-        },
-        {
-          "rank": 22,
-          "relevance_score": 0.43,
-          "title": "How To WIN On Kalshi \u2014 Top Strategies For Profiting From Event ...",
-          "url": "https://5reasonstovisit.com/travel/how-to-win-on-kalshi",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: expert analysis market_kalshi_45bb8d5f_1757308753"
-        },
-        {
-          "rank": 23,
-          "relevance_score": 0.42,
-          "title": "When AI meets the prediction market: Kalshi trading revolution ...",
-          "url": "https://www.panewslab.com/en/articles/7v5h2okw",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: expert analysis market_kalshi_45bb8d5f_1757308753"
-        },
-        {
-          "rank": 24,
-          "relevance_score": 0.4,
-          "title": "Kalshi - Prediction Market for Trading the Future",
-          "url": "https://kalshi.com/",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: expert analysis market_kalshi_45bb8d5f_1757308753"
-        },
-        {
-          "rank": 25,
-          "relevance_score": 0.37,
-          "title": "What is Kalshi and how do prediction markets work? - Yahoo",
-          "url": "https://www.yahoo.com/news/articles/kalshi-prediction-markets-181600634.html",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: expert analysis market_kalshi_45bb8d5f_1757308753"
-        },
-        {
-          "rank": 26,
-          "relevance_score": 0.35,
-          "title": "Kalshi Volume Report: Tennis, Baseball, And Hot Dog Eating ...",
-          "url": "https://nexteventhorizon.substack.com/p/kalshi-volume-report-july-6",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: expert analysis market_kalshi_45bb8d5f_1757308753"
-        },
-        {
-          "rank": 27,
-          "relevance_score": 0.33,
-          "title": "Kalshi Volume Report: Preseason NFL Betting Already A Top-10 ...",
-          "url": "https://nexteventhorizon.substack.com/p/kalshi-volume-report-preseason-nfl",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: expert analysis market_kalshi_45bb8d5f_1757308753"
+          "extracted_fact": "We push each other."
         },
         {
           "rank": 28,
-          "relevance_score": 0.33,
-          "title": "Prediction Market Parlays Are Here: Kalshi Posted Multi-Leg Bet For ...",
-          "url": "https://sports.yahoo.com/article/prediction-market-parlays-kalshi-posted-131201392.html",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: expert analysis market_kalshi_45bb8d5f_1757308753"
-        },
-        {
-          "rank": 29,
-          "relevance_score": 0.32,
-          "title": "Kalshi eyes a new form of a prediction market contract that ...",
-          "url": "https://seekingalpha.com/news/4491470-kalshi-eyes-a-new-form-of-a-prediction-market-contract-that-resembles-a-traditional-sports-betting-parlay",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: expert analysis market_kalshi_45bb8d5f_1757308753"
-        },
-        {
-          "rank": 30,
-          "relevance_score": 0.3,
-          "title": "How Kalshi and prediction markets are disrupting sports betting",
-          "url": "https://www.espn.com/espn/betting/story/_/id/45377686/kalshi-prediction-markets-disrupt-sports-betting",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Recent developments related to: expert analysis market_kalshi_45bb8d5f_1757308753"
-        },
-        {
-          "rank": 31,
-          "relevance_score": 0.48,
-          "title": "Kalshi - Prediction Market for Trading the Future",
-          "url": "https://kalshi.com/",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Prediction markets are gaining traction as tools for forecasting future events."
-        },
-        {
-          "rank": 32,
-          "relevance_score": 0.47,
-          "title": "Prediction market Kalshi expands crypto markets - Solana post",
-          "url": "https://www.ainvest.com/news/prediction-market-kalshi-expands-crypto-markets-solana-post-2508/",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Prediction markets are gaining traction as tools for forecasting future events."
-        },
-        {
-          "rank": 33,
-          "relevance_score": 0.46,
-          "title": "What is Kalshi and how do prediction markets work? - NewsNation",
-          "url": "https://www.newsnationnow.com/business/your-money/kalshi-prediction-markets/",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Prediction markets are gaining traction as tools for forecasting future events."
-        },
-        {
-          "rank": 34,
-          "relevance_score": 0.1,
-          "title": "Weekly Stock Market Update | Edward Jones",
-          "url": "https://www.edwardjones.com/us-en/market-news-insights/stock-market-news/stock-market-weekly-update",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Prediction markets are gaining traction as tools for forecasting future events."
-        },
-        {
-          "rank": 35,
-          "relevance_score": 0.08,
-          "title": "MarketWatch: Stock Market News - Financial News - MarketWatch",
-          "url": "https://www.marketwatch.com/",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Prediction markets are gaining traction as tools for forecasting future events."
-        },
-        {
-          "rank": 36,
-          "relevance_score": 0.08,
-          "title": "Yahoo Finance - Stock Market Live, Quotes, Business & Finance News",
-          "url": "https://finance.yahoo.com/",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Prediction markets are gaining traction as tools for forecasting future events."
-        },
-        {
-          "rank": 37,
-          "relevance_score": 0.07,
-          "title": "Weekly Trader's Stock Market Outlook | Charles Schwab",
-          "url": "https://www.schwab.com/learn/story/weekly-traders-outlook",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Prediction markets are gaining traction as tools for forecasting future events."
-        },
-        {
-          "rank": 38,
-          "relevance_score": 0.05,
-          "title": "Stock Market Today: Stock Market News And Analysis",
-          "url": "https://www.investors.com/news/stock-market-today-stock-market-news/",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Prediction markets are gaining traction as tools for forecasting future events."
-        },
-        {
-          "rank": 39,
-          "relevance_score": 0.05,
-          "title": "Stock Market Data - US Markets, World Markets, and Stock Quotes",
-          "url": "https://www.cnn.com/markets",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Prediction markets are gaining traction as tools for forecasting future events."
-        },
-        {
-          "rank": 40,
-          "relevance_score": 0.05,
-          "title": "U.S. Markets - MarketWatch",
-          "url": "https://www.marketwatch.com/markets/us",
-          "source_type": "news_article",
-          "reliability": "low",
-          "extracted_fact": "Prediction markets are gaining traction as tools for forecasting future events."
-        },
-        {
-          "rank": 41,
-          "relevance_score": 0.99,
+          "relevance_score": 0.53,
           "title": "Wikipedia Kalshi - Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Kalshi",
           "source_type": "news_article",
-          "reliability": "medium",
-          "extracted_fact": "Recent developments related to: official statements market_kalshi_45bb8d5f_1757308753"
+          "reliability": "low",
+          "extracted_fact": "\"ultimately commoditize and degrade the integrity\" of the electoral process."
         },
         {
-          "rank": 42,
-          "relevance_score": 0.99,
-          "title": "Quick Start: Market Data - API Documentation - docs.kalshi.com",
-          "url": "https://docs.kalshi.com/getting_started/quick_start_market_data",
+          "rank": 29,
+          "relevance_score": 0.45,
+          "title": "Who will win the Virginia House of Delegates? | Trade on Kalshi",
+          "url": "https://kalshi.com/markets/kxvahouse/virginia-house-of-delegates-election",
           "source_type": "news_article",
-          "reliability": "medium",
-          "extracted_fact": "Recent developments related to: official statements market_kalshi_45bb8d5f_1757308753"
+          "reliability": "low",
+          "extracted_fact": "Dec 21, 2024\u00b7If Democratic wins the Virginia House of Delegates in 2025, then the market resolves to Yes."
         },
         {
-          "rank": 43,
-          "relevance_score": 0.98,
-          "title": "Bloomberg Kalshi Pulls Announcement of Tie Up With Musk's xAI Hours After Touting Deal - Bloomberg",
-          "url": "https://www.bloomberg.com/news/articles/2025-05-20/kalshi-pulls-announcement-of-xai-tie-up-hours-after-touting-deal",
+          "rank": 30,
+          "relevance_score": 0.39,
+          "title": "Which party will win the House next year? | Trade on Kalshi",
+          "url": "https://kalshi.com/markets/controlh",
           "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Victory will be determined by the party identification of the Speaker of the House and the President pro tempore of the Senate on February 1, 2027."
+        },
+        {
+          "rank": 31,
+          "relevance_score": 0.35,
+          "title": "Congress.gov KALSHI, INC. | Congressional Record Index | Congress.gov | Library of Congress",
+          "url": "https://www.congress.gov/congressional-record/congressional-record-index/118th-congress/2nd-session/kalshi-inc/1921069",
+          "source_type": "official_statement",
           "reliability": "high",
-          "extracted_fact": "Recent developments related to: official statements market_kalshi_45bb8d5f_1757308753"
+          "extracted_fact": "The Congressional Record Index lets you use keywords to search or browse the official record of debates of the U.S."
         },
         {
-          "rank": 44,
-          "relevance_score": 0.98,
+          "rank": 32,
+          "relevance_score": 0.32,
+          "title": "Brownstein Hyatt Farber Schreck Kalshi v. CFTC Challenges Contracts on Political Events | Brownstein ...",
+          "url": "https://www.bhfs.com/insights/alerts-articles/2025/kalshi-v-cftc-challenges-contracts-on-political-events",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "On June 12, 2023, Kalshi self-certified that its planned event contracts complied with applicable federal statutory and regulatory requirements."
+        },
+        {
+          "rank": 33,
+          "relevance_score": 0.31,
+          "title": "Crunchbase Kalshi Stock Price, Funding, Valuation, Revenue & Financial Statements",
+          "url": "https://www.cbinsights.com/company/kalshi/financials",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "| Round | Series B | Series A |\n --- \n| Funding Date | $XXM | $XXM |\n| Pre-Money Valuation | $XXM | $XXM |\n| Post-Money Valuation | $XXM | $XXM |\n| Amount Raised | $XXM | $XXM |\n| Shares Authorized |  |  |\n| Issuance Price |  |  |\n| Dividend Rate |  |  |\n| Liquidation Preferences |  |  |\n| Liquidation Price |  |  |\n| Participation |  |  |\n| Conversion Price |  |  |\n| Anti Dilution |  |  |\n| General Voting | $XXM | $XXM |\n| Board Voting | $XXM | $XXM |\n| Par Value |  |  | [...] |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |\n ---  ---  ---  ---  ---  ---  ---  --- |\n| Round | Funding Date | Pre-Money Valuation | Post-Money Valuation | Amount Raised | Shares Authorized | Issuance Price | Dividend Rate | Liquidation Preferences | Liquidation Price | Participation | Conversion Price | Anti Dilution | General Voting | Board Voting | Par Value |\n| Series B | $XXM | $XXM | $XXM | $XXM |  |  |  |  |  |  |  |  | $XXM | $XXM |  | [...] | Revenue | 0  FY undefined | 0  FY undefined | 0  FY undefined | 0  FY undefined | 0  FY undefined |\n| Sources | 5 | 10 | 10 | 10 | 10 |."
+        },
+        {
+          "rank": 34,
+          "relevance_score": 0.29,
+          "title": "Kalshi How is Kalshi regulated? | Kalshi Help Center",
+          "url": "https://help.kalshi.com/kalshi-101/how-is-kalshi-regulated",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Kalshi is regulated by the Commodity Futures Trading Commission (CFTC) \u2013 an independent agency of the US government that has regulated US derivatives markets since 1974 and is overseen by Congress."
+        },
+        {
+          "rank": 35,
+          "relevance_score": 0.23,
           "title": "Kalshi Kalshi - Prediction Market for Trading the Future",
           "url": "https://kalshi.com/",
           "source_type": "news_article",
-          "reliability": "medium",
-          "extracted_fact": "Recent developments related to: official statements market_kalshi_45bb8d5f_1757308753"
+          "reliability": "low",
+          "extracted_fact": "Which party will win the House next year?\n\nDemocratic Party\n\n68%\n\nYes\n\n/\n\nNo\n\nYes\n\n$100 \u2192 $\u2013\u2013\n\nNo\n\n$100 \u2192 $\u2013\u2013\n\nRepublican Party\n\n32%\n\nYes\n\n/\n\nNo\n\nYes\n\n$100 \u2192 $\u2013\u2013\n\nNo\n\n$100 \u2192 $\u2013\u2013\n\n$3,654,606\n\nFed decision in September?\n\nCut 25bps\n\n77%\n\nYes\n\n/\n\nNo\n\nYes\n\n$100 \u2192 $\u2013\u2013\n\nNo\n\n$100 \u2192 $\u2013\u2013\n\nFed maintains rate\n\n19%\n\nYes\n\n/\n\nNo\n\nYes\n\n$100 \u2192 $\u2013\u2013\n\nNo\n\n$100 \u2192 $\u2013\u2013\n\n$165,928,121\n\nJulie Felss Masino out as Cracker Barrel CEO this year?\n\n24%\n\nYes\n\n$100 \u2192 $395\n\nNo\n\n$100 \u2192 $128\n\n$69,620 [...] No\n\n$100 \u2192 $\u2013\u2013\n\nEurope\n\n40%\n\nYes\n\n/\n\nNo\n\nYes\n\n$100 \u2192 $\u2013\u2013\n\nNo\n\n$100 \u2192 $\u2013\u2013\n\n$69,654\n\u00b7\n\nAnnually\n\nDemocratic nominee in 2028?\n\nGavin Newsom\n\n31%\n\nYes\n\n/\n\nNo\n\nYes\n\n$100 \u2192 $\u2013\u2013\n\nNo\n\n$100 \u2192 $\u2013\u2013\n\nAlexandria Ocasio-Cortez\n\n11%\n\nYes\n\n/\n\nNo\n\nYes\n\n$100 \u2192 $\u2013\u2013\n\nNo\n\n$100 \u2192 $\u2013\u2013\n\n$18,160,018\n\nLisa Cook Out as Fed Governor this year?\n\n28%\n\nYes\n\n$100 \u2192 $340\n\nNo\n\n$100 \u2192 $134\n\n$785,471\n\nWhen will Mr."
         },
         {
-          "rank": 45,
-          "relevance_score": 0.97,
-          "title": "Kalshi Market Maker Program | Kalshi Help Center",
-          "url": "https://help.kalshi.com/markets/market-maker-program",
-          "source_type": "news_article",
-          "reliability": "medium",
-          "extracted_fact": "Recent developments related to: official statements market_kalshi_45bb8d5f_1757308753"
-        },
-        {
-          "rank": 46,
-          "relevance_score": 0.96,
-          "title": "NYTimes Kalshi, an Online Prediction Market, Will Open Up to Brokerages - The New York Times",
-          "url": "https://www.nytimes.com/2025/01/31/business/dealbook/kalshi-prediction-market-brokerages.html",
-          "source_type": "news_article",
-          "reliability": "medium",
-          "extracted_fact": "Recent developments related to: official statements market_kalshi_45bb8d5f_1757308753"
-        },
-        {
-          "rank": 47,
-          "relevance_score": 0.96,
-          "title": "Kalshi API | Kalshi Help Center",
-          "url": "https://help.kalshi.com/kalshi-api",
-          "source_type": "news_article",
-          "reliability": "medium",
-          "extracted_fact": "Recent developments related to: official statements market_kalshi_45bb8d5f_1757308753"
-        },
-        {
-          "rank": 48,
-          "relevance_score": 0.96,
+          "rank": 36,
+          "relevance_score": 0.21,
           "title": "Kalshi Kalshi",
-          "url": "https://kalshi.com/market-makers",
+          "url": "https://shop.kalshi.com/",
           "source_type": "news_article",
-          "reliability": "medium",
-          "extracted_fact": "Recent developments related to: official statements market_kalshi_45bb8d5f_1757308753"
-        },
-        {
-          "rank": 49,
-          "relevance_score": 0.95,
-          "title": "How is Kalshi regulated? | Kalshi Help Center - help.kalshi.com",
-          "url": "https://help.kalshi.com/kalshi-101/how-is-kalshi-regulated",
-          "source_type": "news_article",
-          "reliability": "medium",
-          "extracted_fact": "Recent developments related to: official statements market_kalshi_45bb8d5f_1757308753"
-        },
-        {
-          "rank": 50,
-          "relevance_score": 0.95,
-          "title": "Y Combinator Kalshi: 1st federally regulated exchange where people can trade on events | Y Combinator",
-          "url": "https://www.ycombinator.com/companies/kalshi",
-          "source_type": "news_article",
-          "reliability": "medium",
-          "extracted_fact": "Recent developments related to: official statements market_kalshi_45bb8d5f_1757308753"
-        }
-      ]
-    },
-    {
-      "id": "c015113e-2da7-424b-aa8a-bdeed8c8c4e6",
-      "event_id": "a3047409-bc6c-4c9e-8d15-ba48c30fcd98",
-      "event_key": "market_kalshi_b78d319e_1757308753",
-      "event_title": "Will Ripple XRP reach above $2.92 before 12:00 AM ET on Oct 1, 2025?",
-      "event_description": "Title: Will Ripple XRP reach above $2.92 before 12:00 AM ET on Oct 1, 2025?\nDescription: No description\nTicker: KXXRPMAXM-25OCT01-2.92\nStatus: initialized\nClose Time: 2025-10-01T04:00:00Z\nCategory: \nSubcategory: Unknown\nCurrent Price: 0.000 - 0.000\nVolume: 0",
-      "probability": 0.75,
-      "horizon_hours": 168,
-      "rationale": "Based on analysis of 4 evidence items with an overall strength of 75.0%:\n        \n        \u2022 0 high-reliability sources provide strong supporting evidence\n        \u2022 Evidence covers multiple aspects of the event with consistent patterns\n        \u2022 Source diversity includes news articles, official statements, and expert opinions\n        \u2022 Confidence level reflects the quality and quantity of available evidence\n        \n        The prediction is based on the most reliable and relevant evidence available at the time of analysis.",
-      "created_at": "2025-09-08T01:25:05.662782",
-      "evidence_sources": [
-        {
-          "rank": 1,
-          "relevance_score": 0.75,
-          "title": "Search Results for: recent news market_kalshi_b78d319e_1757308753",
-          "url": "https://example.com/generic-result",
-          "source_type": "news_article",
-          "reliability": "medium",
-          "extracted_fact": "Recent developments related to: recent news market_kalshi_b78d319e_1757308753"
-        },
-        {
-          "rank": 2,
-          "relevance_score": 0.75,
-          "title": "Search Results for: expert opinions market_kalshi_b78d319e_1757308753",
-          "url": "https://example.com/generic-result",
-          "source_type": "news_article",
-          "reliability": "medium",
-          "extracted_fact": "Recent developments related to: expert opinions market_kalshi_b78d319e_1757308753"
-        },
-        {
-          "rank": 3,
-          "relevance_score": 0.75,
-          "title": "Search Results for: market analysis market_kalshi_b78d319e_1757308753",
-          "url": "https://example.com/generic-result",
-          "source_type": "news_article",
-          "reliability": "medium",
-          "extracted_fact": "Recent developments related to: market analysis market_kalshi_b78d319e_1757308753"
-        },
-        {
-          "rank": 4,
-          "relevance_score": 0.75,
-          "title": "Search Results for: official updates market_kalshi_b78d319e_1757308753",
-          "url": "https://example.com/generic-result",
-          "source_type": "news_article",
-          "reliability": "medium",
-          "extracted_fact": "Recent developments related to: official updates market_kalshi_b78d319e_1757308753"
-        }
-      ]
-    },
-    {
-      "id": "c79c0580-602b-418b-bde8-5ad8cf25b42f",
-      "event_id": "a10940bc-18fe-4d86-af4e-98406db9a9e5",
-      "event_key": "market_kalshi_4d54b481_1757308753",
-      "event_title": "Will Ripple XRP reach above $2.91 before 12:00 AM ET on Oct 1, 2025?",
-      "event_description": "Title: Will Ripple XRP reach above $2.91 before 12:00 AM ET on Oct 1, 2025?\nDescription: No description\nTicker: KXXRPMAXM-25OCT01-2.91\nStatus: initialized\nClose Time: 2025-10-01T04:00:00Z\nCategory: \nSubcategory: Unknown\nCurrent Price: 0.000 - 0.000\nVolume: 0",
-      "probability": 0.75,
-      "horizon_hours": 168,
-      "rationale": "Based on analysis of 4 evidence items with an overall strength of 75.0%:\n        \n        \u2022 0 high-reliability sources provide strong supporting evidence\n        \u2022 Evidence covers multiple aspects of the event with consistent patterns\n        \u2022 Source diversity includes news articles, official statements, and expert opinions\n        \u2022 Confidence level reflects the quality and quantity of available evidence\n        \n        The prediction is based on the most reliable and relevant evidence available at the time of analysis.",
-      "created_at": "2025-09-08T01:25:05.186102",
-      "evidence_sources": [
-        {
-          "rank": 1,
-          "relevance_score": 0.75,
-          "title": "Search Results for: recent news market_kalshi_4d54b481_1757308753",
-          "url": "https://example.com/generic-result",
-          "source_type": "news_article",
-          "reliability": "medium",
-          "extracted_fact": "Recent developments related to: recent news market_kalshi_4d54b481_1757308753"
-        },
-        {
-          "rank": 2,
-          "relevance_score": 0.75,
-          "title": "Search Results for: expert opinions market_kalshi_4d54b481_1757308753",
-          "url": "https://example.com/generic-result",
-          "source_type": "news_article",
-          "reliability": "medium",
-          "extracted_fact": "Recent developments related to: expert opinions market_kalshi_4d54b481_1757308753"
-        },
-        {
-          "rank": 3,
-          "relevance_score": 0.75,
-          "title": "Search Results for: market analysis market_kalshi_4d54b481_1757308753",
-          "url": "https://example.com/generic-result",
-          "source_type": "news_article",
-          "reliability": "medium",
-          "extracted_fact": "Recent developments related to: market analysis market_kalshi_4d54b481_1757308753"
-        },
-        {
-          "rank": 4,
-          "relevance_score": 0.75,
-          "title": "Search Results for: official updates market_kalshi_4d54b481_1757308753",
-          "url": "https://example.com/generic-result",
-          "source_type": "news_article",
-          "reliability": "medium",
-          "extracted_fact": "Recent developments related to: official updates market_kalshi_4d54b481_1757308753"
-        }
-      ]
-    },
-    {
-      "id": "cbb75a55-1180-4227-8b07-2d57465e2bf2",
-      "event_id": "d3ecd8e0-6754-4d95-a2ea-ee38fed6c00c",
-      "event_key": "market_kalshi_6f0c3d8c_1757308753",
-      "event_title": "Will Ripple XRP reach above $2.9 before 12:00 AM ET on Oct 1, 2025?",
-      "event_description": "Title: Will Ripple XRP reach above $2.9 before 12:00 AM ET on Oct 1, 2025?\nDescription: No description\nTicker: KXXRPMAXM-25OCT01-2.9\nStatus: initialized\nClose Time: 2025-10-01T04:00:00Z\nCategory: \nSubcategory: Unknown\nCurrent Price: 0.000 - 0.000\nVolume: 0",
-      "probability": 0.75,
-      "horizon_hours": 168,
-      "rationale": "Based on analysis of 4 evidence items with an overall strength of 75.0%:\n        \n        \u2022 0 high-reliability sources provide strong supporting evidence\n        \u2022 Evidence covers multiple aspects of the event with consistent patterns\n        \u2022 Source diversity includes news articles, official statements, and expert opinions\n        \u2022 Confidence level reflects the quality and quantity of available evidence\n        \n        The prediction is based on the most reliable and relevant evidence available at the time of analysis.",
-      "created_at": "2025-09-08T01:25:04.743756",
-      "evidence_sources": [
-        {
-          "rank": 1,
-          "relevance_score": 0.75,
-          "title": "Search Results for: recent news market_kalshi_6f0c3d8c_1757308753",
-          "url": "https://example.com/generic-result",
-          "source_type": "news_article",
-          "reliability": "medium",
-          "extracted_fact": "Recent developments related to: recent news market_kalshi_6f0c3d8c_1757308753"
-        },
-        {
-          "rank": 2,
-          "relevance_score": 0.75,
-          "title": "Search Results for: expert opinions market_kalshi_6f0c3d8c_1757308753",
-          "url": "https://example.com/generic-result",
-          "source_type": "news_article",
-          "reliability": "medium",
-          "extracted_fact": "Recent developments related to: expert opinions market_kalshi_6f0c3d8c_1757308753"
-        },
-        {
-          "rank": 3,
-          "relevance_score": 0.75,
-          "title": "Search Results for: market analysis market_kalshi_6f0c3d8c_1757308753",
-          "url": "https://example.com/generic-result",
-          "source_type": "news_article",
-          "reliability": "medium",
-          "extracted_fact": "Recent developments related to: market analysis market_kalshi_6f0c3d8c_1757308753"
-        },
-        {
-          "rank": 4,
-          "relevance_score": 0.75,
-          "title": "Search Results for: official updates market_kalshi_6f0c3d8c_1757308753",
-          "url": "https://example.com/generic-result",
-          "source_type": "news_article",
-          "reliability": "medium",
-          "extracted_fact": "Recent developments related to: official updates market_kalshi_6f0c3d8c_1757308753"
-        }
-      ]
-    },
-    {
-      "id": "e897e4eb-3034-448b-b66c-1ec37d4839b3",
-      "event_id": "b8802931-4aa0-488c-96d7-c4fed125d152",
-      "event_key": "market_kalshi_c31913fc_1757308753",
-      "event_title": "Coinbase volume in Q3 2025?",
-      "event_description": "Title: Coinbase volume in Q3 2025?\nDescription: No description\nTicker: KXCBVOLUME-Q3-25-250\nStatus: initialized\nClose Time: 2025-10-31T20:00:00Z\nCategory: \nSubcategory: Unknown\nCurrent Price: 0.000 - 0.000\nVolume: 0",
-      "probability": 0.75,
-      "horizon_hours": 168,
-      "rationale": "Based on analysis of 4 evidence items with an overall strength of 75.0%:\n        \n        \u2022 0 high-reliability sources provide strong supporting evidence\n        \u2022 Evidence covers multiple aspects of the event with consistent patterns\n        \u2022 Source diversity includes news articles, official statements, and expert opinions\n        \u2022 Confidence level reflects the quality and quantity of available evidence\n        \n        The prediction is based on the most reliable and relevant evidence available at the time of analysis.",
-      "created_at": "2025-09-08T01:24:31.368532",
-      "evidence_sources": [
-        {
-          "rank": 1,
-          "relevance_score": 0.75,
-          "title": "Search Results for: recent news market_kalshi_c31913fc_1757308753",
-          "url": "https://example.com/generic-result",
-          "source_type": "news_article",
-          "reliability": "medium",
-          "extracted_fact": "Recent developments related to: recent news market_kalshi_c31913fc_1757308753"
-        },
-        {
-          "rank": 2,
-          "relevance_score": 0.75,
-          "title": "Search Results for: expert opinions market_kalshi_c31913fc_1757308753",
-          "url": "https://example.com/generic-result",
-          "source_type": "news_article",
-          "reliability": "medium",
-          "extracted_fact": "Recent developments related to: expert opinions market_kalshi_c31913fc_1757308753"
-        },
-        {
-          "rank": 3,
-          "relevance_score": 0.75,
-          "title": "Search Results for: market analysis market_kalshi_c31913fc_1757308753",
-          "url": "https://example.com/generic-result",
-          "source_type": "news_article",
-          "reliability": "medium",
-          "extracted_fact": "Recent developments related to: market analysis market_kalshi_c31913fc_1757308753"
-        },
-        {
-          "rank": 4,
-          "relevance_score": 0.75,
-          "title": "Search Results for: official updates market_kalshi_c31913fc_1757308753",
-          "url": "https://example.com/generic-result",
-          "source_type": "news_article",
-          "reliability": "medium",
-          "extracted_fact": "Recent developments related to: official updates market_kalshi_c31913fc_1757308753"
-        }
-      ]
-    },
-    {
-      "id": "1f348a35-4aa9-4b47-9038-cb55078a5b8e",
-      "event_id": "ad149550-5313-4f7b-9bdf-0a0fe58b3c77",
-      "event_key": "market_kalshi_f1667ecf_1757308753",
-      "event_title": "Coinbase volume in Q3 2025?",
-      "event_description": "Title: Coinbase volume in Q3 2025?\nDescription: No description\nTicker: KXCBVOLUME-Q3-25-210\nStatus: initialized\nClose Time: 2025-10-31T20:00:00Z\nCategory: \nSubcategory: Unknown\nCurrent Price: 0.000 - 0.000\nVolume: 0",
-      "probability": 0.75,
-      "horizon_hours": 168,
-      "rationale": "Based on analysis of 4 evidence items with an overall strength of 75.0%:\n        \n        \u2022 0 high-reliability sources provide strong supporting evidence\n        \u2022 Evidence covers multiple aspects of the event with consistent patterns\n        \u2022 Source diversity includes news articles, official statements, and expert opinions\n        \u2022 Confidence level reflects the quality and quantity of available evidence\n        \n        The prediction is based on the most reliable and relevant evidence available at the time of analysis.",
-      "created_at": "2025-09-08T01:24:30.942038",
-      "evidence_sources": [
-        {
-          "rank": 1,
-          "relevance_score": 0.75,
-          "title": "Search Results for: recent news market_kalshi_f1667ecf_1757308753",
-          "url": "https://example.com/generic-result",
-          "source_type": "news_article",
-          "reliability": "medium",
-          "extracted_fact": "Recent developments related to: recent news market_kalshi_f1667ecf_1757308753"
-        },
-        {
-          "rank": 2,
-          "relevance_score": 0.75,
-          "title": "Search Results for: expert opinions market_kalshi_f1667ecf_1757308753",
-          "url": "https://example.com/generic-result",
-          "source_type": "news_article",
-          "reliability": "medium",
-          "extracted_fact": "Recent developments related to: expert opinions market_kalshi_f1667ecf_1757308753"
-        },
-        {
-          "rank": 3,
-          "relevance_score": 0.75,
-          "title": "Search Results for: market analysis market_kalshi_f1667ecf_1757308753",
-          "url": "https://example.com/generic-result",
-          "source_type": "news_article",
-          "reliability": "medium",
-          "extracted_fact": "Recent developments related to: market analysis market_kalshi_f1667ecf_1757308753"
-        },
-        {
-          "rank": 4,
-          "relevance_score": 0.75,
-          "title": "Search Results for: official updates market_kalshi_f1667ecf_1757308753",
-          "url": "https://example.com/generic-result",
-          "source_type": "news_article",
-          "reliability": "medium",
-          "extracted_fact": "Recent developments related to: official updates market_kalshi_f1667ecf_1757308753"
-        }
-      ]
-    },
-    {
-      "id": "0921c524-245b-4cf9-8c5a-d9144168c884",
-      "event_id": "f2149b33-c9a2-45c9-8771-34178f38002e",
-      "event_key": "market_kalshi_1474e08c_1757308753",
-      "event_title": "Coinbase volume in Q3 2025?",
-      "event_description": "Title: Coinbase volume in Q3 2025?\nDescription: No description\nTicker: KXCBVOLUME-Q3-25-230\nStatus: initialized\nClose Time: 2025-10-31T20:00:00Z\nCategory: \nSubcategory: Unknown\nCurrent Price: 0.000 - 0.000\nVolume: 0",
-      "probability": 0.75,
-      "horizon_hours": 168,
-      "rationale": "Based on analysis of 4 evidence items with an overall strength of 75.0%:\n        \n        \u2022 0 high-reliability sources provide strong supporting evidence\n        \u2022 Evidence covers multiple aspects of the event with consistent patterns\n        \u2022 Source diversity includes news articles, official statements, and expert opinions\n        \u2022 Confidence level reflects the quality and quantity of available evidence\n        \n        The prediction is based on the most reliable and relevant evidence available at the time of analysis.",
-      "created_at": "2025-09-08T01:24:30.479260",
-      "evidence_sources": [
-        {
-          "rank": 1,
-          "relevance_score": 0.75,
-          "title": "Search Results for: recent news market_kalshi_1474e08c_1757308753",
-          "url": "https://example.com/generic-result",
-          "source_type": "news_article",
-          "reliability": "medium",
-          "extracted_fact": "Recent developments related to: recent news market_kalshi_1474e08c_1757308753"
-        },
-        {
-          "rank": 2,
-          "relevance_score": 0.75,
-          "title": "Search Results for: expert opinions market_kalshi_1474e08c_1757308753",
-          "url": "https://example.com/generic-result",
-          "source_type": "news_article",
-          "reliability": "medium",
-          "extracted_fact": "Recent developments related to: expert opinions market_kalshi_1474e08c_1757308753"
-        },
-        {
-          "rank": 3,
-          "relevance_score": 0.75,
-          "title": "Search Results for: market analysis market_kalshi_1474e08c_1757308753",
-          "url": "https://example.com/generic-result",
-          "source_type": "news_article",
-          "reliability": "medium",
-          "extracted_fact": "Recent developments related to: market analysis market_kalshi_1474e08c_1757308753"
-        },
-        {
-          "rank": 4,
-          "relevance_score": 0.75,
-          "title": "Search Results for: official updates market_kalshi_1474e08c_1757308753",
-          "url": "https://example.com/generic-result",
-          "source_type": "news_article",
-          "reliability": "medium",
-          "extracted_fact": "Recent developments related to: official updates market_kalshi_1474e08c_1757308753"
-        }
-      ]
-    },
-    {
-      "id": "6c4011f3-7beb-40b6-8bc1-2653f252a58f",
-      "event_id": "24adb8f3-f397-4c65-970c-c8106e046b12",
-      "event_key": "bitcoin_100k_2024",
-      "event_title": "Will Bitcoin reach $100,000 by end of 2024?",
-      "event_description": "Bitcoin price prediction for end of year",
-      "probability": 0.75,
-      "horizon_hours": 168,
-      "rationale": "Based on analysis of 4 evidence items with an overall strength of 75.0%:\n        \n        \u2022 0 high-reliability sources provide strong supporting evidence\n        \u2022 Evidence covers multiple aspects of the event with consistent patterns\n        \u2022 Source diversity includes news articles, official statements, and expert opinions\n        \u2022 Confidence level reflects the quality and quantity of available evidence\n        \n        The prediction is based on the most reliable and relevant evidence available at the time of analysis.",
-      "created_at": "2025-09-08T01:19:49.417704",
-      "evidence_sources": [
-        {
-          "rank": 1,
-          "relevance_score": 0.75,
-          "title": "Search Results for: recent news bitcoin_100k_2024",
-          "url": "https://example.com/generic-result",
-          "source_type": "news_article",
-          "reliability": "medium",
-          "extracted_fact": "Recent developments related to: recent news bitcoin_100k_2024"
-        },
-        {
-          "rank": 2,
-          "relevance_score": 0.75,
-          "title": "Search Results for: expert opinions bitcoin_100k_2024",
-          "url": "https://example.com/generic-result",
-          "source_type": "news_article",
-          "reliability": "medium",
-          "extracted_fact": "Recent developments related to: expert opinions bitcoin_100k_2024"
-        },
-        {
-          "rank": 3,
-          "relevance_score": 0.75,
-          "title": "Search Results for: market analysis bitcoin_100k_2024",
-          "url": "https://example.com/generic-result",
-          "source_type": "news_article",
-          "reliability": "medium",
-          "extracted_fact": "Recent developments related to: market analysis bitcoin_100k_2024"
-        },
-        {
-          "rank": 4,
-          "relevance_score": 0.75,
-          "title": "Search Results for: official updates bitcoin_100k_2024",
-          "url": "https://example.com/generic-result",
-          "source_type": "news_article",
-          "reliability": "medium",
-          "extracted_fact": "Recent developments related to: official updates bitcoin_100k_2024"
-        }
-      ]
-    },
-    {
-      "id": "aa96a73d-258d-456e-b6c8-d758badeeae4",
-      "event_id": "8d7a2f50-614d-45eb-804d-85b493d05bad",
-      "event_key": "ai_regulation_us_2024",
-      "event_title": "Will there be major AI regulation passed in the US in 2024?",
-      "event_description": "AI regulation prediction",
-      "probability": 0.9,
-      "horizon_hours": 168,
-      "rationale": "Based on analysis of 4 evidence items with an overall strength of 88.0%:\n        \n        \u2022 0 high-reliability sources provide strong supporting evidence\n        \u2022 Evidence covers multiple aspects of the event with consistent patterns\n        \u2022 Source diversity includes news articles, official statements, and expert opinions\n        \u2022 Confidence level reflects the quality and quantity of available evidence\n        \n        The prediction is based on the most reliable and relevant evidence available at the time of analysis.",
-      "created_at": "2025-09-08T01:19:48.987776",
-      "evidence_sources": [
-        {
-          "rank": 1,
-          "relevance_score": 0.88,
-          "title": "AI Prediction Markets - The Future of Forecasting",
-          "url": "https://example.com/ai-prediction-markets",
-          "source_type": "news_article",
-          "reliability": "medium",
-          "extracted_fact": "AI technology is advancing rapidly with new developments in machine learning and automation."
-        },
-        {
-          "rank": 2,
-          "relevance_score": 0.88,
-          "title": "AI Prediction Markets - The Future of Forecasting",
-          "url": "https://example.com/ai-prediction-markets",
-          "source_type": "news_article",
-          "reliability": "medium",
-          "extracted_fact": "AI technology is advancing rapidly with new developments in machine learning and automation."
-        },
-        {
-          "rank": 3,
-          "relevance_score": 0.88,
-          "title": "AI Prediction Markets - The Future of Forecasting",
-          "url": "https://example.com/ai-prediction-markets",
-          "source_type": "news_article",
-          "reliability": "medium",
-          "extracted_fact": "AI technology is advancing rapidly with new developments in machine learning and automation."
-        },
-        {
-          "rank": 4,
-          "relevance_score": 0.88,
-          "title": "AI Prediction Markets - The Future of Forecasting",
-          "url": "https://example.com/ai-prediction-markets",
-          "source_type": "news_article",
-          "reliability": "medium",
-          "extracted_fact": "AI technology is advancing rapidly with new developments in machine learning and automation."
-        }
-      ]
-    },
-    {
-      "id": "b66a77bd-2f01-48b0-83cb-81b9f38d88e9",
-      "event_id": "4439b5a0-7b71-453c-8c7b-864be7131de8",
-      "event_key": "openai_gpt5_2024",
-      "event_title": "Will OpenAI release GPT-5 in 2024?",
-      "event_description": "OpenAI product release prediction",
-      "probability": 0.9,
-      "horizon_hours": 168,
-      "rationale": "Based on analysis of 4 evidence items with an overall strength of 88.0%:\n        \n        \u2022 0 high-reliability sources provide strong supporting evidence\n        \u2022 Evidence covers multiple aspects of the event with consistent patterns\n        \u2022 Source diversity includes news articles, official statements, and expert opinions\n        \u2022 Confidence level reflects the quality and quantity of available evidence\n        \n        The prediction is based on the most reliable and relevant evidence available at the time of analysis.",
-      "created_at": "2025-09-08T01:19:48.549029",
-      "evidence_sources": [
-        {
-          "rank": 1,
-          "relevance_score": 0.88,
-          "title": "AI Prediction Markets - The Future of Forecasting",
-          "url": "https://example.com/ai-prediction-markets",
-          "source_type": "news_article",
-          "reliability": "medium",
-          "extracted_fact": "AI technology is advancing rapidly with new developments in machine learning and automation."
-        },
-        {
-          "rank": 2,
-          "relevance_score": 0.88,
-          "title": "AI Prediction Markets - The Future of Forecasting",
-          "url": "https://example.com/ai-prediction-markets",
-          "source_type": "news_article",
-          "reliability": "medium",
-          "extracted_fact": "AI technology is advancing rapidly with new developments in machine learning and automation."
-        },
-        {
-          "rank": 3,
-          "relevance_score": 0.88,
-          "title": "AI Prediction Markets - The Future of Forecasting",
-          "url": "https://example.com/ai-prediction-markets",
-          "source_type": "news_article",
-          "reliability": "medium",
-          "extracted_fact": "AI technology is advancing rapidly with new developments in machine learning and automation."
-        },
-        {
-          "rank": 4,
-          "relevance_score": 0.88,
-          "title": "AI Prediction Markets - The Future of Forecasting",
-          "url": "https://example.com/ai-prediction-markets",
-          "source_type": "news_article",
-          "reliability": "medium",
-          "extracted_fact": "AI technology is advancing rapidly with new developments in machine learning and automation."
+          "reliability": "low",
+          "extracted_fact": "on TikTok."
         }
       ]
     }

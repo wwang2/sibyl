@@ -102,19 +102,13 @@ class MarketMiningWorkflow:
         logger.info("Mining Kalshi markets...")
         
         try:
-            # Fetch markets and events
+            # Fetch markets only (events method doesn't exist)
             markets = self.kalshi_adapter.fetch_markets_current(
-                days_ahead=self.config.limit_per_category,
-                include_archived=False,
-                limit=500,
-                max_pages=6
+                limit=self.config.limit_per_category
             )
             
-            events = self.kalshi_adapter.fetch_events_current(
-                days_ahead=self.config.limit_per_category,
-                include_archived=False,
-                max_pages=6
-            )
+            # No events method available in Kalshi adapter
+            events = []
             
             # Save to database
             saved_markets = 0
@@ -160,16 +154,14 @@ class MarketMiningWorkflow:
         logger.info("Mining Polymarket markets...")
         
         try:
-            # Fetch impactful markets (featured or high liquidity/OI)
-            markets = self.polymarket_adapter.fetch_markets_impactful(
-                closing_hours=72,  # 3 days
-                include_archived=False,
-                min_liquidity=2000.0,
-                min_open_interest=5000.0
+            # Fetch markets (including past events for now)
+            markets = self.polymarket_adapter.fetch_markets(
+                limit=self.config.limit_per_category,
+                exclude_past=False  # Include past events for testing
             )
             
-            # Fetch raw events for metadata
-            events = self.polymarket_adapter.fetch_events_raw()
+            # No events method available in Polymarket adapter
+            events = []
             
             # Save to database
             saved_markets = 0
