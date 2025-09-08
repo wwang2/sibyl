@@ -24,6 +24,16 @@ help:
 	@echo "  run-offline      Offline workflow using test fixtures (no network)"
 	@echo "  test-workflow    Test the complete event sourcing workflow"
 	@echo ""
+	@echo "End-to-End Prediction Pipeline:"
+	@echo "  run-e2e          Complete pipeline: reset → mine → judge → predict → visualize"
+	@echo "  run-e2e-quick    Quick pipeline with limited data"
+	@echo "  run-e2e-kalshi   Pipeline with Kalshi markets only"
+	@echo "  run-e2e-polymarket Pipeline with Polymarket markets only"
+	@echo "  step-mine        Step 1: Mine prediction markets only"
+	@echo "  step-judge       Step 2: Judge event proposals only"
+	@echo "  step-predict     Step 3: Run enhanced predictions only"
+	@echo "  step-visualize   Step 4: Start visualization dashboard"
+	@echo ""
 	@echo "Testing & Development:"
 	@echo "  test             Run all tests"
 	@echo "  test-core        Run core workflow tests only"
@@ -132,6 +142,74 @@ test-coverage:
 	@echo "📊 Running tests with coverage..."
 	PYTHONPATH=$$(pwd) python3 -m pytest tests/ --cov=app --cov-report=html --cov-report=term
 
+# Enhanced Prediction Workflow
+run-enhanced-prediction:
+	@echo "🔮 Running enhanced prediction workflow with research agent..."
+	PYTHONPATH=$$(pwd) python3 temp_scripts/test_enhanced_prediction.py
+
+view-dashboard:
+	@echo "🌐 Opening prediction dashboard..."
+	@open docs/index.html 2>/dev/null || xdg-open docs/index.html 2>/dev/null || echo "Please open docs/index.html in your browser"
+
+serve-dashboard:
+	@echo "🚀 Starting local server for prediction dashboard..."
+	@echo "📊 Make sure to run 'make run-enhanced-prediction' first to generate data"
+	@cd docs && python3 serve.py
+
+# End-to-End Workflow (Modular)
+run-e2e:
+	@echo "🚀 Running complete end-to-end prediction workflow..."
+	@echo "   This will: reset DB → mine markets → judge proposals → run predictions → visualize"
+	@make reset-db
+	@make mine-markets
+	@make judge-proposals
+	@make run-enhanced-prediction
+	@echo "✅ End-to-end workflow completed! Run 'make serve-dashboard' to view results."
+
+run-e2e-quick:
+	@echo "⚡ Running quick end-to-end workflow (limited data)..."
+	@make reset-db
+	@make mine-kalshi
+	@make judge-sample
+	@make run-enhanced-prediction
+	@echo "✅ Quick end-to-end workflow completed! Run 'make serve-dashboard' to view results."
+
+run-e2e-kalshi:
+	@echo "⛏️ Running end-to-end workflow with Kalshi only..."
+	@make reset-db
+	@make mine-kalshi
+	@make judge-proposals
+	@make run-enhanced-prediction
+	@echo "✅ Kalshi end-to-end workflow completed! Run 'make serve-dashboard' to view results."
+
+run-e2e-polymarket:
+	@echo "⛏️ Running end-to-end workflow with Polymarket only..."
+	@make reset-db
+	@make mine-polymarket
+	@make judge-proposals
+	@make run-enhanced-prediction
+	@echo "✅ Polymarket end-to-end workflow completed! Run 'make serve-dashboard' to view results."
+
+# Individual workflow steps (using existing commands)
+step-mine:
+	@echo "⛏️ Step 1: Mining prediction markets..."
+	@make mine-markets
+
+step-judge:
+	@echo "⚖️ Step 2: Judging event proposals..."
+	@make judge-proposals
+
+step-create-events:
+	@echo "🎯 Step 3: Creating events from approved proposals..."
+	@make create-events
+
+step-predict:
+	@echo "🔮 Step 4: Running enhanced predictions..."
+	@make run-enhanced-prediction
+
+step-visualize:
+	@echo "📊 Step 5: Visualizing results..."
+	@make serve-dashboard
 
 # Database Query Tools
 query-db:
@@ -228,15 +306,20 @@ mine-polymarket:
 # Event Proposal Judgment
 judge-proposals:
 	@echo "⚖️ Judging event proposals using LLM-based evaluation..."
-	@cd temp_scripts && python judge_event_proposals.py
+	@cd temp_scripts && python judge_event_proposals.py --status-filter pending
 
 judge-offline:
 	@echo "⚖️ Judging event proposals in offline mode..."
-	@cd temp_scripts && python judge_event_proposals.py --offline
+	@cd temp_scripts && python judge_event_proposals.py --offline --status-filter pending
 
 judge-sample:
 	@echo "⚖️ Judging sample of 10 event proposals..."
-	@cd temp_scripts && python judge_event_proposals.py --max-proposals 10
+	@cd temp_scripts && python judge_event_proposals.py --max-proposals 10 --status-filter pending
+
+# Create events from approved proposals
+create-events:
+	@echo "🎯 Creating events from approved proposals..."
+	@cd temp_scripts && python create_events_from_proposals.py
 
 
 # Docker commands (if needed)

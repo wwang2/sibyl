@@ -1,0 +1,1372 @@
+{
+  "timestamp": "2025-09-08T01:30:41.424739",
+  "predictions": [
+    {
+      "id": "07134957-a19b-47d9-93b8-4edba4ea3525",
+      "event_id": "6e7ba275-0736-40ba-8fcc-30a003b6e39e",
+      "event_key": "market_kalshi_965af747_1757308753",
+      "event_title": "Will Ripple XRP reach above $2.94 before 12:00 AM ET on Oct 1, 2025?",
+      "event_description": "Title: Will Ripple XRP reach above $2.94 before 12:00 AM ET on Oct 1, 2025?\nDescription: No description\nTicker: KXXRPMAXM-25OCT01-2.94\nStatus: initialized\nClose Time: 2025-10-01T04:00:00Z\nCategory: \nSubcategory: Unknown\nCurrent Price: 0.000 - 0.000\nVolume: 0",
+      "probability": 0.55,
+      "horizon_hours": 168,
+      "rationale": "Based on analysis of 50 evidence items with an overall strength of 41.2%:\n        \n        \u2022 3 high-reliability sources provide strong supporting evidence\n        \u2022 Evidence covers multiple aspects of the event with consistent patterns\n        \u2022 Source diversity includes news articles, official statements, and expert opinions\n        \u2022 Confidence level reflects the quality and quantity of available evidence\n        \n        The prediction is based on the most reliable and relevant evidence available at the time of analysis.",
+      "created_at": "2025-09-08T01:30:41.348733",
+      "evidence_sources": [
+        {
+          "rank": 1,
+          "relevance_score": 0.38,
+          "title": "How Kalshi and prediction markets are disrupting sports betting",
+          "url": "https://www.espn.com/espn/betting/story/_/id/45377686/kalshi-prediction-markets-disrupt-sports-betting",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: latest news about market_kalshi_965af747_1757308753"
+        },
+        {
+          "rank": 2,
+          "relevance_score": 0.35,
+          "title": "Judge lets MD regulator enforce sports betting laws against ...",
+          "url": "https://thedailyrecord.com/2025/08/12/kalshi-maryland-gambling-license-ruling/",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: latest news about market_kalshi_965af747_1757308753"
+        },
+        {
+          "rank": 3,
+          "relevance_score": 0.35,
+          "title": "Buy Kalshi stock and other Pre-IPO shares on UpMarket",
+          "url": "https://www.upmarket.co/private-markets/pre-ipo/kalshi/",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: latest news about market_kalshi_965af747_1757308753"
+        },
+        {
+          "rank": 4,
+          "relevance_score": 0.31,
+          "title": "New Jersey Federal Court Sides with Kalshi Over Prediction Market ...",
+          "url": "https://www.hklaw.com/en/insights/publications/2025/06/new-jersey-federal-court-sides-with-kalshi-over-prediction",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: latest news about market_kalshi_965af747_1757308753"
+        },
+        {
+          "rank": 5,
+          "relevance_score": 0.3,
+          "title": "What are prediction markets? | Kalshi Help Center",
+          "url": "https://help.kalshi.com/kalshi-101/what-are-prediction-markets",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: latest news about market_kalshi_965af747_1757308753"
+        },
+        {
+          "rank": 6,
+          "relevance_score": 0.3,
+          "title": "Prediction Market for Trading the Future - Kalshi",
+          "url": "https://kalshi.com/market-makers",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: latest news about market_kalshi_965af747_1757308753"
+        },
+        {
+          "rank": 7,
+          "relevance_score": 0.28,
+          "title": "Kalshi - Prediction Market for Trading the Future",
+          "url": "https://kalshi.com/",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: latest news about market_kalshi_965af747_1757308753"
+        },
+        {
+          "rank": 8,
+          "relevance_score": 0.28,
+          "title": "Kalshi - Prediction Market for Trading the Future",
+          "url": "https://kalshi.com/blog/different-types-prediction-markets",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: latest news about market_kalshi_965af747_1757308753"
+        },
+        {
+          "rank": 9,
+          "relevance_score": 0.28,
+          "title": "What is Kalshi?",
+          "url": "https://help.kalshi.com/kalshi-101/what-is-kalshi",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: latest news about market_kalshi_965af747_1757308753"
+        },
+        {
+          "rank": 10,
+          "relevance_score": 0.27,
+          "title": "Trade Hourly Market Predictions & Fed Events Powered by Kalshi",
+          "url": "https://www.webull.com/trading-investing/prediction-markets?hl=en",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: latest news about market_kalshi_965af747_1757308753"
+        },
+        {
+          "rank": 11,
+          "relevance_score": 0.55,
+          "title": "Prediction market Kalshi raises $185M at $2B valuation \u2014 Report",
+          "url": "https://cointelegraph.com/news/prediction-market-kalshi-raises-185m-2b-valuation",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: recent developments market_kalshi_965af747_1757308753"
+        },
+        {
+          "rank": 12,
+          "relevance_score": 0.38,
+          "title": "How Kalshi and prediction markets are disrupting sports betting",
+          "url": "https://www.espn.com/espn/betting/story/_/id/45377686/kalshi-prediction-markets-disrupt-sports-betting",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: recent developments market_kalshi_965af747_1757308753"
+        },
+        {
+          "rank": 13,
+          "relevance_score": 0.36,
+          "title": "59% of Kalshi Traders Bet Gemini Will Outshine ChatGPT and Grok ...",
+          "url": "https://www.blocmates.com/news-posts/59-of-kalshi-traders-bet-gemini-will-outshine-chatgpt-and-grok-in-2025",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: recent developments market_kalshi_965af747_1757308753"
+        },
+        {
+          "rank": 14,
+          "relevance_score": 0.34,
+          "title": "Kalshi - Prediction Market for Trading the Future",
+          "url": "https://kalshi.com/",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: recent developments market_kalshi_965af747_1757308753"
+        },
+        {
+          "rank": 15,
+          "relevance_score": 0.34,
+          "title": "Markets bet on whether inflation in 2025 will be above, below, or ...",
+          "url": "https://www.quiverquant.com/news/Markets+bet+on+whether+inflation+in+2025+will+be+above%2C+below%2C+or+between+certain+thresholds",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: recent developments market_kalshi_965af747_1757308753"
+        },
+        {
+          "rank": 16,
+          "relevance_score": 0.34,
+          "title": "S&P close price end of 2025? | Trade on Kalshi",
+          "url": "https://kalshi.com/markets/kxinxy",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: recent developments market_kalshi_965af747_1757308753"
+        },
+        {
+          "rank": 17,
+          "relevance_score": 0.29,
+          "title": "The Funding: Why crypto VCs are betting on prediction markets now",
+          "url": "https://www.theblock.co/post/369737/why-crypto-vcs-betting-on-prediction-markets-funding",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: recent developments market_kalshi_965af747_1757308753"
+        },
+        {
+          "rank": 18,
+          "relevance_score": 0.28,
+          "title": "The Golden Age of Prediction Markets: Polymarket Rages, Kalshi ...",
+          "url": "https://onekey.so/blog/Learn/the-golden-age-of-prediction-markets-polymarket-rages-kalshi-arrives",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: recent developments market_kalshi_965af747_1757308753"
+        },
+        {
+          "rank": 19,
+          "relevance_score": 0.26,
+          "title": "Trade Hourly Market Predictions & Fed Events Powered by Kalshi",
+          "url": "https://www.webull.com/trading-investing/events-trading/kalshi",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: recent developments market_kalshi_965af747_1757308753"
+        },
+        {
+          "rank": 20,
+          "relevance_score": 0.25,
+          "title": "Kalshi found a backdoor to sports gambling, and flung it wide open",
+          "url": "https://www.fastcompany.com/91399289/kalshi-prediction-markets-sports-gambling",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: recent developments market_kalshi_965af747_1757308753"
+        },
+        {
+          "rank": 21,
+          "relevance_score": 0.47,
+          "title": "Kalshi eyes a new form of a prediction market contract that ...",
+          "url": "https://seekingalpha.com/news/4491470-kalshi-eyes-a-new-form-of-a-prediction-market-contract-that-resembles-a-traditional-sports-betting-parlay",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: expert analysis market_kalshi_965af747_1757308753"
+        },
+        {
+          "rank": 22,
+          "relevance_score": 0.43,
+          "title": "What are prediction markets?",
+          "url": "https://help.kalshi.com/kalshi-101/what-are-prediction-markets",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: expert analysis market_kalshi_965af747_1757308753"
+        },
+        {
+          "rank": 23,
+          "relevance_score": 0.43,
+          "title": "How To WIN On Kalshi \u2014 Top Strategies For Profiting From ...",
+          "url": "https://5reasonstovisit.com/travel/how-to-win-on-kalshi",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: expert analysis market_kalshi_965af747_1757308753"
+        },
+        {
+          "rank": 24,
+          "relevance_score": 0.41,
+          "title": "When AI meets the prediction market: Kalshi trading ...",
+          "url": "https://www.panewslab.com/en/articles/7v5h2okw",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: expert analysis market_kalshi_965af747_1757308753"
+        },
+        {
+          "rank": 25,
+          "relevance_score": 0.4,
+          "title": "Kalshi - Prediction Market for Trading the Future",
+          "url": "https://kalshi.com/",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: expert analysis market_kalshi_965af747_1757308753"
+        },
+        {
+          "rank": 26,
+          "relevance_score": 0.37,
+          "title": "What is Kalshi and how do prediction markets work? - Yahoo",
+          "url": "https://www.yahoo.com/news/articles/kalshi-prediction-markets-181600634.html",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: expert analysis market_kalshi_965af747_1757308753"
+        },
+        {
+          "rank": 27,
+          "relevance_score": 0.34,
+          "title": "Kalshi Volume Report: Tennis, Baseball, And Hot Dog Eating ...",
+          "url": "https://nexteventhorizon.substack.com/p/kalshi-volume-report-july-6",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: expert analysis market_kalshi_965af747_1757308753"
+        },
+        {
+          "rank": 28,
+          "relevance_score": 0.32,
+          "title": "Kalshi Volume Report: Preseason NFL Betting Already A Top-10 ...",
+          "url": "https://nexteventhorizon.substack.com/p/kalshi-volume-report-preseason-nfl",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: expert analysis market_kalshi_965af747_1757308753"
+        },
+        {
+          "rank": 29,
+          "relevance_score": 0.29,
+          "title": "How Kalshi and prediction markets are disrupting sports ...",
+          "url": "https://www.espn.com/espn/betting/story/_/id/45377686/kalshi-prediction-markets-disrupt-sports-betting",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: expert analysis market_kalshi_965af747_1757308753"
+        },
+        {
+          "rank": 30,
+          "relevance_score": 0.29,
+          "title": "How Kalshi and Prediction Markets Are Disrupting Sports ...",
+          "url": "https://www.hklaw.com/en/news/intheheadlines/2025/06/how-kalshi-and-prediction-markets-are-disrupting-sports-betting",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: expert analysis market_kalshi_965af747_1757308753"
+        },
+        {
+          "rank": 31,
+          "relevance_score": 0.47,
+          "title": "Kalshi - Prediction Market for Trading the Future",
+          "url": "https://kalshi.com/",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Prediction markets are gaining traction as tools for forecasting future events."
+        },
+        {
+          "rank": 32,
+          "relevance_score": 0.45,
+          "title": "What is Kalshi and how do prediction markets work? - Yahoo",
+          "url": "https://www.yahoo.com/news/articles/kalshi-prediction-markets-181600634.html",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Prediction markets are gaining traction as tools for forecasting future events."
+        },
+        {
+          "rank": 33,
+          "relevance_score": 0.45,
+          "title": "Kalshi Self-Certifies Prediction Markets for Point Spreads, Totals, TD ...",
+          "url": "https://casinobeats.com/2025/08/19/kalshi-set-to-expand-sports-prediction-markets-offering-point-spreads-totals-td-props/",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Prediction markets are gaining traction as tools for forecasting future events."
+        },
+        {
+          "rank": 34,
+          "relevance_score": 0.4,
+          "title": "Prediction Market for Trading the Future - Kalshi",
+          "url": "https://kalshi.com/market-makers",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Prediction markets are gaining traction as tools for forecasting future events."
+        },
+        {
+          "rank": 35,
+          "relevance_score": 0.09,
+          "title": "Weekly Stock Market Update | Edward Jones",
+          "url": "https://www.edwardjones.com/us-en/market-news-insights/stock-market-news/stock-market-weekly-update",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Prediction markets are gaining traction as tools for forecasting future events."
+        },
+        {
+          "rank": 36,
+          "relevance_score": 0.07,
+          "title": "US Markets, Company Earnings, Stock Market Trends, Market News",
+          "url": "https://www.morningstar.com/markets",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Prediction markets are gaining traction as tools for forecasting future events."
+        },
+        {
+          "rank": 37,
+          "relevance_score": 0.06,
+          "title": "Yahoo Finance - Stock Market Live, Quotes, Business & Finance News",
+          "url": "https://finance.yahoo.com/",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Prediction markets are gaining traction as tools for forecasting future events."
+        },
+        {
+          "rank": 38,
+          "relevance_score": 0.06,
+          "title": "June 2025 stock market outlook - Fidelity Investments",
+          "url": "https://www.fidelity.com/learning-center/trading-investing/stock-market-outlook",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Prediction markets are gaining traction as tools for forecasting future events."
+        },
+        {
+          "rank": 39,
+          "relevance_score": 0.05,
+          "title": "Stock Market Data - US Markets, World Markets, and Stock Quotes",
+          "url": "https://www.cnn.com/markets",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Prediction markets are gaining traction as tools for forecasting future events."
+        },
+        {
+          "rank": 40,
+          "relevance_score": 0.04,
+          "title": "U.S. Markets - MarketWatch",
+          "url": "https://www.marketwatch.com/markets/us",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Prediction markets are gaining traction as tools for forecasting future events."
+        },
+        {
+          "rank": 41,
+          "relevance_score": 0.53,
+          "title": "Kalshi, an Online Prediction Market, Will Open Its Bets to Brokerages",
+          "url": "https://www.nytimes.com/2025/01/31/business/dealbook/kalshi-prediction-market-brokerages.html",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: official statements market_kalshi_965af747_1757308753"
+        },
+        {
+          "rank": 42,
+          "relevance_score": 0.53,
+          "title": "[PDF] <date> <Musk/Trump> - Commodity Futures Trading Commission",
+          "url": "https://www.cftc.gov/filings/ptc/ptc06062523298.pdf",
+          "source_type": "official_statement",
+          "reliability": "high",
+          "extracted_fact": "Recent developments related to: official statements market_kalshi_965af747_1757308753"
+        },
+        {
+          "rank": 43,
+          "relevance_score": 0.48,
+          "title": "[PDF] Kalshi Rulebook v1.14 (Position Accountability)",
+          "url": "https://www.cftc.gov/filings/orgrules/rules1114248723.pdf",
+          "source_type": "official_statement",
+          "reliability": "high",
+          "extracted_fact": "Recent developments related to: official statements market_kalshi_965af747_1757308753"
+        },
+        {
+          "rank": 44,
+          "relevance_score": 0.44,
+          "title": "CFTC drops Kalshi election bet case appeal - CNBC",
+          "url": "https://www.cnbc.com/2025/05/05/cftc-kalshi-election-betting-commodities.html",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: official statements market_kalshi_965af747_1757308753"
+        },
+        {
+          "rank": 45,
+          "relevance_score": 0.43,
+          "title": "Kalshi: Federal appeals court allows prediction market to offer US ...",
+          "url": "https://www.cnn.com/2024/10/02/business/appeals-court-allows-kalshi-election-betting",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: official statements market_kalshi_965af747_1757308753"
+        },
+        {
+          "rank": 46,
+          "relevance_score": 0.42,
+          "title": "About Kalshi - Company History & Founders Profile",
+          "url": "https://kalshi.com/about",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: official statements market_kalshi_965af747_1757308753"
+        },
+        {
+          "rank": 47,
+          "relevance_score": 0.42,
+          "title": "The Right to Regulate: Kalshi, Federal Preemption, and the Fight for ...",
+          "url": "https://www.regulatoryoversight.com/2025/07/the-right-to-regulate-kalshi-federal-preemption-and-the-fight-for-state-gaming-authority/",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: official statements market_kalshi_965af747_1757308753"
+        },
+        {
+          "rank": 48,
+          "relevance_score": 0.42,
+          "title": "Kalshi - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Kalshi",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: official statements market_kalshi_965af747_1757308753"
+        },
+        {
+          "rank": 49,
+          "relevance_score": 0.35,
+          "title": "How Kalshi and prediction markets are disrupting sports betting",
+          "url": "https://www.espn.com/espn/betting/story/_/id/45377686/kalshi-prediction-markets-disrupt-sports-betting",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: official statements market_kalshi_965af747_1757308753"
+        },
+        {
+          "rank": 50,
+          "relevance_score": 0.35,
+          "title": "Nevada officials order Kalshi to shut down sports, election markets",
+          "url": "https://subscriber.politicopro.com/article/2025/03/nevada-officials-order-kalshi-to-shut-down-sports-election-markets-00214068",
+          "source_type": "official_statement",
+          "reliability": "high",
+          "extracted_fact": "Recent developments related to: official statements market_kalshi_965af747_1757308753"
+        }
+      ]
+    },
+    {
+      "id": "1451f071-8644-480c-9f66-71268e1bd95c",
+      "event_id": "af7c7a27-b234-430d-9c0f-469752730c9d",
+      "event_key": "market_kalshi_45bb8d5f_1757308753",
+      "event_title": "Will Ripple XRP reach above $2.93 before 12:00 AM ET on Oct 1, 2025?",
+      "event_description": "Title: Will Ripple XRP reach above $2.93 before 12:00 AM ET on Oct 1, 2025?\nDescription: No description\nTicker: KXXRPMAXM-25OCT01-2.93\nStatus: initialized\nClose Time: 2025-10-01T04:00:00Z\nCategory: \nSubcategory: Unknown\nCurrent Price: 0.000 - 0.000\nVolume: 0",
+      "probability": 0.9,
+      "horizon_hours": 168,
+      "rationale": "Based on analysis of 50 evidence items with an overall strength of 84.1%:\n        \n        \u2022 1 high-reliability sources provide strong supporting evidence\n        \u2022 Evidence covers multiple aspects of the event with consistent patterns\n        \u2022 Source diversity includes news articles, official statements, and expert opinions\n        \u2022 Confidence level reflects the quality and quantity of available evidence\n        \n        The prediction is based on the most reliable and relevant evidence available at the time of analysis.",
+      "created_at": "2025-09-08T01:30:18.856547",
+      "evidence_sources": [
+        {
+          "rank": 1,
+          "relevance_score": 0.36,
+          "title": "More Than 80% Of Kalshi Trading Volume Was On Sports Last Week",
+          "url": "https://nexteventhorizon.substack.com/p/more-than-80-percent-of-kalshi-trading-volume-sports",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: latest news about market_kalshi_45bb8d5f_1757308753"
+        },
+        {
+          "rank": 2,
+          "relevance_score": 0.35,
+          "title": "Prediction markets Polymarket and Kalshi are cashing in on \"Trump ...",
+          "url": "https://investinglive.com/news/prediction-markets-polymarket-and-kalshi-are-cashing-in-on-trump-leaving-office-bets-20250903/",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: latest news about market_kalshi_45bb8d5f_1757308753"
+        },
+        {
+          "rank": 3,
+          "relevance_score": 0.32,
+          "title": "dk on X: \"I made a few updates to my @Kalshi research tooling: 1 ...",
+          "url": "https://x.com/dkposts/status/1964484491197505753",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: latest news about market_kalshi_45bb8d5f_1757308753"
+        },
+        {
+          "rank": 4,
+          "relevance_score": 0.31,
+          "title": "Kalshi Volume Report: British Open, MLB, UFC 318 Are Week's Top ...",
+          "url": "https://nexteventhorizon.substack.com/p/kalshi-volume-report-british-open",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: latest news about market_kalshi_45bb8d5f_1757308753"
+        },
+        {
+          "rank": 5,
+          "relevance_score": 0.29,
+          "title": "Kalshi - Prediction Market for Trading the Future",
+          "url": "https://kalshi.com/",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: latest news about market_kalshi_45bb8d5f_1757308753"
+        },
+        {
+          "rank": 6,
+          "relevance_score": 0.28,
+          "title": "Kalshi eyes a new form of a prediction market contract that ...",
+          "url": "https://seekingalpha.com/news/4491470-kalshi-eyes-a-new-form-of-a-prediction-market-contract-that-resembles-a-traditional-sports-betting-parlay",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: latest news about market_kalshi_45bb8d5f_1757308753"
+        },
+        {
+          "rank": 7,
+          "relevance_score": 0.28,
+          "title": "Kalshi's 2025 pro football preview",
+          "url": "https://news.kalshi.com/p/kalshi-s-2025-pro-football-preview",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: latest news about market_kalshi_45bb8d5f_1757308753"
+        },
+        {
+          "rank": 8,
+          "relevance_score": 0.27,
+          "title": "Why Polymarket's 20% Risk of Recession This Year Is Worth Watching",
+          "url": "https://www.businessinsider.com/polymarket-kalshi-prediction-markets-recession-economy-trump-tariffs-inflation-forecasting-2025-7",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: latest news about market_kalshi_45bb8d5f_1757308753"
+        },
+        {
+          "rank": 9,
+          "relevance_score": 0.18,
+          "title": "Kalshi (@Kalshi) / X",
+          "url": "https://x.com/kalshi",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: latest news about market_kalshi_45bb8d5f_1757308753"
+        },
+        {
+          "rank": 10,
+          "relevance_score": 0.14,
+          "title": "Kalshi: 1st federally regulated exchange where people can trade on ...",
+          "url": "https://www.ycombinator.com/companies/kalshi",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: latest news about market_kalshi_45bb8d5f_1757308753"
+        },
+        {
+          "rank": 11,
+          "relevance_score": 0.47,
+          "title": "Solana News Today: Kalshi Bets on Solana to Fuel On-Chain ...",
+          "url": "https://www.ainvest.com/news/solana-news-today-kalshi-bets-solana-fuel-chain-trading-revolution-2508/",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: recent developments market_kalshi_45bb8d5f_1757308753"
+        },
+        {
+          "rank": 12,
+          "relevance_score": 0.42,
+          "title": "Judge lets MD regulator enforce sports betting laws against ...",
+          "url": "https://thedailyrecord.com/2025/08/12/kalshi-maryland-gambling-license-ruling/",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: recent developments market_kalshi_45bb8d5f_1757308753"
+        },
+        {
+          "rank": 13,
+          "relevance_score": 0.41,
+          "title": "How Kalshi and prediction markets are disrupting sports betting",
+          "url": "https://www.espn.com/espn/betting/story/_/id/45377686/kalshi-prediction-markets-disrupt-sports-betting",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: recent developments market_kalshi_45bb8d5f_1757308753"
+        },
+        {
+          "rank": 14,
+          "relevance_score": 0.4,
+          "title": "Kalshi Self-Certifies To Offer Football Player Props, Point Spreads ...",
+          "url": "https://sports.yahoo.com/article/kalshi-self-certifies-offer-football-154252194.html",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: recent developments market_kalshi_45bb8d5f_1757308753"
+        },
+        {
+          "rank": 15,
+          "relevance_score": 0.38,
+          "title": "Kalshi Expands Offerings Before Football Season Kicks Off",
+          "url": "https://www.gamblingnews.com/news/kalshi-expands-offerings-before-football-season-kicks-off/",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: recent developments market_kalshi_45bb8d5f_1757308753"
+        },
+        {
+          "rank": 16,
+          "relevance_score": 0.36,
+          "title": "Kalshi eyes a new form of a prediction market contract that ...",
+          "url": "https://seekingalpha.com/news/4491470-kalshi-eyes-a-new-form-of-a-prediction-market-contract-that-resembles-a-traditional-sports-betting-parlay",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: recent developments market_kalshi_45bb8d5f_1757308753"
+        },
+        {
+          "rank": 17,
+          "relevance_score": 0.33,
+          "title": "The Funding: Why crypto VCs are betting on prediction markets now",
+          "url": "https://www.theblock.co/post/369737/why-crypto-vcs-betting-on-prediction-markets-funding",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: recent developments market_kalshi_45bb8d5f_1757308753"
+        },
+        {
+          "rank": 18,
+          "relevance_score": 0.32,
+          "title": "Kalshi - Prediction Market for Trading the Future",
+          "url": "https://kalshi.com/",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: recent developments market_kalshi_45bb8d5f_1757308753"
+        },
+        {
+          "rank": 19,
+          "relevance_score": 0.31,
+          "title": "Kalshi hires crypto influencer John Wang with prediction market ...",
+          "url": "https://www.theblock.co/post/368121/kalshi-hires-crypto-influencer-john-wang-with-prediction-market-competition-poised-to-intensify",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: recent developments market_kalshi_45bb8d5f_1757308753"
+        },
+        {
+          "rank": 20,
+          "relevance_score": 0.25,
+          "title": "Kalshi found a backdoor to sports gambling, and flung it wide open",
+          "url": "https://www.fastcompany.com/91399289/kalshi-prediction-markets-sports-gambling",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: recent developments market_kalshi_45bb8d5f_1757308753"
+        },
+        {
+          "rank": 21,
+          "relevance_score": 0.47,
+          "title": "What are prediction markets? | Kalshi Help Center",
+          "url": "https://help.kalshi.com/kalshi-101/what-are-prediction-markets",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: expert analysis market_kalshi_45bb8d5f_1757308753"
+        },
+        {
+          "rank": 22,
+          "relevance_score": 0.43,
+          "title": "How To WIN On Kalshi \u2014 Top Strategies For Profiting From Event ...",
+          "url": "https://5reasonstovisit.com/travel/how-to-win-on-kalshi",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: expert analysis market_kalshi_45bb8d5f_1757308753"
+        },
+        {
+          "rank": 23,
+          "relevance_score": 0.42,
+          "title": "When AI meets the prediction market: Kalshi trading revolution ...",
+          "url": "https://www.panewslab.com/en/articles/7v5h2okw",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: expert analysis market_kalshi_45bb8d5f_1757308753"
+        },
+        {
+          "rank": 24,
+          "relevance_score": 0.4,
+          "title": "Kalshi - Prediction Market for Trading the Future",
+          "url": "https://kalshi.com/",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: expert analysis market_kalshi_45bb8d5f_1757308753"
+        },
+        {
+          "rank": 25,
+          "relevance_score": 0.37,
+          "title": "What is Kalshi and how do prediction markets work? - Yahoo",
+          "url": "https://www.yahoo.com/news/articles/kalshi-prediction-markets-181600634.html",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: expert analysis market_kalshi_45bb8d5f_1757308753"
+        },
+        {
+          "rank": 26,
+          "relevance_score": 0.35,
+          "title": "Kalshi Volume Report: Tennis, Baseball, And Hot Dog Eating ...",
+          "url": "https://nexteventhorizon.substack.com/p/kalshi-volume-report-july-6",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: expert analysis market_kalshi_45bb8d5f_1757308753"
+        },
+        {
+          "rank": 27,
+          "relevance_score": 0.33,
+          "title": "Kalshi Volume Report: Preseason NFL Betting Already A Top-10 ...",
+          "url": "https://nexteventhorizon.substack.com/p/kalshi-volume-report-preseason-nfl",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: expert analysis market_kalshi_45bb8d5f_1757308753"
+        },
+        {
+          "rank": 28,
+          "relevance_score": 0.33,
+          "title": "Prediction Market Parlays Are Here: Kalshi Posted Multi-Leg Bet For ...",
+          "url": "https://sports.yahoo.com/article/prediction-market-parlays-kalshi-posted-131201392.html",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: expert analysis market_kalshi_45bb8d5f_1757308753"
+        },
+        {
+          "rank": 29,
+          "relevance_score": 0.32,
+          "title": "Kalshi eyes a new form of a prediction market contract that ...",
+          "url": "https://seekingalpha.com/news/4491470-kalshi-eyes-a-new-form-of-a-prediction-market-contract-that-resembles-a-traditional-sports-betting-parlay",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: expert analysis market_kalshi_45bb8d5f_1757308753"
+        },
+        {
+          "rank": 30,
+          "relevance_score": 0.3,
+          "title": "How Kalshi and prediction markets are disrupting sports betting",
+          "url": "https://www.espn.com/espn/betting/story/_/id/45377686/kalshi-prediction-markets-disrupt-sports-betting",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Recent developments related to: expert analysis market_kalshi_45bb8d5f_1757308753"
+        },
+        {
+          "rank": 31,
+          "relevance_score": 0.48,
+          "title": "Kalshi - Prediction Market for Trading the Future",
+          "url": "https://kalshi.com/",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Prediction markets are gaining traction as tools for forecasting future events."
+        },
+        {
+          "rank": 32,
+          "relevance_score": 0.47,
+          "title": "Prediction market Kalshi expands crypto markets - Solana post",
+          "url": "https://www.ainvest.com/news/prediction-market-kalshi-expands-crypto-markets-solana-post-2508/",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Prediction markets are gaining traction as tools for forecasting future events."
+        },
+        {
+          "rank": 33,
+          "relevance_score": 0.46,
+          "title": "What is Kalshi and how do prediction markets work? - NewsNation",
+          "url": "https://www.newsnationnow.com/business/your-money/kalshi-prediction-markets/",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Prediction markets are gaining traction as tools for forecasting future events."
+        },
+        {
+          "rank": 34,
+          "relevance_score": 0.1,
+          "title": "Weekly Stock Market Update | Edward Jones",
+          "url": "https://www.edwardjones.com/us-en/market-news-insights/stock-market-news/stock-market-weekly-update",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Prediction markets are gaining traction as tools for forecasting future events."
+        },
+        {
+          "rank": 35,
+          "relevance_score": 0.08,
+          "title": "MarketWatch: Stock Market News - Financial News - MarketWatch",
+          "url": "https://www.marketwatch.com/",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Prediction markets are gaining traction as tools for forecasting future events."
+        },
+        {
+          "rank": 36,
+          "relevance_score": 0.08,
+          "title": "Yahoo Finance - Stock Market Live, Quotes, Business & Finance News",
+          "url": "https://finance.yahoo.com/",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Prediction markets are gaining traction as tools for forecasting future events."
+        },
+        {
+          "rank": 37,
+          "relevance_score": 0.07,
+          "title": "Weekly Trader's Stock Market Outlook | Charles Schwab",
+          "url": "https://www.schwab.com/learn/story/weekly-traders-outlook",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Prediction markets are gaining traction as tools for forecasting future events."
+        },
+        {
+          "rank": 38,
+          "relevance_score": 0.05,
+          "title": "Stock Market Today: Stock Market News And Analysis",
+          "url": "https://www.investors.com/news/stock-market-today-stock-market-news/",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Prediction markets are gaining traction as tools for forecasting future events."
+        },
+        {
+          "rank": 39,
+          "relevance_score": 0.05,
+          "title": "Stock Market Data - US Markets, World Markets, and Stock Quotes",
+          "url": "https://www.cnn.com/markets",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Prediction markets are gaining traction as tools for forecasting future events."
+        },
+        {
+          "rank": 40,
+          "relevance_score": 0.05,
+          "title": "U.S. Markets - MarketWatch",
+          "url": "https://www.marketwatch.com/markets/us",
+          "source_type": "news_article",
+          "reliability": "low",
+          "extracted_fact": "Prediction markets are gaining traction as tools for forecasting future events."
+        },
+        {
+          "rank": 41,
+          "relevance_score": 0.99,
+          "title": "Wikipedia Kalshi - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Kalshi",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "Recent developments related to: official statements market_kalshi_45bb8d5f_1757308753"
+        },
+        {
+          "rank": 42,
+          "relevance_score": 0.99,
+          "title": "Quick Start: Market Data - API Documentation - docs.kalshi.com",
+          "url": "https://docs.kalshi.com/getting_started/quick_start_market_data",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "Recent developments related to: official statements market_kalshi_45bb8d5f_1757308753"
+        },
+        {
+          "rank": 43,
+          "relevance_score": 0.98,
+          "title": "Bloomberg Kalshi Pulls Announcement of Tie Up With Musk's xAI Hours After Touting Deal - Bloomberg",
+          "url": "https://www.bloomberg.com/news/articles/2025-05-20/kalshi-pulls-announcement-of-xai-tie-up-hours-after-touting-deal",
+          "source_type": "news_article",
+          "reliability": "high",
+          "extracted_fact": "Recent developments related to: official statements market_kalshi_45bb8d5f_1757308753"
+        },
+        {
+          "rank": 44,
+          "relevance_score": 0.98,
+          "title": "Kalshi Kalshi - Prediction Market for Trading the Future",
+          "url": "https://kalshi.com/",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "Recent developments related to: official statements market_kalshi_45bb8d5f_1757308753"
+        },
+        {
+          "rank": 45,
+          "relevance_score": 0.97,
+          "title": "Kalshi Market Maker Program | Kalshi Help Center",
+          "url": "https://help.kalshi.com/markets/market-maker-program",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "Recent developments related to: official statements market_kalshi_45bb8d5f_1757308753"
+        },
+        {
+          "rank": 46,
+          "relevance_score": 0.96,
+          "title": "NYTimes Kalshi, an Online Prediction Market, Will Open Up to Brokerages - The New York Times",
+          "url": "https://www.nytimes.com/2025/01/31/business/dealbook/kalshi-prediction-market-brokerages.html",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "Recent developments related to: official statements market_kalshi_45bb8d5f_1757308753"
+        },
+        {
+          "rank": 47,
+          "relevance_score": 0.96,
+          "title": "Kalshi API | Kalshi Help Center",
+          "url": "https://help.kalshi.com/kalshi-api",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "Recent developments related to: official statements market_kalshi_45bb8d5f_1757308753"
+        },
+        {
+          "rank": 48,
+          "relevance_score": 0.96,
+          "title": "Kalshi Kalshi",
+          "url": "https://kalshi.com/market-makers",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "Recent developments related to: official statements market_kalshi_45bb8d5f_1757308753"
+        },
+        {
+          "rank": 49,
+          "relevance_score": 0.95,
+          "title": "How is Kalshi regulated? | Kalshi Help Center - help.kalshi.com",
+          "url": "https://help.kalshi.com/kalshi-101/how-is-kalshi-regulated",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "Recent developments related to: official statements market_kalshi_45bb8d5f_1757308753"
+        },
+        {
+          "rank": 50,
+          "relevance_score": 0.95,
+          "title": "Y Combinator Kalshi: 1st federally regulated exchange where people can trade on events | Y Combinator",
+          "url": "https://www.ycombinator.com/companies/kalshi",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "Recent developments related to: official statements market_kalshi_45bb8d5f_1757308753"
+        }
+      ]
+    },
+    {
+      "id": "c015113e-2da7-424b-aa8a-bdeed8c8c4e6",
+      "event_id": "a3047409-bc6c-4c9e-8d15-ba48c30fcd98",
+      "event_key": "market_kalshi_b78d319e_1757308753",
+      "event_title": "Will Ripple XRP reach above $2.92 before 12:00 AM ET on Oct 1, 2025?",
+      "event_description": "Title: Will Ripple XRP reach above $2.92 before 12:00 AM ET on Oct 1, 2025?\nDescription: No description\nTicker: KXXRPMAXM-25OCT01-2.92\nStatus: initialized\nClose Time: 2025-10-01T04:00:00Z\nCategory: \nSubcategory: Unknown\nCurrent Price: 0.000 - 0.000\nVolume: 0",
+      "probability": 0.75,
+      "horizon_hours": 168,
+      "rationale": "Based on analysis of 4 evidence items with an overall strength of 75.0%:\n        \n        \u2022 0 high-reliability sources provide strong supporting evidence\n        \u2022 Evidence covers multiple aspects of the event with consistent patterns\n        \u2022 Source diversity includes news articles, official statements, and expert opinions\n        \u2022 Confidence level reflects the quality and quantity of available evidence\n        \n        The prediction is based on the most reliable and relevant evidence available at the time of analysis.",
+      "created_at": "2025-09-08T01:25:05.662782",
+      "evidence_sources": [
+        {
+          "rank": 1,
+          "relevance_score": 0.75,
+          "title": "Search Results for: recent news market_kalshi_b78d319e_1757308753",
+          "url": "https://example.com/generic-result",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "Recent developments related to: recent news market_kalshi_b78d319e_1757308753"
+        },
+        {
+          "rank": 2,
+          "relevance_score": 0.75,
+          "title": "Search Results for: expert opinions market_kalshi_b78d319e_1757308753",
+          "url": "https://example.com/generic-result",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "Recent developments related to: expert opinions market_kalshi_b78d319e_1757308753"
+        },
+        {
+          "rank": 3,
+          "relevance_score": 0.75,
+          "title": "Search Results for: market analysis market_kalshi_b78d319e_1757308753",
+          "url": "https://example.com/generic-result",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "Recent developments related to: market analysis market_kalshi_b78d319e_1757308753"
+        },
+        {
+          "rank": 4,
+          "relevance_score": 0.75,
+          "title": "Search Results for: official updates market_kalshi_b78d319e_1757308753",
+          "url": "https://example.com/generic-result",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "Recent developments related to: official updates market_kalshi_b78d319e_1757308753"
+        }
+      ]
+    },
+    {
+      "id": "c79c0580-602b-418b-bde8-5ad8cf25b42f",
+      "event_id": "a10940bc-18fe-4d86-af4e-98406db9a9e5",
+      "event_key": "market_kalshi_4d54b481_1757308753",
+      "event_title": "Will Ripple XRP reach above $2.91 before 12:00 AM ET on Oct 1, 2025?",
+      "event_description": "Title: Will Ripple XRP reach above $2.91 before 12:00 AM ET on Oct 1, 2025?\nDescription: No description\nTicker: KXXRPMAXM-25OCT01-2.91\nStatus: initialized\nClose Time: 2025-10-01T04:00:00Z\nCategory: \nSubcategory: Unknown\nCurrent Price: 0.000 - 0.000\nVolume: 0",
+      "probability": 0.75,
+      "horizon_hours": 168,
+      "rationale": "Based on analysis of 4 evidence items with an overall strength of 75.0%:\n        \n        \u2022 0 high-reliability sources provide strong supporting evidence\n        \u2022 Evidence covers multiple aspects of the event with consistent patterns\n        \u2022 Source diversity includes news articles, official statements, and expert opinions\n        \u2022 Confidence level reflects the quality and quantity of available evidence\n        \n        The prediction is based on the most reliable and relevant evidence available at the time of analysis.",
+      "created_at": "2025-09-08T01:25:05.186102",
+      "evidence_sources": [
+        {
+          "rank": 1,
+          "relevance_score": 0.75,
+          "title": "Search Results for: recent news market_kalshi_4d54b481_1757308753",
+          "url": "https://example.com/generic-result",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "Recent developments related to: recent news market_kalshi_4d54b481_1757308753"
+        },
+        {
+          "rank": 2,
+          "relevance_score": 0.75,
+          "title": "Search Results for: expert opinions market_kalshi_4d54b481_1757308753",
+          "url": "https://example.com/generic-result",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "Recent developments related to: expert opinions market_kalshi_4d54b481_1757308753"
+        },
+        {
+          "rank": 3,
+          "relevance_score": 0.75,
+          "title": "Search Results for: market analysis market_kalshi_4d54b481_1757308753",
+          "url": "https://example.com/generic-result",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "Recent developments related to: market analysis market_kalshi_4d54b481_1757308753"
+        },
+        {
+          "rank": 4,
+          "relevance_score": 0.75,
+          "title": "Search Results for: official updates market_kalshi_4d54b481_1757308753",
+          "url": "https://example.com/generic-result",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "Recent developments related to: official updates market_kalshi_4d54b481_1757308753"
+        }
+      ]
+    },
+    {
+      "id": "cbb75a55-1180-4227-8b07-2d57465e2bf2",
+      "event_id": "d3ecd8e0-6754-4d95-a2ea-ee38fed6c00c",
+      "event_key": "market_kalshi_6f0c3d8c_1757308753",
+      "event_title": "Will Ripple XRP reach above $2.9 before 12:00 AM ET on Oct 1, 2025?",
+      "event_description": "Title: Will Ripple XRP reach above $2.9 before 12:00 AM ET on Oct 1, 2025?\nDescription: No description\nTicker: KXXRPMAXM-25OCT01-2.9\nStatus: initialized\nClose Time: 2025-10-01T04:00:00Z\nCategory: \nSubcategory: Unknown\nCurrent Price: 0.000 - 0.000\nVolume: 0",
+      "probability": 0.75,
+      "horizon_hours": 168,
+      "rationale": "Based on analysis of 4 evidence items with an overall strength of 75.0%:\n        \n        \u2022 0 high-reliability sources provide strong supporting evidence\n        \u2022 Evidence covers multiple aspects of the event with consistent patterns\n        \u2022 Source diversity includes news articles, official statements, and expert opinions\n        \u2022 Confidence level reflects the quality and quantity of available evidence\n        \n        The prediction is based on the most reliable and relevant evidence available at the time of analysis.",
+      "created_at": "2025-09-08T01:25:04.743756",
+      "evidence_sources": [
+        {
+          "rank": 1,
+          "relevance_score": 0.75,
+          "title": "Search Results for: recent news market_kalshi_6f0c3d8c_1757308753",
+          "url": "https://example.com/generic-result",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "Recent developments related to: recent news market_kalshi_6f0c3d8c_1757308753"
+        },
+        {
+          "rank": 2,
+          "relevance_score": 0.75,
+          "title": "Search Results for: expert opinions market_kalshi_6f0c3d8c_1757308753",
+          "url": "https://example.com/generic-result",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "Recent developments related to: expert opinions market_kalshi_6f0c3d8c_1757308753"
+        },
+        {
+          "rank": 3,
+          "relevance_score": 0.75,
+          "title": "Search Results for: market analysis market_kalshi_6f0c3d8c_1757308753",
+          "url": "https://example.com/generic-result",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "Recent developments related to: market analysis market_kalshi_6f0c3d8c_1757308753"
+        },
+        {
+          "rank": 4,
+          "relevance_score": 0.75,
+          "title": "Search Results for: official updates market_kalshi_6f0c3d8c_1757308753",
+          "url": "https://example.com/generic-result",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "Recent developments related to: official updates market_kalshi_6f0c3d8c_1757308753"
+        }
+      ]
+    },
+    {
+      "id": "e897e4eb-3034-448b-b66c-1ec37d4839b3",
+      "event_id": "b8802931-4aa0-488c-96d7-c4fed125d152",
+      "event_key": "market_kalshi_c31913fc_1757308753",
+      "event_title": "Coinbase volume in Q3 2025?",
+      "event_description": "Title: Coinbase volume in Q3 2025?\nDescription: No description\nTicker: KXCBVOLUME-Q3-25-250\nStatus: initialized\nClose Time: 2025-10-31T20:00:00Z\nCategory: \nSubcategory: Unknown\nCurrent Price: 0.000 - 0.000\nVolume: 0",
+      "probability": 0.75,
+      "horizon_hours": 168,
+      "rationale": "Based on analysis of 4 evidence items with an overall strength of 75.0%:\n        \n        \u2022 0 high-reliability sources provide strong supporting evidence\n        \u2022 Evidence covers multiple aspects of the event with consistent patterns\n        \u2022 Source diversity includes news articles, official statements, and expert opinions\n        \u2022 Confidence level reflects the quality and quantity of available evidence\n        \n        The prediction is based on the most reliable and relevant evidence available at the time of analysis.",
+      "created_at": "2025-09-08T01:24:31.368532",
+      "evidence_sources": [
+        {
+          "rank": 1,
+          "relevance_score": 0.75,
+          "title": "Search Results for: recent news market_kalshi_c31913fc_1757308753",
+          "url": "https://example.com/generic-result",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "Recent developments related to: recent news market_kalshi_c31913fc_1757308753"
+        },
+        {
+          "rank": 2,
+          "relevance_score": 0.75,
+          "title": "Search Results for: expert opinions market_kalshi_c31913fc_1757308753",
+          "url": "https://example.com/generic-result",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "Recent developments related to: expert opinions market_kalshi_c31913fc_1757308753"
+        },
+        {
+          "rank": 3,
+          "relevance_score": 0.75,
+          "title": "Search Results for: market analysis market_kalshi_c31913fc_1757308753",
+          "url": "https://example.com/generic-result",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "Recent developments related to: market analysis market_kalshi_c31913fc_1757308753"
+        },
+        {
+          "rank": 4,
+          "relevance_score": 0.75,
+          "title": "Search Results for: official updates market_kalshi_c31913fc_1757308753",
+          "url": "https://example.com/generic-result",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "Recent developments related to: official updates market_kalshi_c31913fc_1757308753"
+        }
+      ]
+    },
+    {
+      "id": "1f348a35-4aa9-4b47-9038-cb55078a5b8e",
+      "event_id": "ad149550-5313-4f7b-9bdf-0a0fe58b3c77",
+      "event_key": "market_kalshi_f1667ecf_1757308753",
+      "event_title": "Coinbase volume in Q3 2025?",
+      "event_description": "Title: Coinbase volume in Q3 2025?\nDescription: No description\nTicker: KXCBVOLUME-Q3-25-210\nStatus: initialized\nClose Time: 2025-10-31T20:00:00Z\nCategory: \nSubcategory: Unknown\nCurrent Price: 0.000 - 0.000\nVolume: 0",
+      "probability": 0.75,
+      "horizon_hours": 168,
+      "rationale": "Based on analysis of 4 evidence items with an overall strength of 75.0%:\n        \n        \u2022 0 high-reliability sources provide strong supporting evidence\n        \u2022 Evidence covers multiple aspects of the event with consistent patterns\n        \u2022 Source diversity includes news articles, official statements, and expert opinions\n        \u2022 Confidence level reflects the quality and quantity of available evidence\n        \n        The prediction is based on the most reliable and relevant evidence available at the time of analysis.",
+      "created_at": "2025-09-08T01:24:30.942038",
+      "evidence_sources": [
+        {
+          "rank": 1,
+          "relevance_score": 0.75,
+          "title": "Search Results for: recent news market_kalshi_f1667ecf_1757308753",
+          "url": "https://example.com/generic-result",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "Recent developments related to: recent news market_kalshi_f1667ecf_1757308753"
+        },
+        {
+          "rank": 2,
+          "relevance_score": 0.75,
+          "title": "Search Results for: expert opinions market_kalshi_f1667ecf_1757308753",
+          "url": "https://example.com/generic-result",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "Recent developments related to: expert opinions market_kalshi_f1667ecf_1757308753"
+        },
+        {
+          "rank": 3,
+          "relevance_score": 0.75,
+          "title": "Search Results for: market analysis market_kalshi_f1667ecf_1757308753",
+          "url": "https://example.com/generic-result",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "Recent developments related to: market analysis market_kalshi_f1667ecf_1757308753"
+        },
+        {
+          "rank": 4,
+          "relevance_score": 0.75,
+          "title": "Search Results for: official updates market_kalshi_f1667ecf_1757308753",
+          "url": "https://example.com/generic-result",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "Recent developments related to: official updates market_kalshi_f1667ecf_1757308753"
+        }
+      ]
+    },
+    {
+      "id": "0921c524-245b-4cf9-8c5a-d9144168c884",
+      "event_id": "f2149b33-c9a2-45c9-8771-34178f38002e",
+      "event_key": "market_kalshi_1474e08c_1757308753",
+      "event_title": "Coinbase volume in Q3 2025?",
+      "event_description": "Title: Coinbase volume in Q3 2025?\nDescription: No description\nTicker: KXCBVOLUME-Q3-25-230\nStatus: initialized\nClose Time: 2025-10-31T20:00:00Z\nCategory: \nSubcategory: Unknown\nCurrent Price: 0.000 - 0.000\nVolume: 0",
+      "probability": 0.75,
+      "horizon_hours": 168,
+      "rationale": "Based on analysis of 4 evidence items with an overall strength of 75.0%:\n        \n        \u2022 0 high-reliability sources provide strong supporting evidence\n        \u2022 Evidence covers multiple aspects of the event with consistent patterns\n        \u2022 Source diversity includes news articles, official statements, and expert opinions\n        \u2022 Confidence level reflects the quality and quantity of available evidence\n        \n        The prediction is based on the most reliable and relevant evidence available at the time of analysis.",
+      "created_at": "2025-09-08T01:24:30.479260",
+      "evidence_sources": [
+        {
+          "rank": 1,
+          "relevance_score": 0.75,
+          "title": "Search Results for: recent news market_kalshi_1474e08c_1757308753",
+          "url": "https://example.com/generic-result",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "Recent developments related to: recent news market_kalshi_1474e08c_1757308753"
+        },
+        {
+          "rank": 2,
+          "relevance_score": 0.75,
+          "title": "Search Results for: expert opinions market_kalshi_1474e08c_1757308753",
+          "url": "https://example.com/generic-result",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "Recent developments related to: expert opinions market_kalshi_1474e08c_1757308753"
+        },
+        {
+          "rank": 3,
+          "relevance_score": 0.75,
+          "title": "Search Results for: market analysis market_kalshi_1474e08c_1757308753",
+          "url": "https://example.com/generic-result",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "Recent developments related to: market analysis market_kalshi_1474e08c_1757308753"
+        },
+        {
+          "rank": 4,
+          "relevance_score": 0.75,
+          "title": "Search Results for: official updates market_kalshi_1474e08c_1757308753",
+          "url": "https://example.com/generic-result",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "Recent developments related to: official updates market_kalshi_1474e08c_1757308753"
+        }
+      ]
+    },
+    {
+      "id": "6c4011f3-7beb-40b6-8bc1-2653f252a58f",
+      "event_id": "24adb8f3-f397-4c65-970c-c8106e046b12",
+      "event_key": "bitcoin_100k_2024",
+      "event_title": "Will Bitcoin reach $100,000 by end of 2024?",
+      "event_description": "Bitcoin price prediction for end of year",
+      "probability": 0.75,
+      "horizon_hours": 168,
+      "rationale": "Based on analysis of 4 evidence items with an overall strength of 75.0%:\n        \n        \u2022 0 high-reliability sources provide strong supporting evidence\n        \u2022 Evidence covers multiple aspects of the event with consistent patterns\n        \u2022 Source diversity includes news articles, official statements, and expert opinions\n        \u2022 Confidence level reflects the quality and quantity of available evidence\n        \n        The prediction is based on the most reliable and relevant evidence available at the time of analysis.",
+      "created_at": "2025-09-08T01:19:49.417704",
+      "evidence_sources": [
+        {
+          "rank": 1,
+          "relevance_score": 0.75,
+          "title": "Search Results for: recent news bitcoin_100k_2024",
+          "url": "https://example.com/generic-result",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "Recent developments related to: recent news bitcoin_100k_2024"
+        },
+        {
+          "rank": 2,
+          "relevance_score": 0.75,
+          "title": "Search Results for: expert opinions bitcoin_100k_2024",
+          "url": "https://example.com/generic-result",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "Recent developments related to: expert opinions bitcoin_100k_2024"
+        },
+        {
+          "rank": 3,
+          "relevance_score": 0.75,
+          "title": "Search Results for: market analysis bitcoin_100k_2024",
+          "url": "https://example.com/generic-result",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "Recent developments related to: market analysis bitcoin_100k_2024"
+        },
+        {
+          "rank": 4,
+          "relevance_score": 0.75,
+          "title": "Search Results for: official updates bitcoin_100k_2024",
+          "url": "https://example.com/generic-result",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "Recent developments related to: official updates bitcoin_100k_2024"
+        }
+      ]
+    },
+    {
+      "id": "aa96a73d-258d-456e-b6c8-d758badeeae4",
+      "event_id": "8d7a2f50-614d-45eb-804d-85b493d05bad",
+      "event_key": "ai_regulation_us_2024",
+      "event_title": "Will there be major AI regulation passed in the US in 2024?",
+      "event_description": "AI regulation prediction",
+      "probability": 0.9,
+      "horizon_hours": 168,
+      "rationale": "Based on analysis of 4 evidence items with an overall strength of 88.0%:\n        \n        \u2022 0 high-reliability sources provide strong supporting evidence\n        \u2022 Evidence covers multiple aspects of the event with consistent patterns\n        \u2022 Source diversity includes news articles, official statements, and expert opinions\n        \u2022 Confidence level reflects the quality and quantity of available evidence\n        \n        The prediction is based on the most reliable and relevant evidence available at the time of analysis.",
+      "created_at": "2025-09-08T01:19:48.987776",
+      "evidence_sources": [
+        {
+          "rank": 1,
+          "relevance_score": 0.88,
+          "title": "AI Prediction Markets - The Future of Forecasting",
+          "url": "https://example.com/ai-prediction-markets",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "AI technology is advancing rapidly with new developments in machine learning and automation."
+        },
+        {
+          "rank": 2,
+          "relevance_score": 0.88,
+          "title": "AI Prediction Markets - The Future of Forecasting",
+          "url": "https://example.com/ai-prediction-markets",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "AI technology is advancing rapidly with new developments in machine learning and automation."
+        },
+        {
+          "rank": 3,
+          "relevance_score": 0.88,
+          "title": "AI Prediction Markets - The Future of Forecasting",
+          "url": "https://example.com/ai-prediction-markets",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "AI technology is advancing rapidly with new developments in machine learning and automation."
+        },
+        {
+          "rank": 4,
+          "relevance_score": 0.88,
+          "title": "AI Prediction Markets - The Future of Forecasting",
+          "url": "https://example.com/ai-prediction-markets",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "AI technology is advancing rapidly with new developments in machine learning and automation."
+        }
+      ]
+    },
+    {
+      "id": "b66a77bd-2f01-48b0-83cb-81b9f38d88e9",
+      "event_id": "4439b5a0-7b71-453c-8c7b-864be7131de8",
+      "event_key": "openai_gpt5_2024",
+      "event_title": "Will OpenAI release GPT-5 in 2024?",
+      "event_description": "OpenAI product release prediction",
+      "probability": 0.9,
+      "horizon_hours": 168,
+      "rationale": "Based on analysis of 4 evidence items with an overall strength of 88.0%:\n        \n        \u2022 0 high-reliability sources provide strong supporting evidence\n        \u2022 Evidence covers multiple aspects of the event with consistent patterns\n        \u2022 Source diversity includes news articles, official statements, and expert opinions\n        \u2022 Confidence level reflects the quality and quantity of available evidence\n        \n        The prediction is based on the most reliable and relevant evidence available at the time of analysis.",
+      "created_at": "2025-09-08T01:19:48.549029",
+      "evidence_sources": [
+        {
+          "rank": 1,
+          "relevance_score": 0.88,
+          "title": "AI Prediction Markets - The Future of Forecasting",
+          "url": "https://example.com/ai-prediction-markets",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "AI technology is advancing rapidly with new developments in machine learning and automation."
+        },
+        {
+          "rank": 2,
+          "relevance_score": 0.88,
+          "title": "AI Prediction Markets - The Future of Forecasting",
+          "url": "https://example.com/ai-prediction-markets",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "AI technology is advancing rapidly with new developments in machine learning and automation."
+        },
+        {
+          "rank": 3,
+          "relevance_score": 0.88,
+          "title": "AI Prediction Markets - The Future of Forecasting",
+          "url": "https://example.com/ai-prediction-markets",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "AI technology is advancing rapidly with new developments in machine learning and automation."
+        },
+        {
+          "rank": 4,
+          "relevance_score": 0.88,
+          "title": "AI Prediction Markets - The Future of Forecasting",
+          "url": "https://example.com/ai-prediction-markets",
+          "source_type": "news_article",
+          "reliability": "medium",
+          "extracted_fact": "AI technology is advancing rapidly with new developments in machine learning and automation."
+        }
+      ]
+    }
+  ]
+}

@@ -243,9 +243,51 @@ class WebResearchAgent:
         return extracted_fact, supporting_claim
     
     async def _extract_facts(self, result: Dict[str, Any], query: str) -> Tuple[str, str]:
-        """Extract facts from search result (would use LLM in real mode)."""
-        # For now, use mock extraction
-        return self._mock_extract_facts(result, query)
+        """Extract facts from search result using content analysis."""
+        title = result.get("title", "")
+        content = result.get("content", "")
+        url = result.get("url", "")
+        
+        # Extract meaningful facts from the actual content
+        if not content or len(content.strip()) < 50:
+            # Fallback to title-based extraction
+            extracted_fact = f"Article titled '{title}' discusses topics related to: {query}"
+            supporting_claim = f"Source: {title} ({url})"
+            return extracted_fact, supporting_claim
+        
+        # Extract key sentences from content
+        sentences = content.split('. ')
+        relevant_sentences = []
+        
+        # Look for sentences that contain relevant keywords
+        query_keywords = query.lower().split()
+        
+        for sentence in sentences[:10]:  # Check first 10 sentences
+            if len(sentence.strip()) > 20:  # Skip very short sentences
+                sentence_lower = sentence.lower()
+                # Check if sentence contains any query keywords
+                if any(keyword in sentence_lower for keyword in query_keywords):
+                    relevant_sentences.append(sentence.strip())
+        
+        # If we found relevant sentences, use them
+        if relevant_sentences:
+            # Take the most relevant sentence (first one found)
+            extracted_fact = relevant_sentences[0]
+            if not extracted_fact.endswith('.'):
+                extracted_fact += '.'
+            
+            # Create supporting claim with more context
+            supporting_claim = f"Source: {title} - {content[:200]}..."
+        else:
+            # Fallback: extract first meaningful sentence from content
+            first_sentence = sentences[0] if sentences else content[:100]
+            extracted_fact = first_sentence.strip()
+            if not extracted_fact.endswith('.'):
+                extracted_fact += '.'
+            
+            supporting_claim = f"Source: {title} - {content[:200]}..."
+        
+        return extracted_fact, supporting_claim
     
     async def _analyze_and_predict(
         self, 
