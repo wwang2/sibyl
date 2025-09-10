@@ -137,45 +137,25 @@ class EnhancedPredictionWorkflow:
     
     async def _get_events_for_prediction(self) -> List[Event]:
         """Get events that need predictions."""
-        # Get approved proposals that don't have predictions yet
         with self.store.get_session() as session:
-            from sqlalchemy import and_, not_
+            # Get all events that don't have predictions yet
+            events_without_predictions = []
             
-            # First, try to get approved proposals that don't have events yet
-            approved_proposals = session.query(EventProposal).filter(
-                EventProposal.status == ProposalStatus.ACCEPTED
+            all_events = session.query(Event).filter(
+                Event.state == EventState.ACTIVE
             ).all()
             
-            events = []
-            for proposal in approved_proposals:
-                # Check if this proposal already has an event with predictions
-                existing_event = session.query(Event).filter(
-                    Event.event_proposal_id == proposal.id
-                ).first()
+            for event in all_events:
+                # Check if this event already has predictions
+                has_predictions = session.query(Prediction).join(
+                    WorkflowRun, Prediction.workflow_run_id == WorkflowRun.id
+                ).filter(WorkflowRun.event_id == event.id).first() is not None
                 
-                if existing_event:
-                    # Check if this event already has predictions
-                    has_predictions = session.query(Prediction).join(
-                        WorkflowRun, Prediction.workflow_run_id == WorkflowRun.id
-                    ).filter(WorkflowRun.event_id == existing_event.id).first() is not None
-                    
-                    if not has_predictions:
-                        events.append(existing_event)
-                else:
-                    # Create a temporary Event object from the proposal for prediction
-                    temp_event = Event(
-                        id=proposal.id,  # Use proposal ID as event ID
-                        event_proposal_id=proposal.id,
-                        key=proposal.event_key,
-                        title=proposal.title,
-                        description=proposal.description,
-                        state=EventState.ACTIVE,
-                        created_at=proposal.created_at
-                    )
-                    events.append(temp_event)
+                if not has_predictions:
+                    events_without_predictions.append(event)
             
             # Limit the number of events to process
-            events = events[:self.config.max_events_per_run]
+            events = events_without_predictions[:self.config.max_events_per_run]
         
         logger.info(f"Found {len(events)} events/proposals without predictions")
         return events

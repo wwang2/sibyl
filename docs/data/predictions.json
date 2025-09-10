@@ -1,6 +1,213 @@
 {
-  "timestamp": "2025-09-10T05:31:28.557521",
+  "timestamp": "2025-09-10T05:34:45.272264",
   "events": [
+    {
+      "event_id": "ae9a9f45-f230-49e2-8315-5d8034145770",
+      "event_key": "openai_gpt5_2024",
+      "event_title": "Will OpenAI release GPT-5 in 2024?",
+      "event_description": "OpenAI product release prediction",
+      "event_state": "active",
+      "expected_resolution_date": null,
+      "created_at": "2025-09-08T02:26:10.305538",
+      "resolution": {
+        "status": "none",
+        "confidence_score": null,
+        "confirming_sources_count": 0,
+        "contradicting_sources_count": 0,
+        "total_sources_checked": 0,
+        "resolution_summary": null,
+        "resolution_date": null,
+        "human_override": false
+      },
+      "predictions": [
+        {
+          "id": "3a0e0781-eca8-47e7-8396-c8bb506dd519",
+          "probability": 0.9,
+          "horizon_hours": 168,
+          "rationale": "\ud83e\udd16 **WebResearchAgent Analysis** (v1.0)\n\n\ud83d\udcca **Evidence Summary:**\n\u2022 Analyzed 4 evidence items with 88.0% overall strength\n\u2022 0 high-reliability sources provide strong supporting evidence\n\u2022 Source breakdown: 4 news article\n\n\ud83d\udd0d **Key Insights:**\n\u2022 Strong media coverage indicates significant public interest and momentum\n\n\u23f0 **Timeline Analysis:**\n\u2022 Recent high-quality evidence suggests current momentum and relevance\n\n\ud83c\udfaf **Prediction Rationale:**\nThis prediction is based on comprehensive analysis of current evidence, source reliability assessment, and trend analysis. The confidence level reflects the quality and consistency of available information.",
+          "created_at": "2025-09-10T05:34:38.646788",
+          "agent_type": "agent",
+          "agent_name": "research_agent",
+          "agent_version": "1.0",
+          "evidence_sources": [
+            {
+              "rank": 1,
+              "relevance_score": 0.88,
+              "title": "AI Prediction Markets - The Future of Forecasting",
+              "url": "https://example.com/ai-prediction-markets",
+              "source_type": "news_article",
+              "reliability": "medium",
+              "extracted_fact": "AI technology is advancing rapidly with new developments in machine learning and automation."
+            },
+            {
+              "rank": 2,
+              "relevance_score": 0.88,
+              "title": "AI Prediction Markets - The Future of Forecasting",
+              "url": "https://example.com/ai-prediction-markets",
+              "source_type": "news_article",
+              "reliability": "medium",
+              "extracted_fact": "AI technology is advancing rapidly with new developments in machine learning and automation."
+            },
+            {
+              "rank": 3,
+              "relevance_score": 0.88,
+              "title": "AI Prediction Markets - The Future of Forecasting",
+              "url": "https://example.com/ai-prediction-markets",
+              "source_type": "news_article",
+              "reliability": "medium",
+              "extracted_fact": "AI technology is advancing rapidly with new developments in machine learning and automation."
+            },
+            {
+              "rank": 4,
+              "relevance_score": 0.88,
+              "title": "AI Prediction Markets - The Future of Forecasting",
+              "url": "https://example.com/ai-prediction-markets",
+              "source_type": "news_article",
+              "reliability": "medium",
+              "extracted_fact": "AI technology is advancing rapidly with new developments in machine learning and automation."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "event_id": "ebd5be8f-cef3-4ddf-bbcb-e5b3ad607bf9",
+      "event_key": "ai_regulation_us_2024",
+      "event_title": "Will there be major AI regulation passed in the US in 2024?",
+      "event_description": "AI regulation prediction",
+      "event_state": "active",
+      "expected_resolution_date": null,
+      "created_at": "2025-09-08T02:26:10.303348",
+      "resolution": {
+        "status": "none",
+        "confidence_score": null,
+        "confirming_sources_count": 0,
+        "contradicting_sources_count": 0,
+        "total_sources_checked": 0,
+        "resolution_summary": null,
+        "resolution_date": null,
+        "human_override": false
+      },
+      "predictions": [
+        {
+          "id": "1b55f3eb-992d-4762-b52a-6c880d11901d",
+          "probability": 0.9,
+          "horizon_hours": 168,
+          "rationale": "\ud83e\udd16 **WebResearchAgent Analysis** (v1.0)\n\n\ud83d\udcca **Evidence Summary:**\n\u2022 Analyzed 4 evidence items with 88.0% overall strength\n\u2022 0 high-reliability sources provide strong supporting evidence\n\u2022 Source breakdown: 4 news article\n\n\ud83d\udd0d **Key Insights:**\n\u2022 Strong media coverage indicates significant public interest and momentum\n\n\u23f0 **Timeline Analysis:**\n\u2022 Recent high-quality evidence suggests current momentum and relevance\n\n\ud83c\udfaf **Prediction Rationale:**\nThis prediction is based on comprehensive analysis of current evidence, source reliability assessment, and trend analysis. The confidence level reflects the quality and consistency of available information.",
+          "created_at": "2025-09-10T05:34:38.206040",
+          "agent_type": "agent",
+          "agent_name": "research_agent",
+          "agent_version": "1.0",
+          "evidence_sources": [
+            {
+              "rank": 1,
+              "relevance_score": 0.88,
+              "title": "AI Prediction Markets - The Future of Forecasting",
+              "url": "https://example.com/ai-prediction-markets",
+              "source_type": "news_article",
+              "reliability": "medium",
+              "extracted_fact": "AI technology is advancing rapidly with new developments in machine learning and automation."
+            },
+            {
+              "rank": 2,
+              "relevance_score": 0.88,
+              "title": "AI Prediction Markets - The Future of Forecasting",
+              "url": "https://example.com/ai-prediction-markets",
+              "source_type": "news_article",
+              "reliability": "medium",
+              "extracted_fact": "AI technology is advancing rapidly with new developments in machine learning and automation."
+            },
+            {
+              "rank": 3,
+              "relevance_score": 0.88,
+              "title": "AI Prediction Markets - The Future of Forecasting",
+              "url": "https://example.com/ai-prediction-markets",
+              "source_type": "news_article",
+              "reliability": "medium",
+              "extracted_fact": "AI technology is advancing rapidly with new developments in machine learning and automation."
+            },
+            {
+              "rank": 4,
+              "relevance_score": 0.88,
+              "title": "AI Prediction Markets - The Future of Forecasting",
+              "url": "https://example.com/ai-prediction-markets",
+              "source_type": "news_article",
+              "reliability": "medium",
+              "extracted_fact": "AI technology is advancing rapidly with new developments in machine learning and automation."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "event_id": "c9e35d01-a7af-4232-96c8-e3ef8e530668",
+      "event_key": "bitcoin_100k_2024",
+      "event_title": "Will Bitcoin reach $100,000 by end of 2024?",
+      "event_description": "Bitcoin price prediction for end of year",
+      "event_state": "active",
+      "expected_resolution_date": null,
+      "created_at": "2025-09-08T02:26:10.299625",
+      "resolution": {
+        "status": "none",
+        "confidence_score": null,
+        "confirming_sources_count": 0,
+        "contradicting_sources_count": 0,
+        "total_sources_checked": 0,
+        "resolution_summary": null,
+        "resolution_date": null,
+        "human_override": false
+      },
+      "predictions": [
+        {
+          "id": "aeb9e1ab-360d-4513-a401-db4fc67e1eb0",
+          "probability": 0.75,
+          "horizon_hours": 168,
+          "rationale": "\ud83e\udd16 **WebResearchAgent Analysis** (v1.0)\n\n\ud83d\udcca **Evidence Summary:**\n\u2022 Analyzed 4 evidence items with 75.0% overall strength\n\u2022 0 high-reliability sources provide strong supporting evidence\n\u2022 Source breakdown: 4 news article\n\n\ud83d\udd0d **Key Insights:**\n\u2022 Strong media coverage indicates significant public interest and momentum\n\n\u23f0 **Timeline Analysis:**\n\u2022 Recent high-quality evidence suggests current momentum and relevance\n\n\ud83c\udfaf **Prediction Rationale:**\nThis prediction is based on comprehensive analysis of current evidence, source reliability assessment, and trend analysis. The confidence level reflects the quality and consistency of available information.",
+          "created_at": "2025-09-10T05:34:37.752015",
+          "agent_type": "agent",
+          "agent_name": "research_agent",
+          "agent_version": "1.0",
+          "evidence_sources": [
+            {
+              "rank": 1,
+              "relevance_score": 0.75,
+              "title": "Search Results for: recent news bitcoin_100k_2024",
+              "url": "https://example.com/generic-result",
+              "source_type": "news_article",
+              "reliability": "medium",
+              "extracted_fact": "Recent developments related to: recent news bitcoin_100k_2024"
+            },
+            {
+              "rank": 2,
+              "relevance_score": 0.75,
+              "title": "Search Results for: expert opinions bitcoin_100k_2024",
+              "url": "https://example.com/generic-result",
+              "source_type": "news_article",
+              "reliability": "medium",
+              "extracted_fact": "Recent developments related to: expert opinions bitcoin_100k_2024"
+            },
+            {
+              "rank": 3,
+              "relevance_score": 0.75,
+              "title": "Search Results for: market analysis bitcoin_100k_2024",
+              "url": "https://example.com/generic-result",
+              "source_type": "news_article",
+              "reliability": "medium",
+              "extracted_fact": "Recent developments related to: market analysis bitcoin_100k_2024"
+            },
+            {
+              "rank": 4,
+              "relevance_score": 0.75,
+              "title": "Search Results for: official updates bitcoin_100k_2024",
+              "url": "https://example.com/generic-result",
+              "source_type": "news_article",
+              "reliability": "medium",
+              "extracted_fact": "Recent developments related to: official updates bitcoin_100k_2024"
+            }
+          ]
+        }
+      ]
+    },
     {
       "event_id": "5883a08b-dd44-4e88-9962-680753bda2e0",
       "event_key": "kalshi_KXTARIFFPHARMA-26SEP30",

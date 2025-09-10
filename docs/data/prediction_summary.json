@@ -1,14 +1,14 @@
 {
-  "timestamp": "2025-09-10T05:31:28.561143",
-  "total_predictions": 3,
-  "average_confidence": 0.783,
+  "timestamp": "2025-09-10T05:34:45.274745",
+  "total_predictions": 6,
+  "average_confidence": 0.817,
   "confidence_distribution": {
     "low": 0,
     "medium": 1,
-    "high": 2
+    "high": 5
   },
   "recent_activity": {
-    "predictions_last_7_days": 3,
-    "average_confidence_recent": 0.783
+    "predictions_last_7_days": 6,
+    "average_confidence_recent": 0.817
   }
 }
