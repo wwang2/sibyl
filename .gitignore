@@ -67,6 +67,25 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
+# ---- Data Files ----
+events_snapshot*.json
+events_impact*.json
+*.csv
+*.xlsx
+
+# ---- Archive / Experimental ----
+archive/
+experimental_scripts/
+temp_scripts_backup/
+
+# ---- Documentation / Specs ----
+spec/
+PREDICTION_MARKETS_INTEGRATION_SUMMARY.md
+
+# ---- Generated Files ----
+docs/predictions/
+docs/index_enhanced.html
+
 # ---- Misc ----
 *.lock
 *.crt
