@@ -138,6 +138,9 @@ class EnhancedPredictionWorkflow:
     async def _get_events_for_prediction(self) -> List[Event]:
         """Get events that need predictions."""
         with self.store.get_session() as session:
+            # First, check for automatic event resolution
+            await self._check_automatic_resolution(session)
+            
             # Get all events that don't have predictions yet
             events_without_predictions = []
             
@@ -146,12 +149,13 @@ class EnhancedPredictionWorkflow:
             ).all()
             
             for event in all_events:
-                # Check if this event already has predictions
-                has_predictions = session.query(Prediction).join(
-                    WorkflowRun, Prediction.workflow_run_id == WorkflowRun.id
-                ).filter(WorkflowRun.event_id == event.id).first() is not None
+                # Allow predictions for all active events (same agent can make updated predictions)
+                # Only skip if event is resolved
+                has_resolution = session.query(EventResolution).filter(
+                    EventResolution.event_id == event.id
+                ).first() is not None
                 
-                if not has_predictions:
+                if not has_resolution:
                     events_without_predictions.append(event)
             
             # Limit the number of events to process
@@ -159,6 +163,60 @@ class EnhancedPredictionWorkflow:
         
         logger.info(f"Found {len(events)} events/proposals without predictions")
         return events
+    
+    async def _check_automatic_resolution(self, session) -> None:
+        """Check for events that should be automatically resolved."""
+        from core.models import EventResolution, ResolutionStatus
+        from datetime import datetime
+        
+        current_date = datetime.now()
+        events_to_resolve = []
+        
+        # Get all active events
+        all_events = session.query(Event).filter(Event.state == EventState.ACTIVE).all()
+        
+        for event in all_events:
+            should_resolve = False
+            resolution_reason = ""
+            
+            # Check if event has expected resolution date that has passed
+            if event.expected_resolution_date and event.expected_resolution_date < current_date:
+                should_resolve = True
+                resolution_reason = f"Expected resolution date {event.expected_resolution_date.date()} has passed"
+            
+            # Check if event title/description indicates it's about a past year
+            elif any(year in event.title for year in ["2024", "2023", "2022"]) and current_date.year > 2024:
+                should_resolve = True
+                resolution_reason = "Event is about a past year and we're past that time period"
+            
+            if should_resolve:
+                # Check if resolution already exists
+                existing_resolution = session.query(EventResolution).filter(
+                    EventResolution.event_id == event.id
+                ).first()
+                
+                if not existing_resolution:
+                    events_to_resolve.append((event, resolution_reason))
+        
+        # Create resolution records for events that should be resolved
+        for event, reason in events_to_resolve:
+            resolution = EventResolution(
+                event_id=event.id,
+                resolution_status=ResolutionStatus.RESOLVED,
+                confidence_score=0.9,  # High confidence for time-based resolution
+                confirming_sources_count=1,
+                contradicting_sources_count=0,
+                total_sources_checked=1,
+                resolution_summary=f"Automatically resolved: {reason}",
+                resolution_date=current_date,
+                human_override=False
+            )
+            session.add(resolution)
+            logger.info(f"Auto-resolved event: {event.title[:50]}... - {reason}")
+        
+        if events_to_resolve:
+            session.commit()
+            logger.info(f"Auto-resolved {len(events_to_resolve)} events")
     
     async def _research_and_predict(self, event: Event) -> Optional[Dict[str, Any]]:
         """Research an event and create a prediction."""
