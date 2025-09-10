@@ -186,7 +186,7 @@
         .event-description {
             font-size: 0.875rem;
             color: #4b5563;
-            line-height: 1.5;
+            line-height: 1.6;
             margin-top: 0;
             padding: 0;
             background: transparent;
@@ -197,6 +197,15 @@
             hyphens: auto;
             box-shadow: none;
             font-weight: 400;
+        }
+        
+        .event-description p {
+            margin-bottom: 12px;
+            line-height: 1.6;
+        }
+        
+        .event-description p:last-child {
+            margin-bottom: 0;
         }
         
         .prediction-card {
@@ -259,7 +268,7 @@
         .prediction-rationale {
             font-size: 0.875rem;
             color: #4b5563;
-            line-height: 1.5;
+            line-height: 1.6;
             margin-top: 8px;
             padding: 0;
             background: transparent;
@@ -270,6 +279,15 @@
             hyphens: auto;
             box-shadow: none;
             font-weight: 400;
+        }
+        
+        .prediction-rationale p {
+            margin-bottom: 12px;
+            line-height: 1.6;
+        }
+        
+        .prediction-rationale p:last-child {
+            margin-bottom: 0;
         }
         
         .evidence-card {
@@ -305,7 +323,7 @@
         .evidence-fact {
             font-size: 0.875rem;
             color: #4b5563;
-            line-height: 1.5;
+            line-height: 1.6;
             margin-bottom: 8px;
             padding: 0;
             background: transparent;
@@ -315,6 +333,15 @@
             word-wrap: break-word;
             hyphens: auto;
             font-weight: 400;
+        }
+        
+        .evidence-fact p {
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+        
+        .evidence-fact p:last-child {
+            margin-bottom: 0;
         }
         
         .evidence-meta {
@@ -544,7 +571,7 @@
         .evidence-fact {
             font-size: 0.875rem;
             color: #4b5563;
-            line-height: 1.5;
+            line-height: 1.6;
             margin-bottom: 8px;
             padding: 0;
             background: transparent;
@@ -554,6 +581,15 @@
             word-wrap: break-word;
             hyphens: auto;
             font-weight: 400;
+        }
+        
+        .evidence-fact p {
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+        
+        .evidence-fact p:last-child {
+            margin-bottom: 0;
         }
         
         .evidence-meta {
@@ -693,13 +729,13 @@
                     <div class="chart-container">
                         <canvas id="confidenceChart"></canvas>
         </div>
-                </div>
-                
+        </div>
+
                 <div class="card">
                     <h2>📈 Recent Activity</h2>
                     <div class="chart-container">
-                        <canvas id="activityChart"></canvas>
-                    </div>
+                    <canvas id="activityChart"></canvas>
+                </div>
                 </div>
             </div>
             
@@ -708,7 +744,7 @@
                     <h2>📋 Events</h2>
                     <div id="events-list" class="events-list">
                         <!-- Events will be loaded here -->
-                    </div>
+            </div>
         </div>
 
                 <div class="column predictions-column">
@@ -716,22 +752,22 @@
                     <div id="predictions-list" class="predictions-list">
                         <!-- Predictions will be loaded here -->
                     </div>
-                </div>
-                
+        </div>
+
                 <div class="column evidence-column">
                     <h2>📚 Evidence</h2>
                     <div id="evidence-list" class="evidence-list">
                         <!-- Evidence will be loaded here -->
-                    </div>
+                </div>
                 </div>
             </div>
         </div>
 
         <div id="last-updated" class="last-updated" style="display: none;">
             Last updated: <span id="update-time"></span>
-        </div>
-    </div>
-
+                </div>
+            </div>
+            
     <script>
         let confidenceChart, activityChart;
         
@@ -1025,20 +1061,51 @@
                 .replace(/\s+/g, ' ')  // Replace multiple spaces with single space
                 .trim();
             
-            // Add paragraph breaks for better readability
-            formatted = formatted
-                .replace(/\. /g, '.</p><p>')  // Add paragraph breaks after sentences
-                .replace(/\? /g, '?</p><p>')  // Add paragraph breaks after questions
-                .replace(/! /g, '!</p><p>');  // Add paragraph breaks after exclamations
+            // Split into logical paragraphs based on bullet points and major breaks
+            let paragraphs = [];
             
-            // Wrap in paragraph tags
-            formatted = '<p>' + formatted + '</p>';
+            // Split by bullet points first
+            if (formatted.includes('•')) {
+                const bulletSections = formatted.split('•');
+                paragraphs.push(bulletSections[0].trim()); // First section before bullets
+                
+                // Process bullet points
+                for (let i = 1; i < bulletSections.length; i++) {
+                    const bulletText = bulletSections[i].trim();
+                    if (bulletText) {
+                        paragraphs.push('• ' + bulletText);
+                    }
+                }
+            } else {
+                // Split by double periods or other logical breaks
+                const sentences = formatted.split(/\. (?=[A-Z])/);
+                let currentParagraph = '';
+                
+                for (let i = 0; i < sentences.length; i++) {
+                    const sentence = sentences[i].trim();
+                    if (!sentence) continue;
+                    
+                    // Add period back if it was removed by split
+                    if (i < sentences.length - 1 && !sentence.endsWith('.')) {
+                        currentParagraph += sentence + '. ';
+                    } else {
+                        currentParagraph += sentence + ' ';
+                    }
+                    
+                    // Create paragraph breaks every 2-3 sentences or at logical breaks
+                    if (currentParagraph.length > 200 || 
+                        sentence.includes('confidence') || 
+                        sentence.includes('prediction') ||
+                        sentence.includes('evidence') ||
+                        i === sentences.length - 1) {
+                        paragraphs.push(currentParagraph.trim());
+                        currentParagraph = '';
+                    }
+                }
+            }
             
-            // Clean up any empty paragraphs
-            formatted = formatted.replace(/<p><\/p>/g, '');
-            formatted = formatted.replace(/<p>\s*<\/p>/g, '');
-            
-            return formatted;
+            // Wrap each paragraph in <p> tags
+            return paragraphs.map(p => `<p>${p}</p>`).join('');
         }
 
         setInterval(loadPredictionData, 5 * 60 * 1000);
