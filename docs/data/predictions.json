@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-09-10T05:20:31.530914",
+  "timestamp": "2025-09-10T05:31:28.557521",
   "events": [
     {
       "event_id": "5883a08b-dd44-4e88-9962-680753bda2e0",
@@ -26,6 +26,9 @@
           "horizon_hours": 168,
           "rationale": "Based on analysis of 46 evidence items with an overall strength of 89.8%:\n        \n        \u2022 10 high-reliability sources provide strong supporting evidence\n        \u2022 Evidence covers multiple aspects of the event with consistent patterns\n        \u2022 Source diversity includes news articles, official statements, and expert opinions\n        \u2022 Confidence level reflects the quality and quantity of available evidence\n        \n        The prediction is based on the most reliable and relevant evidence available at the time of analysis.",
           "created_at": "2025-09-08T02:27:40.205080",
+          "agent_type": "agent",
+          "agent_name": "research_agent",
+          "agent_version": "1.0",
           "evidence_sources": [
             {
               "rank": 1,
@@ -470,6 +473,9 @@
           "horizon_hours": 168,
           "rationale": "Based on analysis of 49 evidence items with an overall strength of 51.1%:\n        \n        \u2022 5 high-reliability sources provide strong supporting evidence\n        \u2022 Evidence covers multiple aspects of the event with consistent patterns\n        \u2022 Source diversity includes news articles, official statements, and expert opinions\n        \u2022 Confidence level reflects the quality and quantity of available evidence\n        \n        The prediction is based on the most reliable and relevant evidence available at the time of analysis.",
           "created_at": "2025-09-08T02:27:15.515381",
+          "agent_type": "agent",
+          "agent_name": "research_agent",
+          "agent_version": "1.0",
           "evidence_sources": [
             {
               "rank": 1,
@@ -941,6 +947,9 @@
           "horizon_hours": 168,
           "rationale": "Based on analysis of 36 evidence items with an overall strength of 86.9%:\n        \n        \u2022 6 high-reliability sources provide strong supporting evidence\n        \u2022 Evidence covers multiple aspects of the event with consistent patterns\n        \u2022 Source diversity includes news articles, official statements, and expert opinions\n        \u2022 Confidence level reflects the quality and quantity of available evidence\n        \n        The prediction is based on the most reliable and relevant evidence available at the time of analysis.",
           "created_at": "2025-09-08T02:26:46.899088",
+          "agent_type": "agent",
+          "agent_name": "research_agent",
+          "agent_version": "1.0",
           "evidence_sources": [
             {
               "rank": 1,

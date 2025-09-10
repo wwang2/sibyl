@@ -265,6 +265,32 @@
             color: #721c24;
         }
         
+        .agent-badge {
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 3px 6px;
+            border-radius: 3px;
+            color: white;
+            margin-left: 8px;
+        }
+        
+        .agent-agent {
+            background: #007bff; /* Blue for AI agents */
+        }
+        
+        .agent-human {
+            background: #28a745; /* Green for human predictions */
+        }
+        
+        .agent-heuristic {
+            background: #ffc107; /* Yellow for heuristic methods */
+            color: #212529;
+        }
+        
+        .agent-random {
+            background: #6c757d; /* Gray for random predictions */
+        }
+        
         .resolution-badge {
             font-size: 0.7rem;
             font-weight: 600;
@@ -1079,10 +1105,16 @@
                 const confidenceClass = confidence >= 0.7 ? 'high' : confidence >= 0.4 ? 'medium' : 'low';
                 const confidenceText = (confidence * 100).toFixed(1) + '%';
                 
+                // Get agent information
+                const agentType = prediction.agent_type || 'unknown';
+                const agentName = prediction.agent_name || 'unknown';
+                const agentVersion = prediction.agent_version || 'unknown';
+                
                 predictionCard.innerHTML = `
                     <div class="prediction-header">
                         <div class="prediction-id">${prediction.id}</div>
                         <div class="confidence-badge confidence-${confidenceClass}">${confidenceText}</div>
+                        <div class="agent-badge agent-${agentType}">${agentName} v${agentVersion}</div>
                     </div>
                     <div class="prediction-rationale">
                         ${formatDescription(prediction.rationale || 'No rationale provided')}

@@ -408,6 +408,13 @@ class EnhancedPredictionWorkflow:
                     "predictions": []
                 }
             
+            # Get protocol information
+            protocol = None
+            with self.store.get_session() as session:
+                protocol = session.query(Protocol).filter(
+                    Protocol.id == prediction.protocol_id
+                ).first()
+            
             # Add prediction data
             prediction_data = {
                 "id": prediction.id,
@@ -415,6 +422,9 @@ class EnhancedPredictionWorkflow:
                 "horizon_hours": prediction.horizon_hours,
                 "rationale": prediction.rationale,
                 "created_at": prediction.created_at.isoformat(),
+                "agent_type": protocol.kind.value if protocol else "unknown",
+                "agent_name": protocol.name if protocol else "unknown",
+                "agent_version": protocol.version if protocol else "unknown",
                 "evidence_sources": []
             }
             
