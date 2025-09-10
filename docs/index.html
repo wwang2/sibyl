@@ -170,9 +170,16 @@
         }
         
         .event-description {
-            font-size: 0.9rem;
-            color: #666;
-            line-height: 1.4;
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.6;
+            margin-top: 12px;
+            padding: 12px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            word-wrap: break-word;
+            hyphens: auto;
         }
         
         .prediction-card {
@@ -233,9 +240,16 @@
         }
         
         .prediction-rationale {
-            font-size: 0.9rem;
-            color: #666;
-            line-height: 1.4;
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.6;
+            margin-top: 12px;
+            padding: 12px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+            word-wrap: break-word;
+            hyphens: auto;
         }
         
         .evidence-card {
@@ -268,10 +282,16 @@
         }
         
         .evidence-fact {
-            font-size: 0.9rem;
-            color: #666;
-            line-height: 1.4;
-            margin-bottom: 8px;
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 12px;
+            padding: 10px;
+            background: white;
+            border-radius: 6px;
+            border-left: 3px solid #ffc107;
+            word-wrap: break-word;
+            hyphens: auto;
         }
         
         .evidence-meta {
@@ -499,10 +519,16 @@
         }
         
         .evidence-fact {
-            font-size: 0.9rem;
-            color: #666;
-            line-height: 1.4;
-            margin-bottom: 8px;
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 12px;
+            padding: 10px;
+            background: white;
+            border-radius: 6px;
+            border-left: 3px solid #ffc107;
+            word-wrap: break-word;
+            hyphens: auto;
         }
         
         .evidence-meta {
@@ -845,7 +871,7 @@
                 eventCard.innerHTML = `
                     <div class="event-title">${group.event.title || 'Unknown Event'}</div>
                     <div class="event-key">${group.event.key || 'No key'}</div>
-                    <div class="event-description">${group.event.description || 'No description available'}</div>
+                    <div class="event-description">${formatDescription(group.event.description || 'No description available')}</div>
                 `;
                 
                 eventsContainer.appendChild(eventCard);
@@ -895,7 +921,7 @@
                         <div class="confidence-badge confidence-${confidenceClass}">${confidenceText}</div>
                     </div>
                     <div class="prediction-rationale">
-                        ${prediction.rationale || 'No rationale provided'}
+                        ${formatDescription(prediction.rationale || 'No rationale provided')}
                     </div>
                 `;
                 
@@ -946,7 +972,7 @@
                 evidenceCard.innerHTML = `
                     <div class="evidence-title">${source.title || 'No title'}</div>
                     <a href="${source.url || '#'}" target="_blank" class="evidence-url">${source.url || 'No URL'}</a>
-                    <div class="evidence-fact">${source.extracted_fact || 'No fact extracted'}</div>
+                    <div class="evidence-fact">${formatDescription(source.extracted_fact || 'No fact extracted')}</div>
                     <div class="evidence-meta">
                         <span>Relevance: ${((source.relevance_score || 0) * 100).toFixed(1)}%</span>
                         <span class="reliability-badge reliability-${reliabilityClass}">${reliability}</span>
@@ -963,6 +989,29 @@
         
         
         // Auto-refresh every 5 minutes
+        // Format description text for better readability
+        function formatDescription(text) {
+            if (!text || text === 'No description available' || text === 'No rationale provided' || text === 'No fact extracted') {
+                return text;
+            }
+            
+            // Clean up the text
+            let formatted = text
+                .replace(/\s+/g, ' ')  // Replace multiple spaces with single space
+                .trim();
+            
+            // Add line breaks for better readability
+            formatted = formatted
+                .replace(/\. /g, '.<br><br>')  // Add line breaks after sentences
+                .replace(/\? /g, '?<br><br>')  // Add line breaks after questions
+                .replace(/! /g, '!<br><br>');  // Add line breaks after exclamations
+            
+            // Clean up any double line breaks
+            formatted = formatted.replace(/<br><br><br><br>/g, '<br><br>');
+            
+            return formatted;
+        }
+
         setInterval(loadPredictionData, 5 * 60 * 1000);
         
         // Load data on page load
