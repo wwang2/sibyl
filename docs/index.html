@@ -8,6 +8,9 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -16,42 +19,44 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
-            background: #fafafa;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            background: #ffffff;
             min-height: 100vh;
-            color: #1a1a1a;
-            line-height: 1.6;
+            color: #000000;
+            line-height: 1.5;
+            font-size: 16px;
         }
         
         .container {
-            max-width: 1400px;
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 40px 20px;
         }
         
         .header {
             text-align: center;
-            margin-bottom: 40px;
-            color: #1a1a1a;
-            background: white;
-            padding: 40px 20px;
-            border-radius: 16px;
-            border: 1px solid #e5e5e5;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            margin-bottom: 60px;
+            color: #000000;
+            background: transparent;
+            padding: 0;
+            border: none;
+            box-shadow: none;
         }
         
         .header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 16px;
-            color: #1a1a1a;
-            font-weight: 600;
-            letter-spacing: -0.02em;
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #000000;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            line-height: 1.1;
         }
         
         .header p {
-            font-size: 1.1rem;
-            color: #666;
+            font-size: 1.25rem;
+            color: #666666;
             font-weight: 400;
+            line-height: 1.4;
         }
         
         .stats-grid {
@@ -89,11 +94,11 @@
         }
         
         .card {
-            background: white;
-            border-radius: 16px;
-            padding: 24px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-            border: 1px solid #e5e5e5;
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 32px;
+            box-shadow: none;
+            border: 1px solid #e0e0e0;
         }
         
         .card h2 {
@@ -115,19 +120,20 @@
         }
         
         .column {
-            background: white;
-            border-radius: 16px;
-            padding: 24px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-            border: 1px solid #e5e5e5;
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 32px;
+            box-shadow: none;
+            border: 1px solid #e0e0e0;
         }
         
         .column h2 {
-            margin-bottom: 20px;
-            color: #333;
-            font-size: 1.3rem;
-            border-bottom: 2px solid #667eea;
-            padding-bottom: 10px;
+            margin-bottom: 24px;
+            color: #000000;
+            font-size: 1.5rem;
+            font-weight: 600;
+            border-bottom: none;
+            padding-bottom: 0;
         }
         
         .events-list, .predictions-list, .evidence-list {
@@ -136,81 +142,82 @@
         }
         
         .event-card {
-            background: #f8f9fa;
-            border: 1px solid #dee2e6;
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
             border-radius: 8px;
-            padding: 15px;
-            margin-bottom: 15px;
+            padding: 24px;
+            margin-bottom: 16px;
             cursor: pointer;
-            transition: all 0.3s ease;
-            border-left: 4px solid #667eea;
+            transition: all 0.2s ease;
+            border-left: none;
         }
         
         .event-card:hover {
-            background: #e9ecef;
-            transform: translateX(2px);
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            background: #f8f9fa;
+            transform: none;
+            box-shadow: 0 1px 6px rgba(0,0,0,0.04);
         }
         
         .event-card.selected {
-            background: #e3f2fd;
-            border-left-color: #2196f3;
+            background: #f0f8ff;
+            border-color: #0066cc;
         }
         
         .event-title {
-            font-weight: bold;
-            color: #333;
-            margin-bottom: 8px;
-            font-size: 1rem;
+            font-weight: 600;
+            color: #000000;
+            margin-bottom: 12px;
+            font-size: 1.125rem;
+            line-height: 1.4;
         }
         
         .event-key {
-            font-family: monospace;
-            font-size: 0.8rem;
-            color: #666;
-            background: rgba(102, 126, 234, 0.1);
-            padding: 2px 6px;
+            font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+            font-size: 0.875rem;
+            color: #666666;
+            background: #f5f5f5;
+            padding: 4px 8px;
             border-radius: 4px;
             display: inline-block;
-            margin-bottom: 8px;
+            margin-bottom: 12px;
         }
         
         .event-description {
             font-size: 1rem;
-            color: #2d3748;
-            line-height: 1.7;
-            margin-top: 16px;
-            padding: 20px;
-            background: white;
-            border-radius: 12px;
-            border: 1px solid #e2e8f0;
-            border-left: 4px solid #4299e1;
+            color: #333333;
+            line-height: 1.6;
+            margin-top: 0;
+            padding: 0;
+            background: transparent;
+            border-radius: 0;
+            border: none;
+            border-left: none;
             word-wrap: break-word;
             hyphens: auto;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            box-shadow: none;
             font-weight: 400;
         }
         
         .prediction-card {
-            background: #f8f9fa;
-            border: 1px solid #dee2e6;
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
             border-radius: 8px;
-            padding: 15px;
-            margin-bottom: 15px;
+            padding: 24px;
+            margin-bottom: 16px;
             cursor: pointer;
-            transition: all 0.3s ease;
-            border-left: 4px solid #28a745;
+            transition: all 0.2s ease;
+            border-left: none;
         }
         
         .prediction-card:hover {
-            background: #e9ecef;
-            transform: translateX(2px);
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            background: #f8f9fa;
+            transform: none;
+            box-shadow: 0 1px 6px rgba(0,0,0,0.04);
         }
         
         .prediction-card.selected {
-            background: #e8f5e8;
-            border-left-color: #28a745;
+            background: #f0fff0;
+            border-color: #00aa00;
         }
         
         .prediction-header {
@@ -250,41 +257,42 @@
         
         .prediction-rationale {
             font-size: 1rem;
-            color: #2d3748;
-            line-height: 1.7;
-            margin-top: 16px;
-            padding: 20px;
-            background: white;
-            border-radius: 12px;
-            border: 1px solid #e2e8f0;
-            border-left: 4px solid #48bb78;
+            color: #333333;
+            line-height: 1.6;
+            margin-top: 12px;
+            padding: 0;
+            background: transparent;
+            border-radius: 0;
+            border: none;
+            border-left: none;
             word-wrap: break-word;
             hyphens: auto;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            box-shadow: none;
             font-weight: 400;
         }
         
         .evidence-card {
-            background: #f8f9fa;
-            border: 1px solid #dee2e6;
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
             border-radius: 8px;
-            padding: 15px;
-            margin-bottom: 15px;
-            border-left: 4px solid #ffc107;
+            padding: 24px;
+            margin-bottom: 16px;
+            border-left: none;
         }
         
         .evidence-title {
-            font-weight: bold;
-            color: #333;
-            margin-bottom: 8px;
-            font-size: 0.95rem;
+            font-weight: 600;
+            color: #000000;
+            margin-bottom: 12px;
+            font-size: 1.125rem;
+            line-height: 1.4;
         }
         
         .evidence-url {
-            font-size: 0.8rem;
-            color: #667eea;
+            font-size: 0.875rem;
+            color: #0066cc;
             text-decoration: none;
-            margin-bottom: 8px;
+            margin-bottom: 12px;
             display: block;
             word-break: break-all;
         }
@@ -295,14 +303,14 @@
         
         .evidence-fact {
             font-size: 1rem;
-            color: #2d3748;
-            line-height: 1.7;
-            margin-bottom: 16px;
-            padding: 16px;
-            background: #f7fafc;
-            border-radius: 10px;
-            border: 1px solid #e2e8f0;
-            border-left: 4px solid #ed8936;
+            color: #333333;
+            line-height: 1.6;
+            margin-bottom: 12px;
+            padding: 0;
+            background: transparent;
+            border-radius: 0;
+            border: none;
+            border-left: none;
             word-wrap: break-word;
             hyphens: auto;
             font-weight: 400;
@@ -534,14 +542,14 @@
         
         .evidence-fact {
             font-size: 1rem;
-            color: #2d3748;
-            line-height: 1.7;
-            margin-bottom: 16px;
-            padding: 16px;
-            background: #f7fafc;
-            border-radius: 10px;
-            border: 1px solid #e2e8f0;
-            border-left: 4px solid #ed8936;
+            color: #333333;
+            line-height: 1.6;
+            margin-bottom: 12px;
+            padding: 0;
+            background: transparent;
+            border-radius: 0;
+            border: none;
+            border-left: none;
             word-wrap: break-word;
             hyphens: auto;
             font-weight: 400;
