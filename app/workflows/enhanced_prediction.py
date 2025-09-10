@@ -12,10 +12,14 @@ This workflow integrates the WebResearchAgent into the prediction pipeline:
 import asyncio
 import json
 import logging
+import sys
 from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Dict, List, Optional, Any
 from dataclasses import dataclass
+
+# Add parent directory to path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from core.store import Store
 from core.models import Event, EventProposal, EventResolution, Prediction, WorkflowRun, ToolCall, ToolCallType, RawItem, PredictionAttribution, Protocol, Source, SourceType, EventState
@@ -343,17 +347,15 @@ class EnhancedPredictionWorkflow:
         logger.info(f"Exported prediction data to {export_path}")
     
     async def _get_predictions_for_export(self) -> Dict[str, Any]:
-        """Get predictions data for export."""
+        """Get predictions data for export, grouped by events."""
         # Get recent predictions with their attributions
         with self.store.get_session() as session:
             predictions = session.query(Prediction).filter(
                 Prediction.created_at >= datetime.utcnow() - timedelta(days=7)
             ).order_by(Prediction.created_at.desc()).all()
         
-        export_data = {
-            "timestamp": datetime.utcnow().isoformat(),
-            "predictions": []
-        }
+        # Group predictions by event
+        events_data = {}
         
         for prediction in predictions:
             # Get event information
@@ -373,35 +375,47 @@ class EnhancedPredictionWorkflow:
                     PredictionAttribution.prediction_id == prediction.id
                 ).order_by(PredictionAttribution.rank).all()
             
-            # Get resolution information
-            resolution = None
-            if event:
+            if not event:
+                continue
+                
+            # Initialize event data if not exists
+            if event.id not in events_data:
+                # Get resolution information for this event
+                resolution = None
                 with self.store.get_session() as session:
                     resolution = session.query(EventResolution).filter(
                         EventResolution.event_id == event.id
                     ).first()
+                
+                events_data[event.id] = {
+                    "event_id": event.id,
+                    "event_key": event.key,
+                    "event_title": event.title,
+                    "event_description": event.description,
+                    "event_state": event.state.value,
+                    "expected_resolution_date": event.expected_resolution_date.isoformat() if event.expected_resolution_date else None,
+                    "created_at": event.created_at.isoformat(),
+                    "resolution": {
+                        "status": resolution.resolution_status.value if resolution else "none",
+                        "confidence_score": float(resolution.confidence_score) if resolution and resolution.confidence_score else None,
+                        "confirming_sources_count": resolution.confirming_sources_count if resolution else 0,
+                        "contradicting_sources_count": resolution.contradicting_sources_count if resolution else 0,
+                        "total_sources_checked": resolution.total_sources_checked if resolution else 0,
+                        "resolution_summary": resolution.resolution_summary if resolution else None,
+                        "resolution_date": resolution.resolution_date.isoformat() if resolution and resolution.resolution_date else None,
+                        "human_override": resolution.human_override if resolution else False
+                    },
+                    "predictions": []
+                }
             
+            # Add prediction data
             prediction_data = {
                 "id": prediction.id,
-                "event_id": event.id if event else None,
-                "event_key": event.key if event else None,
-                "event_title": event.title if event else None,
-                "event_description": event.description if event else None,
                 "probability": float(prediction.p),
                 "horizon_hours": prediction.horizon_hours,
                 "rationale": prediction.rationale,
                 "created_at": prediction.created_at.isoformat(),
-                "evidence_sources": [],
-                "resolution": {
-                    "status": resolution.resolution_status.value if resolution else "none",
-                    "confidence_score": float(resolution.confidence_score) if resolution and resolution.confidence_score else None,
-                    "confirming_sources_count": resolution.confirming_sources_count if resolution else 0,
-                    "contradicting_sources_count": resolution.contradicting_sources_count if resolution else 0,
-                    "total_sources_checked": resolution.total_sources_checked if resolution else 0,
-                    "resolution_summary": resolution.resolution_summary if resolution else None,
-                    "resolution_date": resolution.resolution_date.isoformat() if resolution and resolution.resolution_date else None,
-                    "human_override": resolution.human_override if resolution else False
-                }
+                "evidence_sources": []
             }
             
             for attr in attributions:
@@ -421,7 +435,14 @@ class EnhancedPredictionWorkflow:
                         "extracted_fact": raw_item.meta_json.get("extracted_fact") if raw_item.meta_json else None
                     })
             
-            export_data["predictions"].append(prediction_data)
+            # Add prediction to the event's predictions list
+            events_data[event.id]["predictions"].append(prediction_data)
+        
+        # Convert to list format for export
+        export_data = {
+            "timestamp": datetime.utcnow().isoformat(),
+            "events": list(events_data.values())
+        }
         
         return export_data
     

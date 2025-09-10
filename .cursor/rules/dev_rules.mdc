@@ -28,3 +28,25 @@ Temporary Workflows
 	Simplicity > Features > Performance (unless proven otherwise).
 	Fewer files, fewer concepts, fewer dependencies.
 	If a change adds complexity, it must remove at least as much elsewhere.
+
+# Git Commit & Push Rules
+
+Commits
+  - Commit small, one logical change at a time.
+  - Use imperative messages: <type>(<scope>): <summary>.
+  - Types: feat, fix, docs, refactor, style, test, chore.
+  - Do not commit secrets, large data, or temp files.
+
+Push
+  - Always pull --rebase before push.
+  - Run tests/linters before push.
+  - No direct pushes to main/master; use feature branches + PRs.
+
+Branching
+  - main: stable/deployable only.
+  - dev: integration.
+  - feature/*: new work, delete after merge.
+
+History
+  - Don’t rewrite shared branch history.
+  - Force-push only on personal feature branches.
