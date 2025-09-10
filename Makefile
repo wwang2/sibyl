@@ -17,7 +17,7 @@ help:
 	@echo "  init-db          Initialize database with schema"
 	@echo ""
 	@echo "End-to-End Prediction Pipeline:"
-	@echo "  run-e2e          Complete pipeline: mine → judge → predict → visualize"
+	@echo "  run-e2e          Complete pipeline: mine → judge → predict → resolve → visualize"
 	@echo "  run-e2e-quick    Quick pipeline with limited data"
 	@echo "  run-e2e-kalshi   Pipeline with Kalshi markets only"
 	@echo "  run-e2e-polymarket Pipeline with Polymarket markets only"
@@ -26,7 +26,8 @@ help:
 	@echo "  step-mine        Step 1: Mine prediction markets"
 	@echo "  step-judge       Step 2: Judge event proposals"
 	@echo "  step-predict     Step 3: Generate predictions"
-	@echo "  step-visualize   Step 4: Start dashboard"
+	@echo "  step-resolve     Step 4: Resolve events with evidence"
+	@echo "  step-visualize   Step 5: Start dashboard"
 	@echo ""
 	@echo "Dashboard & Visualization:"
 	@echo "  serve-dashboard  Start local dashboard server"
@@ -80,7 +81,9 @@ run-e2e: reset-db
 	@$(MAKE) step-judge
 	@echo "Step 3: Generating predictions..."
 	@$(MAKE) step-predict
-	@echo "Step 4: Starting visualization..."
+	@echo "Step 4: Resolving events with evidence..."
+	@$(MAKE) step-resolve
+	@echo "Step 5: Starting visualization..."
 	@$(MAKE) step-visualize
 	@echo "✅ Complete pipeline finished!"
 
@@ -92,7 +95,9 @@ run-e2e-quick: reset-db
 	@$(MAKE) step-judge
 	@echo "Step 3: Generating predictions..."
 	@$(MAKE) step-predict
-	@echo "Step 4: Starting visualization..."
+	@echo "Step 4: Resolving events with evidence..."
+	@$(MAKE) step-resolve
+	@echo "Step 5: Starting visualization..."
 	@$(MAKE) step-visualize
 	@echo "✅ Quick pipeline finished!"
 
@@ -104,7 +109,9 @@ run-e2e-kalshi: reset-db
 	@$(MAKE) step-judge
 	@echo "Step 3: Generating predictions..."
 	@$(MAKE) step-predict
-	@echo "Step 4: Starting visualization..."
+	@echo "Step 4: Resolving events with evidence..."
+	@$(MAKE) step-resolve
+	@echo "Step 5: Starting visualization..."
 	@$(MAKE) step-visualize
 	@echo "✅ Kalshi pipeline finished!"
 
@@ -116,7 +123,9 @@ run-e2e-polymarket: reset-db
 	@$(MAKE) step-judge
 	@echo "Step 3: Generating predictions..."
 	@$(MAKE) step-predict
-	@echo "Step 4: Starting visualization..."
+	@echo "Step 4: Resolving events with evidence..."
+	@$(MAKE) step-resolve
+	@echo "Step 5: Starting visualization..."
 	@$(MAKE) step-visualize
 	@echo "✅ Polymarket pipeline finished!"
 
@@ -144,6 +153,10 @@ step-judge:
 step-predict:
 	@echo "🔮 Generating predictions with research agent..."
 	PYTHONPATH=$$(pwd) python3 temp_scripts/test_enhanced_prediction.py
+
+step-resolve:
+	@echo "🔍 Resolving events with evidence analysis..."
+	PYTHONPATH=$$(pwd) python3 -m app.workflows.event_resolution
 
 step-visualize:
 	@echo "📊 Starting visualization dashboard..."

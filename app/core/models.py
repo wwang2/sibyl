@@ -74,6 +74,13 @@ class ToolCallType(str, Enum):
     DATA_FETCH = "data_fetch"
 
 
+class ResolutionStatus(str, Enum):
+    """Status of event resolution based on evidence analysis."""
+    RESOLVED = "resolved"        # Event outcome determined with strong evidence
+    OPEN = "open"               # Not enough evidence or ongoing event
+    CONTRADICTED = "contradicted"  # Conflicting evidence requiring human review
+
+
 # -------------------- Core Event Sourcing Entities --------------------
 class Source(Base):
     """Data source configuration and metadata."""
@@ -167,6 +174,7 @@ class Event(Base):
     market_listings: Mapped[List[MarketListing]] = relationship(back_populates="event", cascade="all, delete-orphan")
     workflow_runs: Mapped[List[WorkflowRun]] = relationship(back_populates="event", cascade="all, delete-orphan")
     outcome: Mapped[Optional[Outcome]] = relationship(back_populates="event", uselist=False, cascade="all, delete-orphan")
+    resolution: Mapped[Optional[EventResolution]] = relationship(back_populates="event", uselist=False, cascade="all, delete-orphan")
 
     __table_args__ = (
         Index("idx_events_key", "key"),
@@ -384,4 +392,45 @@ class AgentRun(Base):
     __table_args__ = (
         Index("idx_agent_runs_type", "agent_type"),
         Index("idx_agent_runs_started_at", "started_at"),
+    )
+
+
+# -------------------- Event Resolution Models --------------------
+class EventResolution(Base):
+    """Event resolution based on evidence analysis from multiple independent sources."""
+    __tablename__ = "event_resolutions"
+    
+    id: Mapped[str] = mapped_column(String(36), primary_key=True, default=lambda: str(uuid4()))
+    event_id: Mapped[str] = mapped_column(ForeignKey("events.id"), nullable=False)
+    resolution_status: Mapped[ResolutionStatus] = mapped_column(SAEnum(ResolutionStatus), nullable=False)
+    resolution_date: Mapped[Optional[datetime]] = mapped_column(DateTime(timezone=True))
+    confidence_score: Mapped[Optional[float]] = mapped_column(Numeric(3,2))
+    
+    # Evidence summary
+    confirming_sources_count: Mapped[int] = mapped_column(Integer, default=0, nullable=False)
+    contradicting_sources_count: Mapped[int] = mapped_column(Integer, default=0, nullable=False)
+    total_sources_checked: Mapped[int] = mapped_column(Integer, default=0, nullable=False)
+    
+    # Resolution details
+    resolution_summary: Mapped[Optional[str]] = mapped_column(Text)
+    key_evidence: Mapped[Optional[dict]] = mapped_column(JSON, default=dict, nullable=False)  # JSON of key facts
+    contradicting_evidence: Mapped[Optional[dict]] = mapped_column(JSON, default=dict, nullable=False)  # JSON of opposing facts
+    
+    # Metadata
+    resolved_by: Mapped[str] = mapped_column(String(50), default="EventResolutionAgent", nullable=False)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=datetime.utcnow, nullable=False)
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=datetime.utcnow, onupdate=datetime.utcnow, nullable=False)
+    human_override: Mapped[bool] = mapped_column(Boolean, default=False, nullable=False)
+    human_override_notes: Mapped[Optional[str]] = mapped_column(Text)
+    
+    event: Mapped[Event] = relationship(back_populates="resolution")
+
+    __table_args__ = (
+        Index("idx_event_resolutions_event_id", "event_id"),
+        Index("idx_event_resolutions_status", "resolution_status"),
+        Index("idx_event_resolutions_created_at", "created_at"),
+        CheckConstraint("confidence_score >= 0.0 AND confidence_score <= 1.0", name="ck_resolution_confidence_range"),
+        CheckConstraint("confirming_sources_count >= 0", name="ck_confirming_sources_positive"),
+        CheckConstraint("contradicting_sources_count >= 0", name="ck_contradicting_sources_positive"),
+        CheckConstraint("total_sources_checked >= 0", name="ck_total_sources_positive"),
     )

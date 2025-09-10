@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-09-08T02:27:40.274690",
+  "timestamp": "2025-09-10T04:14:37.465110",
   "predictions": [
     {
       "id": "fecf20a7-9da6-4222-8340-ed2276739fd1",
@@ -426,7 +426,17 @@
           "reliability": "high",
           "extracted_fact": "/ B.Sc."
         }
-      ]
+      ],
+      "resolution": {
+        "status": "open",
+        "confidence_score": null,
+        "confirming_sources_count": 0,
+        "contradicting_sources_count": 0,
+        "total_sources_checked": 0,
+        "resolution_summary": "Insufficient evidence for resolution: 0 confirming sources (need 3), 0 contradicting sources.",
+        "resolution_date": null,
+        "human_override": false
+      }
     },
     {
       "id": "0ac2893e-2720-4ffa-99a4-4eabd65848bd",
@@ -880,7 +890,17 @@
           "reliability": "low",
           "extracted_fact": "Subramanyam had received endorsements from both incumbent Democrat Rep."
         }
-      ]
+      ],
+      "resolution": {
+        "status": "open",
+        "confidence_score": 0.3,
+        "confirming_sources_count": 1,
+        "contradicting_sources_count": 0,
+        "total_sources_checked": 3,
+        "resolution_summary": "Insufficient evidence for resolution: 1 confirming sources (need 3), 0 contradicting sources.",
+        "resolution_date": null,
+        "human_override": false
+      }
     },
     {
       "id": "6466ab02-172a-4243-94ea-a278e6ad58f1",
@@ -1217,7 +1237,17 @@
           "reliability": "low",
           "extracted_fact": "on TikTok."
         }
-      ]
+      ],
+      "resolution": {
+        "status": "none",
+        "confidence_score": null,
+        "confirming_sources_count": 0,
+        "contradicting_sources_count": 0,
+        "total_sources_checked": 0,
+        "resolution_summary": null,
+        "resolution_date": null,
+        "human_override": false
+      }
     }
   ]
 }

@@ -18,7 +18,7 @@ from typing import Dict, List, Optional, Any
 from dataclasses import dataclass
 
 from core.store import Store
-from core.models import Event, EventProposal, Prediction, WorkflowRun, ToolCall, ToolCallType, RawItem, PredictionAttribution, Protocol, Source, SourceType, EventState
+from core.models import Event, EventProposal, EventResolution, Prediction, WorkflowRun, ToolCall, ToolCallType, RawItem, PredictionAttribution, Protocol, Source, SourceType, EventState
 from core.types import ProposalStatus
 from core.types import ProtocolKind
 from core.research_models import Prediction as ResearchPrediction
@@ -373,6 +373,14 @@ class EnhancedPredictionWorkflow:
                     PredictionAttribution.prediction_id == prediction.id
                 ).order_by(PredictionAttribution.rank).all()
             
+            # Get resolution information
+            resolution = None
+            if event:
+                with self.store.get_session() as session:
+                    resolution = session.query(EventResolution).filter(
+                        EventResolution.event_id == event.id
+                    ).first()
+            
             prediction_data = {
                 "id": prediction.id,
                 "event_id": event.id if event else None,
@@ -383,7 +391,17 @@ class EnhancedPredictionWorkflow:
                 "horizon_hours": prediction.horizon_hours,
                 "rationale": prediction.rationale,
                 "created_at": prediction.created_at.isoformat(),
-                "evidence_sources": []
+                "evidence_sources": [],
+                "resolution": {
+                    "status": resolution.resolution_status.value if resolution else "none",
+                    "confidence_score": float(resolution.confidence_score) if resolution and resolution.confidence_score else None,
+                    "confirming_sources_count": resolution.confirming_sources_count if resolution else 0,
+                    "contradicting_sources_count": resolution.contradicting_sources_count if resolution else 0,
+                    "total_sources_checked": resolution.total_sources_checked if resolution else 0,
+                    "resolution_summary": resolution.resolution_summary if resolution else None,
+                    "resolution_date": resolution.resolution_date.isoformat() if resolution and resolution.resolution_date else None,
+                    "human_override": resolution.human_override if resolution else False
+                }
             }
             
             for attr in attributions:

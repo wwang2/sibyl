@@ -79,6 +79,56 @@ class WebResearchAgent:
         
         return prediction
     
+    async def search_and_extract_facts(self, query: str) -> List[Dict[str, Any]]:
+        """Search for facts related to a query and extract relevant information.
+        
+        This method is used by the EventResolutionAgent to gather evidence.
+        
+        Args:
+            query: Search query string
+            
+        Returns:
+            List of evidence dictionaries with extracted facts
+        """
+        if self.offline_mode:
+            return self._mock_search_results(query)
+        
+        # In real mode, use Tavily search
+        try:
+            from adapters.tavily import TavilyAdapter
+            tavily = TavilyAdapter()
+            results = await tavily.search(query, max_results=5)
+            
+            evidence = []
+            for result in results:
+                evidence.append({
+                    'url': result.get('url', ''),
+                    'title': result.get('title', ''),
+                    'content': result.get('content', ''),
+                    'extracted_fact': result.get('content', '')[:500],  # Truncate for storage
+                    'relevance_score': 0.8,  # Default relevance
+                    'reliability_score': 0.9  # Default reliability
+                })
+            
+            return evidence
+            
+        except Exception as e:
+            print(f"Error in Tavily search: {e}")
+            return self._mock_search_results(query)
+    
+    def _mock_search_results(self, query: str) -> List[Dict[str, Any]]:
+        """Generate mock search results for testing."""
+        return [
+            {
+                'url': f'https://example.com/search?q={query}',
+                'title': f'Search result for: {query}',
+                'content': f'This is mock content for the query: {query}',
+                'extracted_fact': f'Mock fact extracted from search for: {query}',
+                'relevance_score': 0.8,
+                'reliability_score': 0.9
+            }
+        ]
+    
     async def _generate_research_queries(self, event_description: str) -> List[str]:
         """Generate research queries for the event."""
         if self.offline_mode:

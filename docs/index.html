@@ -265,6 +265,56 @@
             color: #721c24;
         }
         
+        .resolution-badge {
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 3px 6px;
+            border-radius: 3px;
+            color: white;
+            margin-left: 8px;
+        }
+        
+        .resolution-resolved {
+            background: #28a745;
+        }
+        
+        .resolution-contradicted {
+            background: #dc3545;
+        }
+        
+        .resolution-open {
+            background: #6c757d;
+        }
+        
+        .resolution-details {
+            margin-top: 12px;
+            padding: 12px;
+            background: #f8f9fa;
+            border-radius: 6px;
+            border-left: 3px solid #6c757d;
+        }
+        
+        .resolution-summary {
+            font-size: 0.875rem;
+            color: #495057;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+        
+        .resolution-stats {
+            display: flex;
+            gap: 12px;
+            font-size: 0.75rem;
+            color: #6c757d;
+        }
+        
+        .resolution-stats span {
+            background: white;
+            padding: 2px 6px;
+            border-radius: 3px;
+            border: 1px solid #dee2e6;
+        }
+        
         .prediction-rationale {
             font-size: 0.875rem;
             color: #4b5563;
@@ -976,14 +1026,36 @@
                 const confidenceClass = confidence >= 0.7 ? 'high' : confidence >= 0.4 ? 'medium' : 'low';
                 const confidenceText = (confidence * 100).toFixed(1) + '%';
                 
+                // Get resolution status
+                const resolution = prediction.resolution || {};
+                const resolutionStatus = resolution.status || 'none';
+                const resolutionClass = resolutionStatus === 'resolved' ? 'resolved' : 
+                                      resolutionStatus === 'contradicted' ? 'contradicted' : 'open';
+                const resolutionText = resolutionStatus === 'resolved' ? 'RESOLVED' :
+                                     resolutionStatus === 'contradicted' ? 'CONTRADICTED' :
+                                     resolutionStatus === 'open' ? 'OPEN' : 'NO RESOLUTION';
+                
                 predictionCard.innerHTML = `
                     <div class="prediction-header">
                         <div class="prediction-id">${prediction.id}</div>
                         <div class="confidence-badge confidence-${confidenceClass}">${confidenceText}</div>
+                        <div class="resolution-badge resolution-${resolutionClass}">${resolutionText}</div>
                     </div>
                     <div class="prediction-rationale">
                         ${formatDescription(prediction.rationale || 'No rationale provided')}
                     </div>
+                    ${resolutionStatus !== 'none' ? `
+                    <div class="resolution-details">
+                        <div class="resolution-summary">
+                            <strong>Resolution:</strong> ${resolution.resolution_summary || 'No summary available'}
+                        </div>
+                        <div class="resolution-stats">
+                            <span>Confirming: ${resolution.confirming_sources_count || 0}</span>
+                            <span>Contradicting: ${resolution.contradicting_sources_count || 0}</span>
+                            <span>Total Sources: ${resolution.total_sources_checked || 0}</span>
+                        </div>
+                    </div>
+                    ` : ''}
                 `;
                 
                 predictionsContainer.appendChild(predictionCard);
